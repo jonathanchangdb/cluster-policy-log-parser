@@ -1,10 +1,22 @@
 [2023-07-11]
 ======= Summary =======
-count=99712,
-total # of org=1764
-total # of pipeline=10891
-total # of policy=78
+count=104466,
+total # of org=1870
+total # of pipeline=11275
+total # of policy=87
+[MATCHED_CLUSTER_SPEC]:
+total = 99753, pipelineIds = 11245, orgIds = 1851, policies = 0
+[MISMATCHED_CLUSTER_SPEC]:
+total = 1882, pipelineIds = 16, orgIds = 16, policies = 37
+[ONLY_LEGACY_CODE_PATH_SUCCEED]:
+total = 2102, pipelineIds = 9, orgIds = 9, policies = 49
+[ONLY_NEW_CODE_PATH_SUCCEED]:
+total = 17, pipelineIds = 5, orgIds = 5, policies = 3
+[BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]:
+total = 712, pipelineIds = 13, orgIds = 13, policies = 0
 
+
+======= Details =======
 (az-australiaeast):
 total = 1881, pipelineIds = 228, orgIds = 66, policies = 0
 
@@ -154,3 +166,21 @@ total = 2773, pipelineIds = 182, orgIds = 41, policies = 1
 
 (oregon-prod):
 total = 10811, pipelineIds = 860, orgIds = 162, policies = 13
+
+(paris-prod):
+total = 10, pipelineIds = 4, orgIds = 3, policies = 0
+
+(saopaulo-prod):
+total = 16, pipelineIds = 5, orgIds = 4, policies = 0
+
+(seoul-prod):
+total = 163, pipelineIds = 23, orgIds = 14, policies = 1
+
+(singapore-prod):
+total = 2060, pipelineIds = 63, orgIds = 17, policies = 0
+
+(sydney-prod):
+total = 1993, pipelineIds = 240, orgIds = 49, policies = 6
+
+(tokyo-prod):
+total = 512, pipelineIds = 49, orgIds = 19, policies = 2

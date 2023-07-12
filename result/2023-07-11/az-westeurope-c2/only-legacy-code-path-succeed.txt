@@ -5,7 +5,6 @@ count=71,
 total # of org=1
 total # of pipeline=1
 total # of policy=1
-
 =================== DETAILS ===================
 -------- ApplyPolicy RPC validation --------
 count=0

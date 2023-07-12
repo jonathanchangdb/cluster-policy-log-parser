@@ -1,11 +1,10 @@
-shardName=az-australiaeast
+shardName=saopaulo-prod
 [ONLY_NEW_CODE_PATH_SUCCEED]
 ======= Summary =======
 count=0,
 total # of org=0
 total # of pipeline=0
 total # of policy=0
-
 =================== DETAILS ===================
 -------- Node Type ID --------
 count=0

@@ -5,7 +5,6 @@ count=28,
 total # of org=1
 total # of pipeline=1
 total # of policy=3
-
 =================== DETAILS ===================
 -------- Custom tags --------
 count=28

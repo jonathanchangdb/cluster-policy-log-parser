@@ -5,7 +5,6 @@ count=1,
 total # of org=1
 total # of pipeline=1
 total # of policy=1
-
 =================== DETAILS ===================
 -------- Node Type ID --------
 count=1

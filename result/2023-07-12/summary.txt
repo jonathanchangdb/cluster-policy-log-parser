@@ -1,7 +1,0 @@
-[2023-07-12]
-======= Summary =======
-count=1236,
-total # of org=60
-total # of pipeline=218
-total # of policy=0
-az-australiaeast=(total=1236,pipelineIds=218,orgIds=60,policies=0)

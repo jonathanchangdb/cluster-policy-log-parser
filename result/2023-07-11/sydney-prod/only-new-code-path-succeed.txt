@@ -1,13 +1,12 @@
-shardName=az-australiaeast
-[ONLY_LEGACY_CODE_PATH_SUCCEED]
+shardName=sydney-prod
+[ONLY_NEW_CODE_PATH_SUCCEED]
 ======= Summary =======
 count=0,
 total # of org=0
 total # of pipeline=0
 total # of policy=0
-
 =================== DETAILS ===================
--------- ApplyPolicy RPC validation --------
+-------- Node Type ID --------
 count=0
 # of orgs=0
 # of pipelines=0
@@ -24,12 +23,11 @@ orgIds={}
 pipelineIds={}
 policyIds={}
 
--------- Disallowed cluster attributes --------
+-------- Rate limited (non-error) --------
 count=0
 # of orgs=0
 # of pipelines=0
 # of policies=0
-attributes=None
 
 OrgIds details:
 
@@ -37,13 +35,10 @@ PipelineIds details:
 
 PolicyIds details:
 
-PolicyIds details:
-
 JSON dump:
 orgIds={}
 pipelineIds={}
 policyIds={}
-attributes={}
 
 -------- Uncategorized --------
 count=0

@@ -4,7 +4,19 @@ count=1593,
 total # of org=50
 total # of pipeline=180
 total # of policy=2
+[MATCHED_CLUSTER_SPEC]:
+total = 1582, pipelineIds = 179, orgIds = 49, policies = 0
+[MISMATCHED_CLUSTER_SPEC]:
+total = 11, pipelineIds = 1, orgIds = 1, policies = 2
+[ONLY_LEGACY_CODE_PATH_SUCCEED]:
+total = 0, pipelineIds = 1, orgIds = 1, policies = 0
+[ONLY_NEW_CODE_PATH_SUCCEED]:
+total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+[BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]:
+total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
+
+======= Details =======
 (MATCHED_CLUSTER_SPEC):
 total = 1582, pipelineIds = 179, orgIds = 49, policies = 0
 

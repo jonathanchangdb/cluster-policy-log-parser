@@ -1,6 +1,5 @@
 import json
 import re
-import logging
 
 
 def get_policy_id(cluster_spec):
@@ -316,10 +315,60 @@ class SummaryResult:
 count={self.count},
 total # of org={len(self.orgIds)}
 total # of pipeline={len(self.pipelineIds)}
-total # of policy={len(self.policyIds)}\n"""
+total # of policy={len(self.policyIds)}"""
+
+
+class OverallSummaryResult(SummaryResult):
+    def __init__(self, name):
+        super().__init__(name)
+        self.matchedClusterSpec = SummaryResult("MATCHED_CLUSTER_SPEC")
+        self.mismatchedClusterSpec = SummaryResult("MATCHED_CLUSTER_SPEC")
+        self.onlyLegacySucceed = SummaryResult("MATCHED_CLUSTER_SPEC")
+        self.onlyNewSucceed = SummaryResult("MATCHED_CLUSTER_SPEC")
+        self.bothFailed = SummaryResult("MATCHED_CLUSTER_SPEC")
+
+    def add(self, result):
+        super().add(result)
+        if isinstance(result, OverallSummaryResult):
+            self.matchedClusterSpec.add(result.matchedClusterSpec)
+            self.mismatchedClusterSpec.add(result.mismatchedClusterSpec)
+            self.onlyLegacySucceed.add(result.onlyLegacySucceed)
+            self.onlyNewSucceed.add(result.onlyNewSucceed)
+            self.bothFailed.add(result.bothFailed)
+        else:
+            if result.name == "MATCHED_CLUSTER_SPEC":
+                self.matchedClusterSpec.add(result)
+            elif result.name == "MISMATCHED_CLUSTER_SPEC":
+                self.mismatchedClusterSpec.add(result)
+            elif result.name == "ONLY_LEGACY_CODE_PATH_SUCCEED":
+                self.onlyLegacySucceed.add(result)
+            elif result.name == "ONLY_NEW_CODE_PATH_SUCCEED":
+                self.onlyNewSucceed.add(result)
+            elif result.name == "BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED":
+                self.bothFailed.add(result)
+
+    def summaryPerShard(self):
+        return f"""[{self.name}]
+======= Summary =======
+count={self.count},
+total # of org={len(self.orgIds)}
+total # of pipeline={len(self.pipelineIds)}
+total # of policy={len(self.policyIds)}
+[MATCHED_CLUSTER_SPEC]:
+total = {self.matchedClusterSpec.count}, pipelineIds = {len(self.matchedClusterSpec.pipelineIds)}, orgIds = {len(self.matchedClusterSpec.orgIds)}, policies = {len(self.matchedClusterSpec.policyIds)}
+[MISMATCHED_CLUSTER_SPEC]:
+total = {self.mismatchedClusterSpec.count}, pipelineIds = {len(self.mismatchedClusterSpec.pipelineIds)}, orgIds = {len(self.mismatchedClusterSpec.orgIds)}, policies = {len(self.mismatchedClusterSpec.policyIds)}
+[ONLY_LEGACY_CODE_PATH_SUCCEED]:
+total = {self.onlyLegacySucceed.count}, pipelineIds = {len(self.onlyLegacySucceed.pipelineIds)}, orgIds = {len(self.onlyLegacySucceed.orgIds)}, policies = {len(self.onlyLegacySucceed.policyIds)}
+[ONLY_NEW_CODE_PATH_SUCCEED]:
+total = {self.onlyNewSucceed.count}, pipelineIds = {len(self.onlyNewSucceed.pipelineIds)}, orgIds = {len(self.onlyNewSucceed.orgIds)}, policies = {len(self.onlyNewSucceed.policyIds)}
+[BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]:
+total = {self.bothFailed.count}, pipelineIds = {len(self.bothFailed.pipelineIds)}, orgIds = {len(self.bothFailed.orgIds)}, policies = {len(self.bothFailed.policyIds)}
+"""
 
     def __repr__(self):
-        resultStr = self.summary()
+        resultStr = self.summaryPerShard()
+        resultStr += "\n\n======= Details ======="
         for result in self.results:
             resultStr += f"""
 ({result.name}):

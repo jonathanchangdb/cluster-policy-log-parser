@@ -1,23 +1,7 @@
-type=MATCHED_CLUSTER_SPEC
 shardName=saopaulo-prod
-total=16
-# of orgs=4
-# of pipelines=5
-
-OrgIds details:
-8559955083150369: 9
-5563198994755307: 4
-5953593312436648: 2
-6003186419604474: 1
-
-PipelineIds details:
-14966bca-64f8-4419-8140-07572619c074: 9
-535c53be-43ff-41e8-a4fe-c06bfefe17cb: 4
-515e078e-a322-47be-ae68-17dda097fb66: 1
-282b02d1-3bfa-458e-adc0-f2c3d6dc7142: 1
-10b5b523-6ad5-40e7-86f4-c0ec21069301: 1
-
-    
-JSON dump:
-orgIds:{"8559955083150369": 9, "5953593312436648": 2, "6003186419604474": 1, "5563198994755307": 4}
-pipelines:{"14966bca-64f8-4419-8140-07572619c074": 9, "515e078e-a322-47be-ae68-17dda097fb66": 1, "282b02d1-3bfa-458e-adc0-f2c3d6dc7142": 1, "10b5b523-6ad5-40e7-86f4-c0ec21069301": 1, "535c53be-43ff-41e8-a4fe-c06bfefe17cb": 4}
+[MATCHED_CLUSTER_SPEC]
+======= Summary =======
+count=16,
+total # of org=4
+total # of pipeline=5
+total # of policy=0

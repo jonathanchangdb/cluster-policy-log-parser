@@ -11,7 +11,7 @@ from parsers.matched_cluster_spec import parseMatchedClusterSpec
 from parsers.mismatched_cluster_spec import parseMismatchClusterSpec
 from parsers.only_legacy_succeed import parseOnlyLegacySucceed
 from parsers.only_new_succeed import parseOnlyNewSucceed
-from parsers.utils import SummaryResult
+from parsers.utils import OverallSummaryResult, SummaryResult
 
 logging.basicConfig(level=logging.INFO)
 
@@ -203,7 +203,7 @@ def __bothFailed(url, cookie, startTimestamp, endTimestamp, directory, shardName
 
 
 def __parseOneShard(url, cookie, startTimestamp, endTimestamp, directory, shardName):
-    shardSummaryResult = SummaryResult(shardName)
+    shardSummaryResult = OverallSummaryResult(shardName)
 
     shardSummaryResult.add(__matchedClusterSpec(url=url, cookie=cookie, startTimestamp=startTimestamp,
                                                 endTimestamp=endTimestamp,
@@ -228,7 +228,7 @@ def __parseOneShard(url, cookie, startTimestamp, endTimestamp, directory, shardN
 
 def parse(cookie, startTimestamp, endTimestamp):
     timestamp = endTimestamp.strftime('%Y-%m-%d')
-    overallSummaryResult = SummaryResult(timestamp)
+    overallSummaryResult = OverallSummaryResult(timestamp)
     directory = f"{__RESULT_PATH}/{timestamp}"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
