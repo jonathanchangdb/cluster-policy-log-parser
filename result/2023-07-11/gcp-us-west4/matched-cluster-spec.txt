@@ -1,0 +1,18 @@
+type=MATCHED_CLUSTER_SPEC
+shardName=gcp-us-west4
+total=3
+# of orgs=2
+# of pipelines=2
+
+OrgIds details:
+7170861636589600: 2
+1790725006740635: 1
+
+PipelineIds details:
+ab097653-f9c8-4eb5-9e90-584b1fb111de: 2
+779ebd96-2b69-4ddc-a53e-c13321169ee6: 1
+
+    
+JSON dump:
+orgIds:{"7170861636589600": 2, "1790725006740635": 1}
+pipelines:{"ab097653-f9c8-4eb5-9e90-584b1fb111de": 2, "779ebd96-2b69-4ddc-a53e-c13321169ee6": 1}

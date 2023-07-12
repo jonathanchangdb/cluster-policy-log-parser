@@ -1,0 +1,21 @@
+type=MATCHED_CLUSTER_SPEC
+shardName=az-switzerlandwest
+total=13
+# of orgs=2
+# of pipelines=5
+
+OrgIds details:
+3329803632486646: 8
+138623782292313: 5
+
+PipelineIds details:
+e36c2dc9-1c39-4652-a843-867a05fc96f4: 5
+e73a63a2-7004-45bc-b599-66fe41e7bd1b: 2
+cc5ed3af-2abb-4cb4-927e-9718acff4b53: 2
+6d86b378-331e-4770-8bcb-e0ce8745f835: 2
+166fd411-4e56-4344-9fa2-9b789ac10505: 2
+
+    
+JSON dump:
+orgIds:{"3329803632486646": 8, "138623782292313": 5}
+pipelines:{"e73a63a2-7004-45bc-b599-66fe41e7bd1b": 2, "cc5ed3af-2abb-4cb4-927e-9718acff4b53": 2, "6d86b378-331e-4770-8bcb-e0ce8745f835": 2, "e36c2dc9-1c39-4652-a843-867a05fc96f4": 5, "166fd411-4e56-4344-9fa2-9b789ac10505": 2}

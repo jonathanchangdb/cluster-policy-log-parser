@@ -1,0 +1,21 @@
+type=MATCHED_CLUSTER_SPEC
+shardName=paris-prod
+total=10
+# of orgs=3
+# of pipelines=4
+
+OrgIds details:
+3148436864291634: 6
+998137325121155: 3
+611125870065531: 1
+
+PipelineIds details:
+c0108d50-74d2-4e66-b668-1ac940fd1878: 6
+90794c8c-c9a4-4ee0-987c-87910f69dd30: 2
+19e11fa4-8403-421a-880b-03bacd43eaaa: 1
+39a15f3d-864f-4e59-97e2-a375cad9b7c5: 1
+
+    
+JSON dump:
+orgIds:{"3148436864291634": 6, "998137325121155": 3, "611125870065531": 1}
+pipelines:{"c0108d50-74d2-4e66-b668-1ac940fd1878": 6, "90794c8c-c9a4-4ee0-987c-87910f69dd30": 2, "19e11fa4-8403-421a-880b-03bacd43eaaa": 1, "39a15f3d-864f-4e59-97e2-a375cad9b7c5": 1}

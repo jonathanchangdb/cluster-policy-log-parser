@@ -1,0 +1,257 @@
+type=MISMATCHED_CLUSTER_SPEC
+shardName=az-ukwest
+total=50
+
+category=Custom tags
+count=50
+# of orgs=8
+# of pipelines=9
+# of policies=9
+
+category=Autoscaling retry
+count=0
+# of orgs=8
+# of pipelines=9
+# of policies=9
+
+category=Single node cluster in cluster policy (Enhanced)
+count=0
+# of orgs=8
+# of pipelines=9
+# of policies=9
+
+category=Single node cluster in cluster policy (Legacy)
+count=0
+# of orgs=8
+# of pipelines=9
+# of policies=9
+
+name=Uncategorized
+count=0
+# of orgs=2
+# of pipelines=2
+
+name=Uncategorized truncated logs
+count=0
+# of orgs=2
+# of pipelines=2
+
+=================== DETAILS ===================
+-------- Custom tags --------
+count=50
+# of orgs=8
+# of pipelines=9
+# of policies=9
+
+OrgIds details:
+1993900917962895: 50
+6056897725116273: 38
+8959478811634114: 13
+8916084915459926: 12
+1088511917216026: 8
+1526531973397437: 2
+984752964297111: 1
+6478936650198963: 1
+
+PipelineIds details:
+71c35d9f-3557-4e5c-b716-9574e86af94a: 50
+86d415d4-4a16-4060-b7f4-6c5020bf5cbd: 28
+303b4daf-3364-4b7e-9b86-f4d10a6ed7df: 13
+c0d955b0-7fce-423b-80fe-5995a275b9d6: 12
+a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15: 10
+c251ec0c-e7bb-42e8-9c79-492815fdc3f7: 8
+b6a016db-456b-420b-a397-0e06a9757c2c: 2
+5317cf32-ca20-4a46-bc71-fb73b411449e: 1
+5913d409-8861-4ffa-8407-a2847895ef33: 1
+
+PolicyIds details:
+DE63D70E0500017D: 37
+000C29592BA1DF85: 18
+6063B59EF1000276: 12
+EB63499A58000F7C: 12
+C9643F54D4000F22: 8
+000A06D9B9A99748: 7
+DE634875FC001616: 7
+DE642DBFCC001C2D: 6
+0016B607A6C7CDEF: 3
+EB62CEF30600013F: 1
+
+JSON dump:
+orgIds={"1993900917962895": 50, "6056897725116273": 38, "8959478811634114": 13, "8916084915459926": 12, "1088511917216026": 8, "1526531973397437": 2, "984752964297111": 1, "6478936650198963": 1}
+pipelineIds={"71c35d9f-3557-4e5c-b716-9574e86af94a": 50, "86d415d4-4a16-4060-b7f4-6c5020bf5cbd": 28, "303b4daf-3364-4b7e-9b86-f4d10a6ed7df": 13, "c0d955b0-7fce-423b-80fe-5995a275b9d6": 12, "a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15": 10, "c251ec0c-e7bb-42e8-9c79-492815fdc3f7": 8, "b6a016db-456b-420b-a397-0e06a9757c2c": 2, "5317cf32-ca20-4a46-bc71-fb73b411449e": 1, "5913d409-8861-4ffa-8407-a2847895ef33": 1}
+policyIds={"DE63D70E0500017D": 37, "000C29592BA1DF85": 18, "6063B59EF1000276": 12, "EB63499A58000F7C": 12, "C9643F54D4000F22": 8, "000A06D9B9A99748": 7, "DE634875FC001616": 7, "DE642DBFCC001C2D": 6, "0016B607A6C7CDEF": 3, "EB62CEF30600013F": 1}
+
+-------- Autoscaling retry --------
+count=0
+# of orgs=8
+# of pipelines=9
+# of policies=9
+
+OrgIds details:
+1993900917962895: 50
+6056897725116273: 38
+8959478811634114: 13
+8916084915459926: 12
+1088511917216026: 8
+1526531973397437: 2
+984752964297111: 1
+6478936650198963: 1
+
+PipelineIds details:
+71c35d9f-3557-4e5c-b716-9574e86af94a: 50
+86d415d4-4a16-4060-b7f4-6c5020bf5cbd: 28
+303b4daf-3364-4b7e-9b86-f4d10a6ed7df: 13
+c0d955b0-7fce-423b-80fe-5995a275b9d6: 12
+a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15: 10
+c251ec0c-e7bb-42e8-9c79-492815fdc3f7: 8
+b6a016db-456b-420b-a397-0e06a9757c2c: 2
+5317cf32-ca20-4a46-bc71-fb73b411449e: 1
+5913d409-8861-4ffa-8407-a2847895ef33: 1
+
+PolicyIds details:
+DE63D70E0500017D: 37
+000C29592BA1DF85: 18
+6063B59EF1000276: 12
+EB63499A58000F7C: 12
+C9643F54D4000F22: 8
+000A06D9B9A99748: 7
+DE634875FC001616: 7
+DE642DBFCC001C2D: 6
+0016B607A6C7CDEF: 3
+EB62CEF30600013F: 1
+
+JSON dump:
+orgIds={"1993900917962895": 50, "6056897725116273": 38, "8959478811634114": 13, "8916084915459926": 12, "1088511917216026": 8, "1526531973397437": 2, "984752964297111": 1, "6478936650198963": 1}
+pipelineIds={"71c35d9f-3557-4e5c-b716-9574e86af94a": 50, "86d415d4-4a16-4060-b7f4-6c5020bf5cbd": 28, "303b4daf-3364-4b7e-9b86-f4d10a6ed7df": 13, "c0d955b0-7fce-423b-80fe-5995a275b9d6": 12, "a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15": 10, "c251ec0c-e7bb-42e8-9c79-492815fdc3f7": 8, "b6a016db-456b-420b-a397-0e06a9757c2c": 2, "5317cf32-ca20-4a46-bc71-fb73b411449e": 1, "5913d409-8861-4ffa-8407-a2847895ef33": 1}
+policyIds={"DE63D70E0500017D": 37, "000C29592BA1DF85": 18, "6063B59EF1000276": 12, "EB63499A58000F7C": 12, "C9643F54D4000F22": 8, "000A06D9B9A99748": 7, "DE634875FC001616": 7, "DE642DBFCC001C2D": 6, "0016B607A6C7CDEF": 3, "EB62CEF30600013F": 1}
+
+-------- Single node cluster in cluster policy (Enhanced) --------
+count=0
+# of orgs=8
+# of pipelines=9
+# of policies=9
+
+OrgIds details:
+1993900917962895: 50
+6056897725116273: 38
+8959478811634114: 13
+8916084915459926: 12
+1088511917216026: 8
+1526531973397437: 2
+984752964297111: 1
+6478936650198963: 1
+
+PipelineIds details:
+71c35d9f-3557-4e5c-b716-9574e86af94a: 50
+86d415d4-4a16-4060-b7f4-6c5020bf5cbd: 28
+303b4daf-3364-4b7e-9b86-f4d10a6ed7df: 13
+c0d955b0-7fce-423b-80fe-5995a275b9d6: 12
+a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15: 10
+c251ec0c-e7bb-42e8-9c79-492815fdc3f7: 8
+b6a016db-456b-420b-a397-0e06a9757c2c: 2
+5317cf32-ca20-4a46-bc71-fb73b411449e: 1
+5913d409-8861-4ffa-8407-a2847895ef33: 1
+
+PolicyIds details:
+DE63D70E0500017D: 37
+000C29592BA1DF85: 18
+6063B59EF1000276: 12
+EB63499A58000F7C: 12
+C9643F54D4000F22: 8
+000A06D9B9A99748: 7
+DE634875FC001616: 7
+DE642DBFCC001C2D: 6
+0016B607A6C7CDEF: 3
+EB62CEF30600013F: 1
+
+JSON dump:
+orgIds={"1993900917962895": 50, "6056897725116273": 38, "8959478811634114": 13, "8916084915459926": 12, "1088511917216026": 8, "1526531973397437": 2, "984752964297111": 1, "6478936650198963": 1}
+pipelineIds={"71c35d9f-3557-4e5c-b716-9574e86af94a": 50, "86d415d4-4a16-4060-b7f4-6c5020bf5cbd": 28, "303b4daf-3364-4b7e-9b86-f4d10a6ed7df": 13, "c0d955b0-7fce-423b-80fe-5995a275b9d6": 12, "a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15": 10, "c251ec0c-e7bb-42e8-9c79-492815fdc3f7": 8, "b6a016db-456b-420b-a397-0e06a9757c2c": 2, "5317cf32-ca20-4a46-bc71-fb73b411449e": 1, "5913d409-8861-4ffa-8407-a2847895ef33": 1}
+policyIds={"DE63D70E0500017D": 37, "000C29592BA1DF85": 18, "6063B59EF1000276": 12, "EB63499A58000F7C": 12, "C9643F54D4000F22": 8, "000A06D9B9A99748": 7, "DE634875FC001616": 7, "DE642DBFCC001C2D": 6, "0016B607A6C7CDEF": 3, "EB62CEF30600013F": 1}
+
+-------- Single node cluster in cluster policy (Legacy) --------
+count=0
+# of orgs=8
+# of pipelines=9
+# of policies=9
+
+OrgIds details:
+1993900917962895: 50
+6056897725116273: 38
+8959478811634114: 13
+8916084915459926: 12
+1088511917216026: 8
+1526531973397437: 2
+984752964297111: 1
+6478936650198963: 1
+
+PipelineIds details:
+71c35d9f-3557-4e5c-b716-9574e86af94a: 50
+86d415d4-4a16-4060-b7f4-6c5020bf5cbd: 28
+303b4daf-3364-4b7e-9b86-f4d10a6ed7df: 13
+c0d955b0-7fce-423b-80fe-5995a275b9d6: 12
+a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15: 10
+c251ec0c-e7bb-42e8-9c79-492815fdc3f7: 8
+b6a016db-456b-420b-a397-0e06a9757c2c: 2
+5317cf32-ca20-4a46-bc71-fb73b411449e: 1
+5913d409-8861-4ffa-8407-a2847895ef33: 1
+
+PolicyIds details:
+DE63D70E0500017D: 37
+000C29592BA1DF85: 18
+6063B59EF1000276: 12
+EB63499A58000F7C: 12
+C9643F54D4000F22: 8
+000A06D9B9A99748: 7
+DE634875FC001616: 7
+DE642DBFCC001C2D: 6
+0016B607A6C7CDEF: 3
+EB62CEF30600013F: 1
+
+JSON dump:
+orgIds={"1993900917962895": 50, "6056897725116273": 38, "8959478811634114": 13, "8916084915459926": 12, "1088511917216026": 8, "1526531973397437": 2, "984752964297111": 1, "6478936650198963": 1}
+pipelineIds={"71c35d9f-3557-4e5c-b716-9574e86af94a": 50, "86d415d4-4a16-4060-b7f4-6c5020bf5cbd": 28, "303b4daf-3364-4b7e-9b86-f4d10a6ed7df": 13, "c0d955b0-7fce-423b-80fe-5995a275b9d6": 12, "a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15": 10, "c251ec0c-e7bb-42e8-9c79-492815fdc3f7": 8, "b6a016db-456b-420b-a397-0e06a9757c2c": 2, "5317cf32-ca20-4a46-bc71-fb73b411449e": 1, "5913d409-8861-4ffa-8407-a2847895ef33": 1}
+policyIds={"DE63D70E0500017D": 37, "000C29592BA1DF85": 18, "6063B59EF1000276": 12, "EB63499A58000F7C": 12, "C9643F54D4000F22": 8, "000A06D9B9A99748": 7, "DE634875FC001616": 7, "DE642DBFCC001C2D": 6, "0016B607A6C7CDEF": 3, "EB62CEF30600013F": 1}
+
+-------- Uncategorized --------
+count=0
+# of orgs=2
+# of pipelines=2
+# of policies=2
+
+OrgIds details:
+6056897725116273: 2
+4102579182584668: 2
+
+PipelineIds details:
+a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15: 2
+1e7fe46c-9575-4dcb-8dbc-b88fad710055: 2
+
+JSON dump:
+orgIds={"6056897725116273": 2, "4102579182584668": 2}
+pipelineIds={"a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15": 2, "1e7fe46c-9575-4dcb-8dbc-b88fad710055": 2}
+logs={"6056897725116273_a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15": [{"legacy": "INVALID_PARAMETER_VALUE: Validation failed for node_type_id, the value must be Standard_DS3_v2 (is \"Standard_F8s\"); Validation failed for cluster_type, the value must be all-purpose (is \"dlt\")\n\n", "latest": "The cluster policy specified for the \"default\" cluster in the pipeline settings is\nnot compatible with cluster settings managed by Delta Live Tables.\n\nINVALID_PARAMETER_VALUE: Validation failed for cluster_type, the value must be all-purpose (is \"dlt\")\n\nYou cannot change cluster settings managed by Delta Live Tables. To fix it, please\nupdate the cluster policy accordingly.\n\n"}, {"legacy": "INVALID_PARAMETER_VALUE: Validation failed for node_type_id, the value must be Standard_DS3_v2 (is \"Standard_F8s\"); Validation failed for cluster_type, the value must be Standard_DS3_v2 (is \"dlt\")\n\n", "latest": "The cluster policy specified for the \"default\" cluster in the pipeline settings is\nnot compatible with cluster settings managed by Delta Live Tables.\n\nINVALID_PARAMETER_VALUE: Validation failed for cluster_type, the value must be Standard_DS3_v2 (is \"dlt\")\n\nYou cannot change cluster settings managed by Delta Live Tables. To fix it, please\nupdate the cluster policy accordingly.\n\n"}], "4102579182584668_1e7fe46c-9575-4dcb-8dbc-b88fad710055": [{"legacy": "INVALID_PARAMETER_VALUE: None.get\n\n", "latest": "The cluster settings for the \"default\" cluster in the pipeline settings are not\ncompatible with the configured cluster policy because of the following\nvalidation failure:\n\nBAD_REQUEST: INVALID_PARAMETER_VALUE: Unknown node type id Standard_L4s_v2\n\nPlease update the pipeline settings or cluster policy accordingly.\n\n"}, {"legacy": "INVALID_PARAMETER_VALUE: None.get\n\n", "latest": "The cluster settings for the \"default\" cluster in the pipeline settings are not\ncompatible with the configured cluster policy because of the following\nvalidation failure:\n\nBAD_REQUEST: INVALID_PARAMETER_VALUE: Unknown node type id Standard_L4s_v2\n\nPlease update the pipeline settings or cluster policy accordingly.\n\n"}]}
+
+-------- Uncategorized truncated logs --------
+count=0
+# of orgs=2
+# of pipelines=2
+# of policies=2
+
+OrgIds details:
+6056897725116273: 2
+4102579182584668: 2
+
+PipelineIds details:
+a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15: 2
+1e7fe46c-9575-4dcb-8dbc-b88fad710055: 2
+
+JSON dump:
+orgIds={"6056897725116273": 2, "4102579182584668": 2}
+pipelineIds={"a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15": 2, "1e7fe46c-9575-4dcb-8dbc-b88fad710055": 2}
+logs={"6056897725116273_a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15": [{"legacy": "INVALID_PARAMETER_VALUE: Validation failed for node_type_id, the value must be Standard_DS3_v2 (is \"Standard_F8s\"); Validation failed for cluster_type, the value must be all-purpose (is \"dlt\")\n\n", "latest": "The cluster policy specified for the \"default\" cluster in the pipeline settings is\nnot compatible with cluster settings managed by Delta Live Tables.\n\nINVALID_PARAMETER_VALUE: Validation failed for cluster_type, the value must be all-purpose (is \"dlt\")\n\nYou cannot change cluster settings managed by Delta Live Tables. To fix it, please\nupdate the cluster policy accordingly.\n\n"}, {"legacy": "INVALID_PARAMETER_VALUE: Validation failed for node_type_id, the value must be Standard_DS3_v2 (is \"Standard_F8s\"); Validation failed for cluster_type, the value must be Standard_DS3_v2 (is \"dlt\")\n\n", "latest": "The cluster policy specified for the \"default\" cluster in the pipeline settings is\nnot compatible with cluster settings managed by Delta Live Tables.\n\nINVALID_PARAMETER_VALUE: Validation failed for cluster_type, the value must be Standard_DS3_v2 (is \"dlt\")\n\nYou cannot change cluster settings managed by Delta Live Tables. To fix it, please\nupdate the cluster policy accordingly.\n\n"}], "4102579182584668_1e7fe46c-9575-4dcb-8dbc-b88fad710055": [{"legacy": "INVALID_PARAMETER_VALUE: None.get\n\n", "latest": "The cluster settings for the \"default\" cluster in the pipeline settings are not\ncompatible with the configured cluster policy because of the following\nvalidation failure:\n\nBAD_REQUEST: INVALID_PARAMETER_VALUE: Unknown node type id Standard_L4s_v2\n\nPlease update the pipeline settings or cluster policy accordingly.\n\n"}, {"legacy": "INVALID_PARAMETER_VALUE: None.get\n\n", "latest": "The cluster settings for the \"default\" cluster in the pipeline settings are not\ncompatible with the configured cluster policy because of the following\nvalidation failure:\n\nBAD_REQUEST: INVALID_PARAMETER_VALUE: Unknown node type id Standard_L4s_v2\n\nPlease update the pipeline settings or cluster policy accordingly.\n\n"}]}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

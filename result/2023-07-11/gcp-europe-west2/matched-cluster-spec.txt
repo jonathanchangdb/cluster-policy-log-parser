@@ -1,0 +1,22 @@
+type=MATCHED_CLUSTER_SPEC
+shardName=gcp-europe-west2
+total=62
+# of orgs=3
+# of pipelines=5
+
+OrgIds details:
+3707112963472909: 56
+1266725111615700: 4
+1003186209102708: 2
+
+PipelineIds details:
+a77f3cc4-9041-486e-b4a0-1c0875738fbb: 38
+921d56a4-ba91-4db4-aa6f-990485cc132f: 18
+5d5d4ea5-ffa9-4609-8a20-ce5c6f11f8cc: 2
+a09f352f-7fbc-47c6-bc1e-39bf1c1c6e1d: 2
+31f0b298-d489-4981-b572-5dec0ce68654: 2
+
+    
+JSON dump:
+orgIds:{"1266725111615700": 4, "1003186209102708": 2, "3707112963472909": 56}
+pipelines:{"5d5d4ea5-ffa9-4609-8a20-ce5c6f11f8cc": 2, "a09f352f-7fbc-47c6-bc1e-39bf1c1c6e1d": 2, "921d56a4-ba91-4db4-aa6f-990485cc132f": 18, "a77f3cc4-9041-486e-b4a0-1c0875738fbb": 38, "31f0b298-d489-4981-b572-5dec0ce68654": 2}

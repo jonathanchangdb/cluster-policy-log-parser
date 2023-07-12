@@ -39,12 +39,13 @@ def __dueToAutoscalingRetry(mismatched_cluster_specs):
     result = CategorizationResult("Autoscaling retry")
     for data in mismatched_cluster_specs:
         (legacy_cluster_spec, latest_cluster_spec, metadata) = data
-        orgId, pipelineId = metadata['orgId'], metadata['pipelineId']
+        orgId, pipelineId = metadata['org_id'], metadata['pipeline_id']
 
         def canonicalize(cluster_spec):
             new_cluster = cluster_spec['new_cluster']
             canonicalized_new_cluster = new_cluster
-            if 'autoscale' in new_cluster and new_cluster['autoscale']['profile'] == 'ENHANCED':
+            if 'autoscale' in new_cluster and 'profile' in new_cluster['autoscale'] and \
+                    new_cluster['autoscale']['profile'] == 'ENHANCED':
                 # remove autoscale and replace it with fix size
                 canonicalized_new_cluster['num_workers'] = new_cluster['autoscale']['min_workers']
                 del canonicalized_new_cluster['autoscale']
@@ -68,7 +69,7 @@ def __dueToSingleNodeClusterInPolicy(truncated_logs, enhanced):
     result = CategorizationResult(f"Single node cluster in cluster policy ({'Enhanced' if enhanced else 'Legacy'})")
     for data in truncated_logs:
         (legacy_cluster_spec_raw, latest_cluster_spec_raw, metadata) = data
-        orgId, pipelineId = metadata['orgId'], metadata['pipelineId']
+        orgId, pipelineId = metadata['org_id'], metadata['pipeline_id']
         latest_cluster_spec = json.loads(latest_cluster_spec_raw)
 
         def is_single_node(cluster_spec):

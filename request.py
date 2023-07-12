@@ -184,16 +184,19 @@ def parse(cookie, startTimestamp=(datetime.today() - timedelta(days=1)),
           endTimestamp=datetime.today()):
     for (shardName, kibanaUri) in tqdm(__parse_uris()):
         time.sleep(0.25)
-        directory = f"{__RESULT_PATH}/{endTimestamp.strftime('%Y-%m-%d')}/{shardName}"
-        url = f"https://{kibanaUri}/internal/search/opensearch"
-        Path(directory).mkdir(parents=True, exist_ok=True)
+        try:
+            directory = f"{__RESULT_PATH}/{endTimestamp.strftime('%Y-%m-%d')}/{shardName}"
+            url = f"https://{kibanaUri}/internal/search/opensearch"
+            Path(directory).mkdir(parents=True, exist_ok=True)
 
-        __matchedClusterSpec(url=url, cookie=cookie, startTimestamp=startTimestamp, endTimestamp=endTimestamp,
-                             directory=directory, shardName=shardName)
-        __mismatchedClusterSpec(url=url, cookie=cookie, startTimestamp=startTimestamp, endTimestamp=endTimestamp,
+            __matchedClusterSpec(url=url, cookie=cookie, startTimestamp=startTimestamp, endTimestamp=endTimestamp,
+                                 directory=directory, shardName=shardName)
+            __mismatchedClusterSpec(url=url, cookie=cookie, startTimestamp=startTimestamp, endTimestamp=endTimestamp,
+                                    directory=directory, shardName=shardName)
+            __onlyLegacySucceed(url=url, cookie=cookie, startTimestamp=startTimestamp, endTimestamp=endTimestamp,
                                 directory=directory, shardName=shardName)
-        __onlyLegacySucceed(url=url, cookie=cookie, startTimestamp=startTimestamp, endTimestamp=endTimestamp,
-                            directory=directory, shardName=shardName)
-        __bothFailed(url=url, cookie=cookie, startTimestamp=startTimestamp, endTimestamp=endTimestamp,
-                     directory=directory, shardName=shardName)
-        print(f'{shardName} finished.')
+            __bothFailed(url=url, cookie=cookie, startTimestamp=startTimestamp, endTimestamp=endTimestamp,
+                         directory=directory, shardName=shardName)
+            logging.info(f'{shardName} finished.')
+        except Exception as ex:
+            logging.error(f"{shardName} failed!", ex)

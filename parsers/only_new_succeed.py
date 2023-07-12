@@ -12,7 +12,7 @@ def __dueToApplyPolicyRpc(only_legacy_succeed_specs):
     for data in only_legacy_succeed_specs:
         (legacyClusterSpec, latest_error, metadata) = data
         policyId = get_policy_id(legacyClusterSpec)
-        orgId, pipelineId = metadata['orgId'], metadata['pipelineId']
+        orgId, pipelineId = metadata['org_id'], metadata['pipeline_id']
         if error in latest_error:
             result.addWithPolicyId(orgId, pipelineId, policyId)
         else:
@@ -29,7 +29,7 @@ def __dueToDisallowedClusterAttributes(only_legacy_succeed_specs):
     for data in only_legacy_succeed_specs:
         (legacy_cluster_spec, latest_error, metadata) = data
         policyId = get_policy_id(legacy_cluster_spec)
-        orgId, pipelineId = metadata['orgId'], metadata['pipelineId']
+        orgId, pipelineId = metadata['org_id'], metadata['pipeline_id']
 
         regex_result = re.search(regex, latest_error)
         if regex_result is not None:

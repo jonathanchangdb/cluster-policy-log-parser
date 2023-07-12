@@ -100,8 +100,8 @@ def parseLogsFromResponse(response, regex):
 def parseUncategorized(uncategorized):
     orgIds, pipelineIds, logs = {}, {}, {}
     for (legacy, latest, metadata) in uncategorized:
-        orgId = metadata['orgId']
-        pipelineId = metadata['pipelineId']
+        orgId = metadata['org_id']
+        pipelineId = metadata['pipeline_id']
         logKey = f"{orgId}_{pipelineId}"
 
         orgIds.setdefault(orgId, 0)
@@ -216,6 +216,17 @@ class DisallowedClusterAttributesResult:
         for (attribute, stats) in self.attributes.items():
             result += f"[{attribute}] count={stats['count']},orgIds={stats['orgIds']},pipelineIds={stats['pipelineIds']},policyIds={stats['policyIds']}\n"
 
+    def __serializableAttributes(self):
+        newAttributes = {}
+        for (attribute, stats) in self.attributes.items():
+            newAttributes[attribute] = {
+                "count": stats["count"],
+                "orgIds": list(stats["orgIds"]),
+                "pipelineIds": list(stats["pipelineIds"]),
+                "policyIds": list(stats["policyIds"])
+            }
+        return newAttributes
+
     def __repr__abbr__(self):
         self.orgIds = sortDictByValue(self.orgIds)
         self.pipelineIds = sortDictByValue(self.pipelineIds)
@@ -252,7 +263,7 @@ JSON dump:
 orgIds={json.dumps(self.orgIds)}
 pipelineIds={json.dumps(self.pipelineIds)}
 policyIds={json.dumps(self.policyIds)}
-attributes={json.dumps(self.attributes)}
+attributes={json.dumps(self.__serializableAttributes())}
 """
 
 

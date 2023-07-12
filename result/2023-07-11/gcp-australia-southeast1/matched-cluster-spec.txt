@@ -1,0 +1,18 @@
+type=MATCHED_CLUSTER_SPEC
+shardName=gcp-australia-southeast1
+total=2
+# of orgs=2
+# of pipelines=2
+
+OrgIds details:
+3549350283752925: 1
+991870975308713: 1
+
+PipelineIds details:
+76bae431-bc8b-418c-8ab2-1b45182b4fe9: 1
+5f0463d5-3775-4bc3-8d8b-670299e86c23: 1
+
+    
+JSON dump:
+orgIds:{"3549350283752925": 1, "991870975308713": 1}
+pipelines:{"76bae431-bc8b-418c-8ab2-1b45182b4fe9": 1, "5f0463d5-3775-4bc3-8d8b-670299e86c23": 1}
