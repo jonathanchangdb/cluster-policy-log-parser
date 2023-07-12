@@ -1,0 +1,169 @@
+type=MISMATCHED_CLUSTER_SPEC
+shardName=az-centralus-c2
+total=28
+
+category=Custom tags
+count=28
+# of orgs=2
+# of pipelines=2
+# of policies=2
+
+category=Autoscaling retry
+count=0
+# of orgs=2
+# of pipelines=2
+# of policies=2
+
+category=Single node cluster in cluster policy (Enhanced)
+count=0
+# of orgs=2
+# of pipelines=2
+# of policies=2
+
+category=Single node cluster in cluster policy (Legacy)
+count=0
+# of orgs=2
+# of pipelines=2
+# of policies=2
+
+name=Uncategorized
+count=0
+# of orgs=0
+# of pipelines=0
+
+name=Uncategorized truncated logs
+count=0
+# of orgs=0
+# of pipelines=0
+
+=================== DETAILS ===================
+-------- Custom tags --------
+count=28
+# of orgs=2
+# of pipelines=2
+# of policies=2
+
+OrgIds details:
+6056897725116273: 28
+1526531973397437: 2
+
+PipelineIds details:
+86d415d4-4a16-4060-b7f4-6c5020bf5cbd: 28
+b6a016db-456b-420b-a397-0e06a9757c2c: 2
+
+PolicyIds details:
+000C29592BA1DF85: 18
+000A06D9B9A99748: 7
+0016B607A6C7CDEF: 3
+
+JSON dump:
+orgIds={"6056897725116273": 28, "1526531973397437": 2}
+pipelineIds={"86d415d4-4a16-4060-b7f4-6c5020bf5cbd": 28, "b6a016db-456b-420b-a397-0e06a9757c2c": 2}
+policyIds={"000C29592BA1DF85": 18, "000A06D9B9A99748": 7, "0016B607A6C7CDEF": 3}
+
+-------- Autoscaling retry --------
+count=0
+# of orgs=2
+# of pipelines=2
+# of policies=2
+
+OrgIds details:
+6056897725116273: 28
+1526531973397437: 2
+
+PipelineIds details:
+86d415d4-4a16-4060-b7f4-6c5020bf5cbd: 28
+b6a016db-456b-420b-a397-0e06a9757c2c: 2
+
+PolicyIds details:
+000C29592BA1DF85: 18
+000A06D9B9A99748: 7
+0016B607A6C7CDEF: 3
+
+JSON dump:
+orgIds={"6056897725116273": 28, "1526531973397437": 2}
+pipelineIds={"86d415d4-4a16-4060-b7f4-6c5020bf5cbd": 28, "b6a016db-456b-420b-a397-0e06a9757c2c": 2}
+policyIds={"000C29592BA1DF85": 18, "000A06D9B9A99748": 7, "0016B607A6C7CDEF": 3}
+
+-------- Single node cluster in cluster policy (Enhanced) --------
+count=0
+# of orgs=2
+# of pipelines=2
+# of policies=2
+
+OrgIds details:
+6056897725116273: 28
+1526531973397437: 2
+
+PipelineIds details:
+86d415d4-4a16-4060-b7f4-6c5020bf5cbd: 28
+b6a016db-456b-420b-a397-0e06a9757c2c: 2
+
+PolicyIds details:
+000C29592BA1DF85: 18
+000A06D9B9A99748: 7
+0016B607A6C7CDEF: 3
+
+JSON dump:
+orgIds={"6056897725116273": 28, "1526531973397437": 2}
+pipelineIds={"86d415d4-4a16-4060-b7f4-6c5020bf5cbd": 28, "b6a016db-456b-420b-a397-0e06a9757c2c": 2}
+policyIds={"000C29592BA1DF85": 18, "000A06D9B9A99748": 7, "0016B607A6C7CDEF": 3}
+
+-------- Single node cluster in cluster policy (Legacy) --------
+count=0
+# of orgs=2
+# of pipelines=2
+# of policies=2
+
+OrgIds details:
+6056897725116273: 28
+1526531973397437: 2
+
+PipelineIds details:
+86d415d4-4a16-4060-b7f4-6c5020bf5cbd: 28
+b6a016db-456b-420b-a397-0e06a9757c2c: 2
+
+PolicyIds details:
+000C29592BA1DF85: 18
+000A06D9B9A99748: 7
+0016B607A6C7CDEF: 3
+
+JSON dump:
+orgIds={"6056897725116273": 28, "1526531973397437": 2}
+pipelineIds={"86d415d4-4a16-4060-b7f4-6c5020bf5cbd": 28, "b6a016db-456b-420b-a397-0e06a9757c2c": 2}
+policyIds={"000C29592BA1DF85": 18, "000A06D9B9A99748": 7, "0016B607A6C7CDEF": 3}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+-------- Uncategorized truncated logs --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

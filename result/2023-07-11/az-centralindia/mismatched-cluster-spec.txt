@@ -1,0 +1,149 @@
+type=MISMATCHED_CLUSTER_SPEC
+shardName=az-centralindia
+total=0
+
+category=Custom tags
+count=0
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+category=Autoscaling retry
+count=0
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+category=Single node cluster in cluster policy (Enhanced)
+count=0
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+category=Single node cluster in cluster policy (Legacy)
+count=0
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+name=Uncategorized
+count=0
+# of orgs=0
+# of pipelines=0
+
+name=Uncategorized truncated logs
+count=0
+# of orgs=0
+# of pipelines=0
+
+=================== DETAILS ===================
+-------- Custom tags --------
+count=0
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+1526531973397437: 2
+
+PipelineIds details:
+b6a016db-456b-420b-a397-0e06a9757c2c: 2
+
+PolicyIds details:
+
+JSON dump:
+orgIds={"1526531973397437": 2}
+pipelineIds={"b6a016db-456b-420b-a397-0e06a9757c2c": 2}
+policyIds={}
+
+-------- Autoscaling retry --------
+count=0
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+1526531973397437: 2
+
+PipelineIds details:
+b6a016db-456b-420b-a397-0e06a9757c2c: 2
+
+PolicyIds details:
+
+JSON dump:
+orgIds={"1526531973397437": 2}
+pipelineIds={"b6a016db-456b-420b-a397-0e06a9757c2c": 2}
+policyIds={}
+
+-------- Single node cluster in cluster policy (Enhanced) --------
+count=0
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+1526531973397437: 2
+
+PipelineIds details:
+b6a016db-456b-420b-a397-0e06a9757c2c: 2
+
+PolicyIds details:
+
+JSON dump:
+orgIds={"1526531973397437": 2}
+pipelineIds={"b6a016db-456b-420b-a397-0e06a9757c2c": 2}
+policyIds={}
+
+-------- Single node cluster in cluster policy (Legacy) --------
+count=0
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+1526531973397437: 2
+
+PipelineIds details:
+b6a016db-456b-420b-a397-0e06a9757c2c: 2
+
+PolicyIds details:
+
+JSON dump:
+orgIds={"1526531973397437": 2}
+pipelineIds={"b6a016db-456b-420b-a397-0e06a9757c2c": 2}
+policyIds={}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+-------- Uncategorized truncated logs --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

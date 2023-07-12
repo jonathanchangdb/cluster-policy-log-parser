@@ -1,0 +1,14 @@
+type=MATCHED_CLUSTER_SPEC
+shardName=az-chinaeast2
+total=0
+# of orgs=0
+# of pipelines=0
+
+OrgIds details:
+
+PipelineIds details:
+
+    
+JSON dump:
+orgIds:{}
+pipelines:{}

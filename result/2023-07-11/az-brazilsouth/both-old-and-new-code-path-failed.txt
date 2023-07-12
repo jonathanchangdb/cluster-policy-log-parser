@@ -1,0 +1,35 @@
+type=BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED
+shardName=az-brazilsouth
+total=0 
+
+category=Same error message
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+name=Uncategorized
+count=0
+# of orgs=0
+# of pipelines=0
+
+=================== DETAILS ===================
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]
