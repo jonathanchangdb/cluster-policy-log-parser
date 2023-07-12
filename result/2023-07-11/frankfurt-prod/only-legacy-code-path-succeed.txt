@@ -45,13 +45,13 @@ PolicyIds details:
 0F63CF324F000F57: 1
 
 PolicyIds details:
-`enable_elastic_disk': {'count': 4, 'orgIds': {'3726185482832627'}, 'pipelineIds': {'3faeb69d-7102-4f13-b4b4-e12d855e6359'}, 'policyIds': {'0F63CF324F000F57', '0F63CF324F000DE7'}}
+`enable_elastic_disk': {'count': 4, 'orgIds': {'3726185482832627'}, 'pipelineIds': {'3faeb69d-7102-4f13-b4b4-e12d855e6359'}, 'policyIds': {'0F63CF324F000DE7', '0F63CF324F000F57'}}
 
 JSON dump:
 orgIds={"3726185482832627": 4}
 pipelineIds={"3faeb69d-7102-4f13-b4b4-e12d855e6359": 4}
 policyIds={"0F63CF324F000DE7": 3, "0F63CF324F000F57": 1}
-attributes={"`enable_elastic_disk'": {"count": 4, "orgIds": ["3726185482832627"], "pipelineIds": ["3faeb69d-7102-4f13-b4b4-e12d855e6359"], "policyIds": ["0F63CF324F000F57", "0F63CF324F000DE7"]}}
+attributes={"`enable_elastic_disk'": {"count": 4, "orgIds": ["3726185482832627"], "pipelineIds": ["3faeb69d-7102-4f13-b4b4-e12d855e6359"], "policyIds": ["0F63CF324F000DE7", "0F63CF324F000F57"]}}
 
 -------- Uncategorized --------
 count=0

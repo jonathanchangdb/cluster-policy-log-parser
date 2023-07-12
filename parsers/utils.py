@@ -2,6 +2,15 @@ import json
 import re
 
 
+def convertToSetIfNeeded(x):
+    if isinstance(x, set):
+        return x
+    elif isinstance(x, dict):
+        return set(x.keys())
+    else:
+        set(x)
+
+
 def get_policy_id(cluster_spec):
     return cluster_spec['new_cluster']['policy_id']
 
@@ -150,6 +159,9 @@ pipelineIds={json.dumps(self.pipelineIds)}
 policyIds={json.dumps(self.policyIds)}
 """
 
+    def summaryOneLine(self):
+        return f"""total = {self.count}, pipelineIds = {len(self.pipelineIds)}, orgIds = {len(self.orgIds)}, policies = {len(self.policyIds)}\n"""
+
 
 class DisallowedClusterAttributesResult:
     def __init__(self):
@@ -236,6 +248,9 @@ policyIds={json.dumps(self.policyIds)}
 attributes={json.dumps(self.__serializableAttributes())}
 """
 
+    def summaryOneLine(self):
+        return f"""total = {self.count}, pipelineIds = {len(self.pipelineIds)}, orgIds = {len(self.orgIds)}, policies = {len(self.policyIds)}\n"""
+
 
 class UncategorizedResult:
     def __init__(self, uncategorizedLogs, name="Uncategorized"):
@@ -283,14 +298,8 @@ pipelineIds={json.dumps(self.pipelineIds)}
 logs={json.dumps(self.logs)}
 """
 
-
-def convertToSetIfNeeded(x):
-    if isinstance(x, set):
-        return x
-    elif isinstance(x, dict):
-        return set(x.keys())
-    else:
-        set(x)
+    def summaryOneLine(self):
+        return f"""total = {self.count}, pipelineIds = {len(self.pipelineIds)}, orgIds = {len(self.orgIds)}, policies = {len(self.policyIds)}\n"""
 
 
 class SummaryResult:
@@ -316,6 +325,9 @@ count={self.count},
 total # of org={len(self.orgIds)}
 total # of pipeline={len(self.pipelineIds)}
 total # of policy={len(self.policyIds)}"""
+
+    def summaryOneLine(self):
+        return f"""total = {self.count}, pipelineIds = {len(self.pipelineIds)}, orgIds = {len(self.orgIds)}, policies = {len(self.policyIds)}\n"""
 
 
 class OverallSummaryResult(SummaryResult):
@@ -368,10 +380,11 @@ total = {self.bothFailed.count}, pipelineIds = {len(self.bothFailed.pipelineIds)
 
     def __repr__(self):
         resultStr = self.summaryPerShard()
-        resultStr += "\n\n======= Details ======="
+        resultStr += "\n\n======= Details =======\n"
         for result in self.results:
-            resultStr += f"""
-({result.name}):
-total = {result.count}, pipelineIds = {len(result.pipelineIds)}, orgIds = {len(result.orgIds)}, policies = {len(result.policyIds)}
-"""
+            resultStr += f"({result.name})\n"
+            resultStr += result.summaryOneLine()
+            for subResult in result.results:
+                resultStr += f"- {subResult.name} " + subResult.summaryOneLine()
+            resultStr += '\n'
         return resultStr

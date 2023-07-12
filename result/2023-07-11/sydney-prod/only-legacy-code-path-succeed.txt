@@ -43,13 +43,13 @@ D063D7FAC00009AD: 4
 D063D7FAC0000602: 2
 
 PolicyIds details:
-`enable_elastic_disk': {'count': 14, 'orgIds': {'1845021670388115'}, 'pipelineIds': {'4ca55b66-4013-41fd-acc1-d7edc1f8bc7f'}, 'policyIds': {'D063D7FAC0000944', 'D063D7FAC0000B15', 'D063D7FAC0000602', 'D063D7FAC00009AD'}}
+`enable_elastic_disk': {'count': 14, 'orgIds': {'1845021670388115'}, 'pipelineIds': {'4ca55b66-4013-41fd-acc1-d7edc1f8bc7f'}, 'policyIds': {'D063D7FAC00009AD', 'D063D7FAC0000B15', 'D063D7FAC0000602', 'D063D7FAC0000944'}}
 
 JSON dump:
 orgIds={"1845021670388115": 14}
 pipelineIds={"4ca55b66-4013-41fd-acc1-d7edc1f8bc7f": 14}
 policyIds={"D063D7FAC0000B15": 4, "D063D7FAC0000944": 4, "D063D7FAC00009AD": 4, "D063D7FAC0000602": 2}
-attributes={"`enable_elastic_disk'": {"count": 14, "orgIds": ["1845021670388115"], "pipelineIds": ["4ca55b66-4013-41fd-acc1-d7edc1f8bc7f"], "policyIds": ["D063D7FAC0000944", "D063D7FAC0000B15", "D063D7FAC0000602", "D063D7FAC00009AD"]}}
+attributes={"`enable_elastic_disk'": {"count": 14, "orgIds": ["1845021670388115"], "pipelineIds": ["4ca55b66-4013-41fd-acc1-d7edc1f8bc7f"], "policyIds": ["D063D7FAC00009AD", "D063D7FAC0000B15", "D063D7FAC0000602", "D063D7FAC0000944"]}}
 
 -------- Uncategorized --------
 count=0
