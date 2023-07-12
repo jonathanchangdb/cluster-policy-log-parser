@@ -1,0 +1,21 @@
+[az-ukwest]
+======= Summary =======
+count=1189,
+total # of org=53
+total # of pipeline=188
+total # of policy=3
+
+(MATCHED_CLUSTER_SPEC):
+total = 1139, pipelineIds = 187, orgIds = 52, policies = 0
+
+(MISMATCHED_CLUSTER_SPEC):
+total = 50, pipelineIds = 1, orgIds = 1, policies = 3
+
+(ONLY_LEGACY_CODE_PATH_SUCCEED):
+total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(ONLY_NEW_CODE_PATH_SUCCEED):
+total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED):
+total = 0, pipelineIds = 0, orgIds = 0, policies = 0

@@ -1,17 +1,11 @@
-type=BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED
 shardName=az-centralindia
-total=0 
+[BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
+======= Summary =======
+count=0,
+total # of org=0
+total # of pipeline=0
+total # of policy=0
 
-category=Same error message
-count=0
-# of orgs=1
-# of pipelines=1
-# of policies=1
-
-name=Uncategorized
-count=0
-# of orgs=0
-# of pipelines=0
 
 =================== DETAILS ===================
 -------- Uncategorized --------

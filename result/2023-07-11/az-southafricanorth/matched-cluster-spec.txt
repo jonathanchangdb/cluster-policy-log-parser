@@ -1,24 +1,8 @@
-type=MATCHED_CLUSTER_SPEC
 shardName=az-southafricanorth
-total=72
-# of orgs=4
-# of pipelines=6
+[MATCHED_CLUSTER_SPEC]
+======= Summary =======
+count=72,
+total # of org=4
+total # of pipeline=6
+total # of policy=0
 
-OrgIds details:
-6854294097892907: 50
-1477451916208048: 11
-1733002306302948: 7
-2119952379162058: 4
-
-PipelineIds details:
-af536c5d-0938-4519-af93-7b8e9ab38e99: 48
-5a5769d2-a433-4bae-9b3b-f32486ff2237: 11
-8b64797c-c0a8-4c68-8087-13f4873a66fa: 7
-6cd1ae0d-0537-4ad2-8b66-b7428f708f0e: 4
-870889c5-41de-4615-875e-1c5792346601: 1
-2dfbfae1-cf25-49b3-bd20-e9d211f5fb94: 1
-
-    
-JSON dump:
-orgIds:{"6854294097892907": 50, "1733002306302948": 7, "2119952379162058": 4, "1477451916208048": 11}
-pipelines:{"af536c5d-0938-4519-af93-7b8e9ab38e99": 48, "8b64797c-c0a8-4c68-8087-13f4873a66fa": 7, "870889c5-41de-4615-875e-1c5792346601": 1, "2dfbfae1-cf25-49b3-bd20-e9d211f5fb94": 1, "6cd1ae0d-0537-4ad2-8b66-b7428f708f0e": 4, "5a5769d2-a433-4bae-9b3b-f32486ff2237": 11}

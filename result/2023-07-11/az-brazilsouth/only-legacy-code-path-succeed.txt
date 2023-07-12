@@ -1,25 +1,10 @@
-type=ONLY_LEGACY_CODE_PATH_SUCCEED
 shardName=az-brazilsouth
-total=0
-
-category=ApplyPolicy RPC validation
-count=0
-# of orgs=0
-# of pipelines=0
-# of policies=0
-
-category=Disallowed cluster attributes
-count=0
-# of orgs=0
-# of pipelines=0
-# of policies=0
-attributes=None
-
-
-name=Uncategorized
-count=0
-# of orgs=0
-# of pipelines=0
+[ONLY_LEGACY_CODE_PATH_SUCCEED]
+======= Summary =======
+count=0,
+total # of org=0
+total # of pipeline=0
+total # of policy=0
 
 =================== DETAILS ===================
 -------- ApplyPolicy RPC validation --------

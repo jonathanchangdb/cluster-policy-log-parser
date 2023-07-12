@@ -1,0 +1,21 @@
+[az-westus]
+======= Summary =======
+count=10142,
+total # of org=128
+total # of pipeline=848
+total # of policy=5
+
+(MATCHED_CLUSTER_SPEC):
+total = 10000, pipelineIds = 845, orgIds = 128, policies = 0
+
+(MISMATCHED_CLUSTER_SPEC):
+total = 82, pipelineIds = 1, orgIds = 1, policies = 5
+
+(ONLY_LEGACY_CODE_PATH_SUCCEED):
+total = 2, pipelineIds = 1, orgIds = 1, policies = 1
+
+(ONLY_NEW_CODE_PATH_SUCCEED):
+total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED):
+total = 58, pipelineIds = 1, orgIds = 1, policies = 0

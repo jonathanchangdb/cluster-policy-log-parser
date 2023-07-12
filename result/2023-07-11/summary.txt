@@ -1,0 +1,156 @@
+[2023-07-11]
+======= Summary =======
+count=99712,
+total # of org=1764
+total # of pipeline=10891
+total # of policy=78
+
+(az-australiaeast):
+total = 1881, pipelineIds = 228, orgIds = 66, policies = 0
+
+(az-brazilsouth):
+total = 551, pipelineIds = 78, orgIds = 20, policies = 0
+
+(az-canadacentral):
+total = 1770, pipelineIds = 223, orgIds = 48, policies = 0
+
+(az-centralindia):
+total = 947, pipelineIds = 121, orgIds = 32, policies = 0
+
+(az-centralus-c2):
+total = 1559, pipelineIds = 264, orgIds = 58, policies = 3
+
+(az-chinaeast2):
+total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-chinanorth2):
+total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-eastasia-c2):
+total = 74, pipelineIds = 8, orgIds = 4, policies = 0
+
+(az-eastus-c3):
+total = 9942, pipelineIds = 564, orgIds = 150, policies = 1
+
+(az-eastus2):
+total = 2006, pipelineIds = 256, orgIds = 62, policies = 0
+
+(az-eastus2-c2):
+total = 7117, pipelineIds = 861, orgIds = 83, policies = 2
+
+(az-eastus2-c3):
+total = 1992, pipelineIds = 170, orgIds = 44, policies = 0
+
+(az-francecentral):
+total = 181, pipelineIds = 32, orgIds = 11, policies = 0
+
+(az-germanywestcentral):
+total = 176, pipelineIds = 37, orgIds = 7, policies = 0
+
+(az-japaneast):
+total = 168, pipelineIds = 26, orgIds = 12, policies = 0
+
+(az-koreacentral):
+total = 1299, pipelineIds = 18, orgIds = 9, policies = 0
+
+(az-northcentralus-c2):
+total = 480, pipelineIds = 152, orgIds = 19, policies = 0
+
+(az-northeurope-c2):
+total = 6265, pipelineIds = 261, orgIds = 72, policies = 0
+
+(az-norwayeast):
+total = 2874, pipelineIds = 1550, orgIds = 23, policies = 0
+
+(az-southafricanorth):
+total = 72, pipelineIds = 6, orgIds = 4, policies = 0
+
+(az-southeastasia):
+total = 2573, pipelineIds = 234, orgIds = 33, policies = 2
+
+(az-swedencentral):
+total = 273, pipelineIds = 39, orgIds = 10, policies = 0
+
+(az-switzerlandnorth):
+total = 121, pipelineIds = 18, orgIds = 6, policies = 0
+
+(az-switzerlandwest):
+total = 13, pipelineIds = 5, orgIds = 2, policies = 0
+
+(az-uaenorth):
+total = 753, pipelineIds = 278, orgIds = 7, policies = 0
+
+(az-ukwest):
+total = 1189, pipelineIds = 188, orgIds = 53, policies = 3
+
+(az-westcentralus):
+total = 57, pipelineIds = 6, orgIds = 4, policies = 0
+
+(az-westeurope):
+total = 1593, pipelineIds = 180, orgIds = 50, policies = 2
+
+(az-westeurope-c2):
+total = 10606, pipelineIds = 690, orgIds = 168, policies = 7
+
+(az-westus):
+total = 10142, pipelineIds = 848, orgIds = 128, policies = 5
+
+(az-westus3):
+total = 491, pipelineIds = 14, orgIds = 6, policies = 0
+
+(canada-prod):
+total = 291, pipelineIds = 37, orgIds = 7, policies = 0
+
+(frankfurt-prod):
+total = 2093, pipelineIds = 173, orgIds = 49, policies = 9
+
+(gcp-asia-northeast1):
+total = 30, pipelineIds = 4, orgIds = 3, policies = 0
+
+(gcp-asia-southeast1):
+total = 591, pipelineIds = 69, orgIds = 7, policies = 0
+
+(gcp-australia-southeast1):
+total = 2, pipelineIds = 2, orgIds = 2, policies = 0
+
+(gcp-europe-west1):
+total = 128, pipelineIds = 24, orgIds = 7, policies = 0
+
+(gcp-europe-west2):
+total = 62, pipelineIds = 5, orgIds = 3, policies = 0
+
+(gcp-europe-west3):
+total = 2, pipelineIds = 2, orgIds = 2, policies = 0
+
+(gcp-us-central1):
+total = 334, pipelineIds = 28, orgIds = 8, policies = 0
+
+(gcp-us-east1):
+total = 95, pipelineIds = 23, orgIds = 8, policies = 0
+
+(gcp-us-east4):
+total = 368, pipelineIds = 80, orgIds = 6, policies = 0
+
+(gcp-us-west1):
+total = 575, pipelineIds = 2, orgIds = 2, policies = 0
+
+(gcp-us-west4):
+total = 3, pipelineIds = 2, orgIds = 2, policies = 0
+
+(ireland-prod):
+total = 1336, pipelineIds = 205, orgIds = 55, policies = 1
+
+(london-prod):
+total = 454, pipelineIds = 55, orgIds = 22, policies = 1
+
+(mumbai-prod):
+total = 1381, pipelineIds = 14, orgIds = 10, policies = 0
+
+(nvirginia-prod):
+total = 11218, pipelineIds = 1769, orgIds = 177, policies = 28
+
+(ohio-prod):
+total = 2773, pipelineIds = 182, orgIds = 41, policies = 1
+
+(oregon-prod):
+total = 10811, pipelineIds = 860, orgIds = 162, policies = 13

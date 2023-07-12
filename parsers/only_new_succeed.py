@@ -1,67 +1,56 @@
 from .utils import *
 
-__FILE_PATH = "data/legacy_code_path_succeed.json"
-__ONLY_LEGACY_SUCCEED_REGEX = r".*\[ONLY_LEGACY_CODE_PATH_SUCCEED].*\nNew code path failure: \n([\S\s]*)" \
-                              r"\nLegacy code path cluster spec: (.*).*"
+__ONLY_NEW_SUCCEED_REGEX = r".*\[ONLY_NEW_CODE_PATH_SUCCEED].*\nNew code path cluster spec: " \
+                           r"(.*)\nLegacy code path failure: ([\S\s]*).*"
 
 
-def __dueToApplyPolicyRpc(only_legacy_succeed_specs):
-    result = CategorizationResult("ApplyPolicy RPC validation")
-    error = 'INVALID_PARAMETER_VALUE: Exactly 1 of virtual_cluster_size, num_workers or autoscale must be specified.'
+def __dueToNodeTypeId(only_legacy_succeed_specs):
     filtered = []
+    result = CategorizationResult("Node Type ID")
+    error = 'INVALID_PARAMETER_VALUE: Validation failed for node_type_id'
     for data in only_legacy_succeed_specs:
-        (legacyClusterSpec, latest_error, metadata) = data
-        policyId = get_policy_id(legacyClusterSpec)
+        (legacyError, latestClusterSpec, metadata) = data
+        policyId = get_policy_id(latestClusterSpec)
         orgId, pipelineId = metadata['org_id'], metadata['pipeline_id']
-        if error in latest_error:
+        if error in legacyError:
             result.addWithPolicyId(orgId, pipelineId, policyId)
         else:
             filtered.append(data)
     return result, filtered
 
 
-def __dueToDisallowedClusterAttributes(only_legacy_succeed_specs):
+def __dueToRatelimiting(only_legacy_succeed_specs):
     filtered = []
-    result = DisallowedClusterAttributesResult()
-    regex = r"The cluster policy for the \"default\" cluster in the pipeline settings is not\n" \
-            r"compatible with the Delta Live Tables because of the following error:[\s]+Cluster " \
-            r"attribute (.*) for cluster 'default' is not allowed for a pipeline.*"
+    result = CategorizationResult("Rate limited (non-error)")
+    errorCode = "REQUEST_LIMIT_EXCEEDED"
     for data in only_legacy_succeed_specs:
-        (legacy_cluster_spec, latest_error, metadata) = data
-        policyId = get_policy_id(legacy_cluster_spec)
+        (legacyError, latestClusterSpec, metadata) = data
         orgId, pipelineId = metadata['org_id'], metadata['pipeline_id']
-
-        regex_result = re.search(regex, latest_error)
-        if regex_result is not None:
-            attribute = regex_result.group(1)
-            result.add(attribute, orgId, pipelineId, policyId)
-        else:
-            filtered.append(data)
-
+        if errorCode in legacyError:
+            result.add(orgId, pipelineId)
     return result, filtered
 
 
 def parseOnlyNewSucceed(response, shardName):
-    parsedLogs, failedToParse = parseLogsFromResponse(response, __ONLY_LEGACY_SUCCEED_REGEX)
-    onlyLegacySucceedLogs = [(json.loads(x), y, metadata) for (x, y, metadata) in parsedLogs]
-    applyPolicyResult, ignoreApplyPolicy = __dueToApplyPolicyRpc(onlyLegacySucceedLogs)
-    disallowedAttrsResult, ignoreDisallowedAttrs = __dueToDisallowedClusterAttributes(ignoreApplyPolicy)
+    parsedLogs, failedToParse = parseLogsFromResponse(response, __ONLY_NEW_SUCCEED_REGEX)
+    onlyNewSucceedLogs = [(x, json.loads(y), metadata) for (x, y, metadata) in parsedLogs]
+    nodeTypeIdResult, ignoreNodeTypeId = __dueToNodeTypeId(onlyNewSucceedLogs)
+    rateLimitingResult, ignoreRateLimiting = __dueToRatelimiting(ignoreNodeTypeId)
 
-    uncategorized = UncategorizedResult(ignoreDisallowedAttrs)
+    uncategorized = UncategorizedResult(ignoreRateLimiting)
+    metricsResultSummary = SummaryResult("ONLY_NEW_CODE_PATH_SUCCEED")
+    metricsResultSummary.add(nodeTypeIdResult)
+    metricsResultSummary.add(rateLimitingResult)
+    metricsResultSummary.add(uncategorized)
 
-    return f"""type=ONLY_LEGACY_CODE_PATH_SUCCEED
-shardName={shardName}
-total={len(parsedLogs) + len(failedToParse)}
-{applyPolicyResult.__repr__abbr__()}
-{disallowedAttrsResult.__repr__abbr__()}
-{uncategorized.__repr__abbr__()}
-
+    return f"""shardName={shardName}
+{metricsResultSummary.summary()}
 =================== DETAILS ===================
-{applyPolicyResult}
-{disallowedAttrsResult}
+{nodeTypeIdResult}
+{rateLimitingResult}
 {uncategorized}
 
 -------- Failed to parse --------
 count={len(failedToParse)}
 log JSON dump={json.dumps(failedToParse)}
-"""
+""", metricsResultSummary

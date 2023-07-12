@@ -1,14 +1,8 @@
-type=MATCHED_CLUSTER_SPEC
 shardName=az-chinaeast2
-total=0
-# of orgs=0
-# of pipelines=0
+[MATCHED_CLUSTER_SPEC]
+======= Summary =======
+count=0,
+total # of org=0
+total # of pipeline=0
+total # of policy=0
 
-OrgIds details:
-
-PipelineIds details:
-
-    
-JSON dump:
-orgIds:{}
-pipelines:{}

@@ -1,6 +1,5 @@
 from .utils import *
 
-__FILE_PATH = "data/mismatch_cluster_spec.json"
 __MISMATCHED_REGEX = r".*\[MISMATCHED_CLUSTER_SPEC].*\nNew code path cluster spec: (.*)" \
                      r"\nLegacy code path cluster spec: (.*).*"
 
@@ -111,16 +110,16 @@ def parseMismatchClusterSpec(response, shardName):
     uncategorizedResult = UncategorizedResult(ignoreAutoscaling)
     uncategorizedTruncatedResult = UncategorizedResult(ignoreSingleNodeLegacy, name="Uncategorized truncated logs")
 
-    return f"""type=MISMATCHED_CLUSTER_SPEC
-shardName={shardName}
-total={len(parsedLogs) + len(failedToParse)}
-{customTagsResult.__repr__abbr__()}
-{autoscalingRetryResult.__repr__abbr__()}
-{singleNodeEnhancedResult.__repr__abbr__()}
-{singleNodeLegacyResult.__repr__abbr__()}
-{uncategorizedResult.__repr__abbr__()}
-{uncategorizedTruncatedResult.__repr__abbr__()}
+    metricsResultSummary = SummaryResult("MISMATCHED_CLUSTER_SPEC")
+    metricsResultSummary.add(customTagsResult)
+    metricsResultSummary.add(autoscalingRetryResult)
+    metricsResultSummary.add(singleNodeEnhancedResult)
+    metricsResultSummary.add(singleNodeLegacyResult)
+    metricsResultSummary.add(uncategorizedResult)
+    metricsResultSummary.add(uncategorizedTruncatedResult)
 
+    return f"""shardName={shardName}
+{metricsResultSummary.summary()}
 =================== DETAILS ===================
 {customTagsResult}
 {autoscalingRetryResult}
@@ -132,4 +131,4 @@ total={len(parsedLogs) + len(failedToParse)}
 -------- Failed to parse --------
 count={len(failedToParse)}
 log JSON dump={json.dumps(failedToParse)}
-"""
+""", metricsResultSummary

@@ -7,16 +7,6 @@ def get_policy_id(cluster_spec):
     return cluster_spec['new_cluster']['policy_id']
 
 
-def get_policy_id_from_truncated(log):
-    try:
-        regex = r'.*"policy_id":"(.{16})",'
-        result = re.search(regex, log)
-        return result.group(1)
-    except Exception as ex:
-        logging.error(f"[get_policy_id_from_truncated] parse policy_id failed. log={log}", ex)
-        return None
-
-
 def get_org_id(log):
     regex = r'deltaPipelinesOrgId=([0-9]+)'
     result = re.search(regex, log)
@@ -97,24 +87,6 @@ def parseLogsFromResponse(response, regex):
     return parsed_logs, failed_to_parse
 
 
-def parseUncategorized(uncategorized):
-    orgIds, pipelineIds, logs = {}, {}, {}
-    for (legacy, latest, metadata) in uncategorized:
-        orgId = metadata['org_id']
-        pipelineId = metadata['pipeline_id']
-        logKey = f"{orgId}_{pipelineId}"
-
-        orgIds.setdefault(orgId, 0)
-        pipelineIds.setdefault(pipelineId, 0)
-        logs.setdefault(logKey, [])
-
-        orgIds[orgId] += 1
-        pipelineIds[pipelineId] += 1
-        logs[logKey].append({"legacy": legacy, "latest": latest})
-
-    return orgIds, pipelineIds, logs
-
-
 def sortDictByValue(x):
     return {k: v for k, v in sorted(x.items(), key=lambda item: item[1], reverse=True)}
 
@@ -127,14 +99,12 @@ def prettyPrintDict(x):
 
 
 class CategorizationResult:
-    category = None
-    count = 0
-    orgIds = {}
-    pipelineIds = {}
-    policyIds = {}
-
-    def __init__(self, category):
-        self.category = category
+    def __init__(self, name):
+        self.name = name
+        self.count = 0
+        self.orgIds = {}
+        self.pipelineIds = {}
+        self.policyIds = {}
 
     def addWithPolicyId(self, orgId, pipelineId, policyId):
         self.policyIds.setdefault(policyId, 0)
@@ -153,7 +123,7 @@ class CategorizationResult:
         self.orgIds = sortDictByValue(self.orgIds)
         self.pipelineIds = sortDictByValue(self.pipelineIds)
         self.policyIds = sortDictByValue(self.policyIds)
-        return f"""\ncategory={self.category}
+        return f"""\ncategory={self.name}
 count={self.count}
 # of orgs={len(self.orgIds)}
 # of pipelines={len(self.pipelineIds)}
@@ -163,7 +133,7 @@ count={self.count}
         self.orgIds = sortDictByValue(self.orgIds)
         self.pipelineIds = sortDictByValue(self.pipelineIds)
         self.policyIds = sortDictByValue(self.policyIds)
-        return f"""-------- {self.category} --------
+        return f"""-------- {self.name} --------
 count={self.count}
 # of orgs={len(self.orgIds)}
 # of pipelines={len(self.pipelineIds)}
@@ -183,12 +153,13 @@ policyIds={json.dumps(self.policyIds)}
 
 
 class DisallowedClusterAttributesResult:
-    category = "Disallowed cluster attributes"
-    count = 0
-    orgIds = {}
-    pipelineIds = {}
-    policyIds = {}
-    attributes = {}
+    def __init__(self):
+        self.name = "Disallowed cluster attributes"
+        self.count = 0
+        self.orgIds = {}
+        self.pipelineIds = {}
+        self.policyIds = {}
+        self.attributes = {}
 
     def add(self, attribute, orgId, pipelineId, policyId):
         self.count += 1
@@ -232,7 +203,7 @@ class DisallowedClusterAttributesResult:
         self.pipelineIds = sortDictByValue(self.pipelineIds)
         self.policyIds = sortDictByValue(self.policyIds)
 
-        return f"""\ncategory={self.category}
+        return f"""\ncategory={self.name}
 count={self.count}
 # of orgs={len(self.orgIds)}
 # of pipelines={len(self.pipelineIds)}
@@ -244,7 +215,7 @@ attributes={self.__printAttributes()}
         self.orgIds = sortDictByValue(self.orgIds)
         self.pipelineIds = sortDictByValue(self.pipelineIds)
         self.policyIds = sortDictByValue(self.policyIds)
-        return f"""-------- {self.category} --------
+        return f"""-------- {self.name} --------
 count={self.count}
 # of orgs={len(self.orgIds)}
 # of pipelines={len(self.pipelineIds)}
@@ -268,14 +239,13 @@ attributes={json.dumps(self.__serializableAttributes())}
 
 
 class UncategorizedResult:
-    name = None
-    count = 0
-    orgIds = {}
-    pipelineIds = {}
-    logs = {}
-
     def __init__(self, uncategorizedLogs, name="Uncategorized"):
         self.name = name
+        self.count = 0
+        self.orgIds = {}
+        self.pipelineIds = {}
+        self.policyIds = {}
+        self.logs = {}
         for (legacy, latest, metadata) in uncategorizedLogs:
             orgId = metadata['org_id']
             pipelineId = metadata['pipeline_id']
@@ -313,3 +283,46 @@ orgIds={json.dumps(self.orgIds)}
 pipelineIds={json.dumps(self.pipelineIds)}
 logs={json.dumps(self.logs)}
 """
+
+
+def convertToSetIfNeeded(x):
+    if isinstance(x, set):
+        return x
+    elif isinstance(x, dict):
+        return set(x.keys())
+    else:
+        set(x)
+
+
+class SummaryResult:
+    def __init__(self, name):
+        self.count = 0
+        self.orgIds = set()
+        self.pipelineIds = set()
+        self.policyIds = set()
+        self.results = []
+        self.name = name
+
+    def add(self, result):
+        self.count += result.count
+        self.orgIds = self.orgIds.union(convertToSetIfNeeded(result.orgIds))
+        self.pipelineIds = self.pipelineIds.union(convertToSetIfNeeded(result.pipelineIds))
+        self.policyIds = self.policyIds.union(convertToSetIfNeeded(result.policyIds))
+        self.results.append(result)
+
+    def summary(self):
+        return f"""[{self.name}]
+======= Summary =======
+count={self.count},
+total # of org={len(self.orgIds)}
+total # of pipeline={len(self.pipelineIds)}
+total # of policy={len(self.policyIds)}\n"""
+
+    def __repr__(self):
+        resultStr = self.summary()
+        for result in self.results:
+            resultStr += f"""
+({result.name}):
+total = {result.count}, pipelineIds = {len(result.pipelineIds)}, orgIds = {len(result.orgIds)}, policies = {len(result.policyIds)}
+"""
+        return resultStr

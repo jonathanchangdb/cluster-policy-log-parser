@@ -1,35 +1,27 @@
-type=BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED
 shardName=az-chinanorth2
-total=0 
+[BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
+======= Summary =======
+count=0,
+total # of org=0
+total # of pipeline=0
+total # of policy=0
 
-category=Same error message
-count=0
-# of orgs=2
-# of pipelines=3
-# of policies=3
-
-name=Uncategorized
-count=0
-# of orgs=1
-# of pipelines=1
 
 =================== DETAILS ===================
 -------- Uncategorized --------
 count=0
-# of orgs=1
-# of pipelines=1
-# of policies=1
+# of orgs=0
+# of pipelines=0
+# of policies=0
 
 OrgIds details:
-6056897725116273: 2
 
 PipelineIds details:
-a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15: 2
 
 JSON dump:
-orgIds={"6056897725116273": 2}
-pipelineIds={"a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15": 2}
-logs={"6056897725116273_a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15": [{"legacy": "INVALID_PARAMETER_VALUE: Validation failed for node_type_id, the value must be Standard_DS3_v2 (is \"Standard_F8s\"); Validation failed for cluster_type, the value must be all-purpose (is \"dlt\")\n\n", "latest": "The cluster policy specified for the \"default\" cluster in the pipeline settings is\nnot compatible with cluster settings managed by Delta Live Tables.\n\nINVALID_PARAMETER_VALUE: Validation failed for cluster_type, the value must be all-purpose (is \"dlt\")\n\nYou cannot change cluster settings managed by Delta Live Tables. To fix it, please\nupdate the cluster policy accordingly.\n\n"}, {"legacy": "INVALID_PARAMETER_VALUE: Validation failed for node_type_id, the value must be Standard_DS3_v2 (is \"Standard_F8s\"); Validation failed for cluster_type, the value must be Standard_DS3_v2 (is \"dlt\")\n\n", "latest": "The cluster policy specified for the \"default\" cluster in the pipeline settings is\nnot compatible with cluster settings managed by Delta Live Tables.\n\nINVALID_PARAMETER_VALUE: Validation failed for cluster_type, the value must be Standard_DS3_v2 (is \"dlt\")\n\nYou cannot change cluster settings managed by Delta Live Tables. To fix it, please\nupdate the cluster policy accordingly.\n\n"}]}
+orgIds={}
+pipelineIds={}
+logs={}
 
 
 -------- Failed to parse --------

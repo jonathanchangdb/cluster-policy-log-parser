@@ -1,40 +1,10 @@
-type=MISMATCHED_CLUSTER_SPEC
 shardName=az-canadacentral
-total=0
-
-category=Custom tags
-count=0
-# of orgs=0
-# of pipelines=0
-# of policies=0
-
-category=Autoscaling retry
-count=0
-# of orgs=0
-# of pipelines=0
-# of policies=0
-
-category=Single node cluster in cluster policy (Enhanced)
-count=0
-# of orgs=0
-# of pipelines=0
-# of policies=0
-
-category=Single node cluster in cluster policy (Legacy)
-count=0
-# of orgs=0
-# of pipelines=0
-# of policies=0
-
-name=Uncategorized
-count=0
-# of orgs=0
-# of pipelines=0
-
-name=Uncategorized truncated logs
-count=0
-# of orgs=0
-# of pipelines=0
+[MISMATCHED_CLUSTER_SPEC]
+======= Summary =======
+count=0,
+total # of org=0
+total # of pipeline=0
+total # of policy=0
 
 =================== DETAILS ===================
 -------- Custom tags --------

@@ -1,0 +1,21 @@
+[az-eastus2-c2]
+======= Summary =======
+count=7117,
+total # of org=83
+total # of pipeline=861
+total # of policy=2
+
+(MATCHED_CLUSTER_SPEC):
+total = 7105, pipelineIds = 860, orgIds = 82, policies = 0
+
+(MISMATCHED_CLUSTER_SPEC):
+total = 8, pipelineIds = 1, orgIds = 1, policies = 1
+
+(ONLY_LEGACY_CODE_PATH_SUCCEED):
+total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(ONLY_NEW_CODE_PATH_SUCCEED):
+total = 4, pipelineIds = 1, orgIds = 1, policies = 1
+
+(BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED):
+total = 0, pipelineIds = 0, orgIds = 0, policies = 0

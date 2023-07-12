@@ -1,6 +1,5 @@
 from .utils import *
 
-__FILE_PATH = "data/both_failed_cluster_spec.json"
 __BOTH_CODE_PATH_FAILED = r".*\[BOTH_OLD_AND_NEW_CODE_PATH_FAILED].*\nNew code path failure: \n" \
                           r"([\s\S]*)Legacy code path failure: ([\s\S]*).*"
 
@@ -27,14 +26,14 @@ def parseBothCodePathFailed(response, shardName):
     bothFailed, failedToParse = parseLogsFromResponse(response, regex=__BOTH_CODE_PATH_FAILED)
     sameErrorMessageResult, ignoreSameMessage = __hasSameErrorMessage(bothFailed)
 
-    uncategorized = ignoreSameMessage
-    uncategorizedResult = UncategorizedResult(uncategorized)
+    uncategorizedResult = UncategorizedResult(ignoreSameMessage)
 
-    return f"""type=BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED
-shardName={shardName}
-total={len(bothFailed) + len(failedToParse)} 
-{sameErrorMessageResult.__repr__abbr__()}
-{uncategorizedResult.__repr__abbr__()}
+    metricsResultSummary = SummaryResult("BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED")
+    metricsResultSummary.add(sameErrorMessageResult)
+    metricsResultSummary.add(uncategorizedResult)
+
+    return f"""shardName={shardName}
+{metricsResultSummary.summary()}
 
 =================== DETAILS ===================
 {uncategorizedResult}
@@ -42,4 +41,4 @@ total={len(bothFailed) + len(failedToParse)}
 -------- Failed to parse --------
 count={len(failedToParse)}
 log JSON dump={json.dumps(failedToParse)}
-"""
+""", metricsResultSummary

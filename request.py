@@ -10,6 +10,10 @@ from parsers.both_failed import parseBothCodePathFailed
 from parsers.matched_cluster_spec import parseMatchedClusterSpec
 from parsers.mismatched_cluster_spec import parseMismatchClusterSpec
 from parsers.only_legacy_succeed import parseOnlyLegacySucceed
+from parsers.only_new_succeed import parseOnlyNewSucceed
+from parsers.utils import SummaryResult
+
+logging.basicConfig(level=logging.INFO)
 
 __KIBANA_JSON_PATH = "data/kibana.json"
 __RESULT_PATH = "result"
@@ -153,50 +157,97 @@ def __sendRequest(url, cookie, query, startTimestamp, endTimestamp):
 def __matchedClusterSpec(url, cookie, startTimestamp, endTimestamp, directory, shardName):
     response = __sendRequest(url=url, cookie=cookie, query="[MATCHED_CLUSTER_SPEC]", startTimestamp=startTimestamp,
                              endTimestamp=endTimestamp)
+    content, summaryResult = parseMatchedClusterSpec(response=response, shardName=shardName)
     with open(f"{directory}/matched-cluster-spec.txt", 'w') as matchedClusterSpecFile:
-        matchedClusterSpecFile.write(parseMatchedClusterSpec(response=response, shardName=shardName))
+        matchedClusterSpecFile.write(content)
+    return summaryResult
 
 
 def __mismatchedClusterSpec(url, cookie, startTimestamp, endTimestamp, directory, shardName):
     response = __sendRequest(url=url, cookie=cookie, query="[MISMATCHED_CLUSTER_SPEC]", startTimestamp=startTimestamp,
                              endTimestamp=endTimestamp)
+    content, summaryResult = parseMismatchClusterSpec(response=response, shardName=shardName)
     with open(f"{directory}/mismatched-cluster-spec.txt", 'w') as mismatchedClusterSpecFile:
-        mismatchedClusterSpecFile.write(parseMismatchClusterSpec(response=response, shardName=shardName))
+        mismatchedClusterSpecFile.write(content)
+    return summaryResult
 
 
 def __onlyLegacySucceed(url, cookie, startTimestamp, endTimestamp, directory, shardName):
     response = __sendRequest(url=url, cookie=cookie, query="[ONLY_LEGACY_CODE_PATH_SUCCEED]",
                              startTimestamp=startTimestamp,
                              endTimestamp=endTimestamp)
+    content, summaryResult = parseOnlyLegacySucceed(response=response, shardName=shardName)
     with open(f"{directory}/only-legacy-code-path-succeed.txt", 'w') as onlyLegacySucceedFile:
-        onlyLegacySucceedFile.write(parseOnlyLegacySucceed(response=response, shardName=shardName))
+        onlyLegacySucceedFile.write(content)
+    return summaryResult
+
+
+def __onlyNewSucceed(url, cookie, startTimestamp, endTimestamp, directory, shardName):
+    response = __sendRequest(url=url, cookie=cookie, query="[ONLY_NEW_CODE_PATH_SUCCEED]",
+                             startTimestamp=startTimestamp,
+                             endTimestamp=endTimestamp)
+    content, summaryResult = parseOnlyNewSucceed(response=response, shardName=shardName)
+    with open(f"{directory}/only-new-code-path-succeed.txt", 'w') as onlyNewSucceedFile:
+        onlyNewSucceedFile.write(content)
+    return summaryResult
 
 
 def __bothFailed(url, cookie, startTimestamp, endTimestamp, directory, shardName):
     response = __sendRequest(url=url, cookie=cookie, query="[BOTH_OLD_AND_NEW_CODE_PATH_FAILED]",
                              startTimestamp=startTimestamp,
                              endTimestamp=endTimestamp)
+    content, summaryResult = parseBothCodePathFailed(response=response, shardName=shardName)
     with open(f"{directory}/both-old-and-new-code-path-failed.txt", 'w') as bothFailed:
-        bothFailed.write(parseBothCodePathFailed(response=response, shardName=shardName))
+        bothFailed.write(content)
+    return summaryResult
 
 
-def parse(cookie, startTimestamp=(datetime.today() - timedelta(days=1)),
-          endTimestamp=datetime.today()):
-    for (shardName, kibanaUri) in tqdm(__parse_uris()):
+def __parseOneShard(url, cookie, startTimestamp, endTimestamp, directory, shardName):
+    shardSummaryResult = SummaryResult(shardName)
+
+    shardSummaryResult.add(__matchedClusterSpec(url=url, cookie=cookie, startTimestamp=startTimestamp,
+                                                endTimestamp=endTimestamp,
+                                                directory=directory, shardName=shardName))
+    shardSummaryResult.add(__mismatchedClusterSpec(url=url, cookie=cookie, startTimestamp=startTimestamp,
+                                                   endTimestamp=endTimestamp,
+                                                   directory=directory, shardName=shardName))
+    shardSummaryResult.add(__onlyLegacySucceed(url=url, cookie=cookie, startTimestamp=startTimestamp,
+                                               endTimestamp=endTimestamp,
+                                               directory=directory, shardName=shardName))
+    shardSummaryResult.add(__onlyNewSucceed(url=url, cookie=cookie, startTimestamp=startTimestamp,
+                                            endTimestamp=endTimestamp,
+                                            directory=directory, shardName=shardName))
+    shardSummaryResult.add(
+        __bothFailed(url=url, cookie=cookie, startTimestamp=startTimestamp, endTimestamp=endTimestamp,
+                     directory=directory, shardName=shardName)
+    )
+    with open(f"{directory}/summary.txt", 'w') as summaryFile:
+        summaryFile.write(shardSummaryResult.__repr__())
+    return shardSummaryResult
+
+
+def parse(cookie, startTimestamp, endTimestamp):
+    timestamp = endTimestamp.strftime('%Y-%m-%d')
+    overallSummaryResult = SummaryResult(timestamp)
+    directory = f"{__RESULT_PATH}/{timestamp}"
+    Path(directory).mkdir(parents=True, exist_ok=True)
+
+    uris = __parse_uris()
+    for (idx, (shardName, kibanaUri)) in enumerate(uris):
         time.sleep(0.25)
         try:
-            directory = f"{__RESULT_PATH}/{endTimestamp.strftime('%Y-%m-%d')}/{shardName}"
+            shardDirectory = f"{directory}/{shardName}"
             url = f"https://{kibanaUri}/internal/search/opensearch"
-            Path(directory).mkdir(parents=True, exist_ok=True)
+            Path(shardDirectory).mkdir(parents=True, exist_ok=True)
 
-            __matchedClusterSpec(url=url, cookie=cookie, startTimestamp=startTimestamp, endTimestamp=endTimestamp,
-                                 directory=directory, shardName=shardName)
-            __mismatchedClusterSpec(url=url, cookie=cookie, startTimestamp=startTimestamp, endTimestamp=endTimestamp,
-                                    directory=directory, shardName=shardName)
-            __onlyLegacySucceed(url=url, cookie=cookie, startTimestamp=startTimestamp, endTimestamp=endTimestamp,
-                                directory=directory, shardName=shardName)
-            __bothFailed(url=url, cookie=cookie, startTimestamp=startTimestamp, endTimestamp=endTimestamp,
-                         directory=directory, shardName=shardName)
-            logging.info(f'{shardName} finished.')
+            overallSummaryResult.add(
+                __parseOneShard(url=url, cookie=cookie, startTimestamp=startTimestamp, endTimestamp=endTimestamp,
+                                directory=shardDirectory, shardName=shardName)
+            )
+            logging.info(f'[{idx + 1}/{len(uris)}] {shardName} finished.')
         except Exception as ex:
-            logging.error(f"{shardName} failed!", ex)
+            logging.error(f"[{idx + 1}/{len(uris)}] {shardName} failed!", ex)
+
+    with open(f"{directory}/summary.txt", 'w') as summaryFile:
+        summaryFile.write(overallSummaryResult.__repr__())
+    return overallSummaryResult

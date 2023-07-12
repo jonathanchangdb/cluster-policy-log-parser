@@ -1,18 +1,8 @@
-type=MATCHED_CLUSTER_SPEC
 shardName=gcp-europe-west3
-total=2
-# of orgs=2
-# of pipelines=2
+[MATCHED_CLUSTER_SPEC]
+======= Summary =======
+count=2,
+total # of org=2
+total # of pipeline=2
+total # of policy=0
 
-OrgIds details:
-2593257210054119: 1
-4263920333694982: 1
-
-PipelineIds details:
-1d6edad4-90d4-4398-bc72-92996158a7d1: 1
-bb182fda-72a1-43c8-8d8a-4d8144ece2f4: 1
-
-    
-JSON dump:
-orgIds:{"2593257210054119": 1, "4263920333694982": 1}
-pipelines:{"1d6edad4-90d4-4398-bc72-92996158a7d1": 1, "bb182fda-72a1-43c8-8d8a-4d8144ece2f4": 1}

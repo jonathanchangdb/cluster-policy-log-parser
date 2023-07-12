@@ -1,6 +1,5 @@
 from .utils import *
 
-__FILE_PATH = "data/legacy_code_path_succeed.json"
 __ONLY_LEGACY_SUCCEED_REGEX = r".*\[ONLY_LEGACY_CODE_PATH_SUCCEED].*\nNew code path failure: \n([\S\s]*)" \
                               r"\nLegacy code path cluster spec: (.*).*"
 
@@ -49,13 +48,13 @@ def parseOnlyLegacySucceed(response, shardName):
 
     uncategorized = UncategorizedResult(ignoreDisallowedAttrs)
 
-    return f"""type=ONLY_LEGACY_CODE_PATH_SUCCEED
-shardName={shardName}
-total={len(parsedLogs) + len(failedToParse)}
-{applyPolicyResult.__repr__abbr__()}
-{disallowedAttrsResult.__repr__abbr__()}
-{uncategorized.__repr__abbr__()}
+    metricsResultSummary = SummaryResult("ONLY_LEGACY_CODE_PATH_SUCCEED")
+    metricsResultSummary.add(applyPolicyResult)
+    metricsResultSummary.add(disallowedAttrsResult)
+    metricsResultSummary.add(uncategorized)
 
+    return f"""shardName={shardName}
+{metricsResultSummary.summary()}
 =================== DETAILS ===================
 {applyPolicyResult}
 {disallowedAttrsResult}
@@ -64,4 +63,4 @@ total={len(parsedLogs) + len(failedToParse)}
 -------- Failed to parse --------
 count={len(failedToParse)}
 log JSON dump={json.dumps(failedToParse)}
-"""
+""", metricsResultSummary

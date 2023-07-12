@@ -1,24 +1,8 @@
-type=MATCHED_CLUSTER_SPEC
 shardName=az-westcentralus
-total=57
-# of orgs=4
-# of pipelines=6
+[MATCHED_CLUSTER_SPEC]
+======= Summary =======
+count=57,
+total # of org=4
+total # of pipeline=6
+total # of policy=0
 
-OrgIds details:
-5712902851982427: 50
-4419753955709830: 4
-6930403252880188: 2
-6510476430451909: 1
-
-PipelineIds details:
-d26eb846-906e-4651-8b6f-eb50222b7abe: 48
-8549e92f-0187-4194-a014-12cf8c6596ae: 4
-f6242e8a-4191-4d10-b30b-24f4d5767daf: 2
-352d104a-c32e-4018-9ea6-4e6121c90395: 1
-a5c78121-5b87-4893-b375-62aa2033236c: 1
-8b022faf-2787-4ab1-ba09-785aa97bc32c: 1
-
-    
-JSON dump:
-orgIds:{"5712902851982427": 50, "4419753955709830": 4, "6930403252880188": 2, "6510476430451909": 1}
-pipelines:{"d26eb846-906e-4651-8b6f-eb50222b7abe": 48, "8549e92f-0187-4194-a014-12cf8c6596ae": 4, "f6242e8a-4191-4d10-b30b-24f4d5767daf": 2, "352d104a-c32e-4018-9ea6-4e6121c90395": 1, "a5c78121-5b87-4893-b375-62aa2033236c": 1, "8b022faf-2787-4ab1-ba09-785aa97bc32c": 1}

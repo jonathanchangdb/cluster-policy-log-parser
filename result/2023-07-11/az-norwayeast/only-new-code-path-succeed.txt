@@ -1,0 +1,64 @@
+shardName=az-norwayeast
+[ONLY_NEW_CODE_PATH_SUCCEED]
+======= Summary =======
+count=5,
+total # of org=1
+total # of pipeline=1
+total # of policy=0
+
+=================== DETAILS ===================
+-------- Node Type ID --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Rate limited (non-error) --------
+count=5
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+3144005935691473: 5
+
+PipelineIds details:
+2a968788-15fc-45c6-a019-09a05efa446b: 5
+
+PolicyIds details:
+
+JSON dump:
+orgIds={"3144005935691473": 5}
+pipelineIds={"2a968788-15fc-45c6-a019-09a05efa446b": 5}
+policyIds={}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

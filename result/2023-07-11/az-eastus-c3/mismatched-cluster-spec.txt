@@ -1,187 +1,112 @@
-type=MISMATCHED_CLUSTER_SPEC
 shardName=az-eastus-c3
-total=12
-
-category=Custom tags
-count=0
-# of orgs=3
-# of pipelines=4
-# of policies=4
-
-category=Autoscaling retry
-count=12
-# of orgs=3
-# of pipelines=4
-# of policies=4
-
-category=Single node cluster in cluster policy (Enhanced)
-count=0
-# of orgs=3
-# of pipelines=4
-# of policies=4
-
-category=Single node cluster in cluster policy (Legacy)
-count=0
-# of orgs=3
-# of pipelines=4
-# of policies=4
-
-name=Uncategorized
-count=0
-# of orgs=1
-# of pipelines=1
-
-name=Uncategorized truncated logs
-count=0
-# of orgs=1
-# of pipelines=1
+[MISMATCHED_CLUSTER_SPEC]
+======= Summary =======
+count=12,
+total # of org=1
+total # of pipeline=1
+total # of policy=1
 
 =================== DETAILS ===================
 -------- Custom tags --------
 count=0
-# of orgs=3
-# of pipelines=4
-# of policies=4
+# of orgs=0
+# of pipelines=0
+# of policies=0
 
 OrgIds details:
-6056897725116273: 38
-8916084915459926: 12
-1526531973397437: 2
 
 PipelineIds details:
-86d415d4-4a16-4060-b7f4-6c5020bf5cbd: 28
-c0d955b0-7fce-423b-80fe-5995a275b9d6: 12
-a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15: 10
-b6a016db-456b-420b-a397-0e06a9757c2c: 2
 
 PolicyIds details:
-000C29592BA1DF85: 18
-6063B59EF1000276: 12
-000A06D9B9A99748: 7
-0016B607A6C7CDEF: 3
 
 JSON dump:
-orgIds={"6056897725116273": 38, "8916084915459926": 12, "1526531973397437": 2}
-pipelineIds={"86d415d4-4a16-4060-b7f4-6c5020bf5cbd": 28, "c0d955b0-7fce-423b-80fe-5995a275b9d6": 12, "a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15": 10, "b6a016db-456b-420b-a397-0e06a9757c2c": 2}
-policyIds={"000C29592BA1DF85": 18, "6063B59EF1000276": 12, "000A06D9B9A99748": 7, "0016B607A6C7CDEF": 3}
+orgIds={}
+pipelineIds={}
+policyIds={}
 
 -------- Autoscaling retry --------
 count=12
-# of orgs=3
-# of pipelines=4
-# of policies=4
+# of orgs=1
+# of pipelines=1
+# of policies=1
 
 OrgIds details:
-6056897725116273: 38
 8916084915459926: 12
-1526531973397437: 2
 
 PipelineIds details:
-86d415d4-4a16-4060-b7f4-6c5020bf5cbd: 28
 c0d955b0-7fce-423b-80fe-5995a275b9d6: 12
-a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15: 10
-b6a016db-456b-420b-a397-0e06a9757c2c: 2
 
 PolicyIds details:
-000C29592BA1DF85: 18
 6063B59EF1000276: 12
-000A06D9B9A99748: 7
-0016B607A6C7CDEF: 3
 
 JSON dump:
-orgIds={"6056897725116273": 38, "8916084915459926": 12, "1526531973397437": 2}
-pipelineIds={"86d415d4-4a16-4060-b7f4-6c5020bf5cbd": 28, "c0d955b0-7fce-423b-80fe-5995a275b9d6": 12, "a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15": 10, "b6a016db-456b-420b-a397-0e06a9757c2c": 2}
-policyIds={"000C29592BA1DF85": 18, "6063B59EF1000276": 12, "000A06D9B9A99748": 7, "0016B607A6C7CDEF": 3}
+orgIds={"8916084915459926": 12}
+pipelineIds={"c0d955b0-7fce-423b-80fe-5995a275b9d6": 12}
+policyIds={"6063B59EF1000276": 12}
 
 -------- Single node cluster in cluster policy (Enhanced) --------
 count=0
-# of orgs=3
-# of pipelines=4
-# of policies=4
+# of orgs=0
+# of pipelines=0
+# of policies=0
 
 OrgIds details:
-6056897725116273: 38
-8916084915459926: 12
-1526531973397437: 2
 
 PipelineIds details:
-86d415d4-4a16-4060-b7f4-6c5020bf5cbd: 28
-c0d955b0-7fce-423b-80fe-5995a275b9d6: 12
-a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15: 10
-b6a016db-456b-420b-a397-0e06a9757c2c: 2
 
 PolicyIds details:
-000C29592BA1DF85: 18
-6063B59EF1000276: 12
-000A06D9B9A99748: 7
-0016B607A6C7CDEF: 3
 
 JSON dump:
-orgIds={"6056897725116273": 38, "8916084915459926": 12, "1526531973397437": 2}
-pipelineIds={"86d415d4-4a16-4060-b7f4-6c5020bf5cbd": 28, "c0d955b0-7fce-423b-80fe-5995a275b9d6": 12, "a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15": 10, "b6a016db-456b-420b-a397-0e06a9757c2c": 2}
-policyIds={"000C29592BA1DF85": 18, "6063B59EF1000276": 12, "000A06D9B9A99748": 7, "0016B607A6C7CDEF": 3}
+orgIds={}
+pipelineIds={}
+policyIds={}
 
 -------- Single node cluster in cluster policy (Legacy) --------
 count=0
-# of orgs=3
-# of pipelines=4
-# of policies=4
+# of orgs=0
+# of pipelines=0
+# of policies=0
 
 OrgIds details:
-6056897725116273: 38
-8916084915459926: 12
-1526531973397437: 2
 
 PipelineIds details:
-86d415d4-4a16-4060-b7f4-6c5020bf5cbd: 28
-c0d955b0-7fce-423b-80fe-5995a275b9d6: 12
-a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15: 10
-b6a016db-456b-420b-a397-0e06a9757c2c: 2
 
 PolicyIds details:
-000C29592BA1DF85: 18
-6063B59EF1000276: 12
-000A06D9B9A99748: 7
-0016B607A6C7CDEF: 3
 
 JSON dump:
-orgIds={"6056897725116273": 38, "8916084915459926": 12, "1526531973397437": 2}
-pipelineIds={"86d415d4-4a16-4060-b7f4-6c5020bf5cbd": 28, "c0d955b0-7fce-423b-80fe-5995a275b9d6": 12, "a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15": 10, "b6a016db-456b-420b-a397-0e06a9757c2c": 2}
-policyIds={"000C29592BA1DF85": 18, "6063B59EF1000276": 12, "000A06D9B9A99748": 7, "0016B607A6C7CDEF": 3}
+orgIds={}
+pipelineIds={}
+policyIds={}
 
 -------- Uncategorized --------
 count=0
-# of orgs=1
-# of pipelines=1
-# of policies=1
+# of orgs=0
+# of pipelines=0
+# of policies=0
 
 OrgIds details:
-6056897725116273: 2
 
 PipelineIds details:
-a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15: 2
 
 JSON dump:
-orgIds={"6056897725116273": 2}
-pipelineIds={"a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15": 2}
-logs={"6056897725116273_a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15": [{"legacy": "INVALID_PARAMETER_VALUE: Validation failed for node_type_id, the value must be Standard_DS3_v2 (is \"Standard_F8s\"); Validation failed for cluster_type, the value must be all-purpose (is \"dlt\")\n\n", "latest": "The cluster policy specified for the \"default\" cluster in the pipeline settings is\nnot compatible with cluster settings managed by Delta Live Tables.\n\nINVALID_PARAMETER_VALUE: Validation failed for cluster_type, the value must be all-purpose (is \"dlt\")\n\nYou cannot change cluster settings managed by Delta Live Tables. To fix it, please\nupdate the cluster policy accordingly.\n\n"}, {"legacy": "INVALID_PARAMETER_VALUE: Validation failed for node_type_id, the value must be Standard_DS3_v2 (is \"Standard_F8s\"); Validation failed for cluster_type, the value must be Standard_DS3_v2 (is \"dlt\")\n\n", "latest": "The cluster policy specified for the \"default\" cluster in the pipeline settings is\nnot compatible with cluster settings managed by Delta Live Tables.\n\nINVALID_PARAMETER_VALUE: Validation failed for cluster_type, the value must be Standard_DS3_v2 (is \"dlt\")\n\nYou cannot change cluster settings managed by Delta Live Tables. To fix it, please\nupdate the cluster policy accordingly.\n\n"}]}
+orgIds={}
+pipelineIds={}
+logs={}
 
 -------- Uncategorized truncated logs --------
 count=0
-# of orgs=1
-# of pipelines=1
-# of policies=1
+# of orgs=0
+# of pipelines=0
+# of policies=0
 
 OrgIds details:
-6056897725116273: 2
 
 PipelineIds details:
-a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15: 2
 
 JSON dump:
-orgIds={"6056897725116273": 2}
-pipelineIds={"a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15": 2}
-logs={"6056897725116273_a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15": [{"legacy": "INVALID_PARAMETER_VALUE: Validation failed for node_type_id, the value must be Standard_DS3_v2 (is \"Standard_F8s\"); Validation failed for cluster_type, the value must be all-purpose (is \"dlt\")\n\n", "latest": "The cluster policy specified for the \"default\" cluster in the pipeline settings is\nnot compatible with cluster settings managed by Delta Live Tables.\n\nINVALID_PARAMETER_VALUE: Validation failed for cluster_type, the value must be all-purpose (is \"dlt\")\n\nYou cannot change cluster settings managed by Delta Live Tables. To fix it, please\nupdate the cluster policy accordingly.\n\n"}, {"legacy": "INVALID_PARAMETER_VALUE: Validation failed for node_type_id, the value must be Standard_DS3_v2 (is \"Standard_F8s\"); Validation failed for cluster_type, the value must be Standard_DS3_v2 (is \"dlt\")\n\n", "latest": "The cluster policy specified for the \"default\" cluster in the pipeline settings is\nnot compatible with cluster settings managed by Delta Live Tables.\n\nINVALID_PARAMETER_VALUE: Validation failed for cluster_type, the value must be Standard_DS3_v2 (is \"dlt\")\n\nYou cannot change cluster settings managed by Delta Live Tables. To fix it, please\nupdate the cluster policy accordingly.\n\n"}]}
+orgIds={}
+pipelineIds={}
+logs={}
 
 
 -------- Failed to parse --------

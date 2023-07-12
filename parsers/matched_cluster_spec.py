@@ -21,19 +21,11 @@ def __parse(response):
 
 def parseMatchedClusterSpec(response, shardName):
     logs, orgIds, pipelineIds = __parse(response)
+    metricsResultSummary = SummaryResult("MATCHED_CLUSTER_SPEC")
+    metricsResultSummary.count = len(logs)
+    metricsResultSummary.orgIds = orgIds
+    metricsResultSummary.pipelineIds = pipelineIds
 
-    return f"""type=MATCHED_CLUSTER_SPEC
-shardName={shardName}
-total={len(logs)}
-# of orgs={len(orgIds)}
-# of pipelines={len(pipelineIds)}
-
-OrgIds details:
-{prettyPrintDict(sortDictByValue(orgIds))}
-PipelineIds details:
-{prettyPrintDict(sortDictByValue(pipelineIds))}
-    
-JSON dump:
-orgIds:{json.dumps(orgIds)}
-pipelines:{json.dumps(pipelineIds)}
-"""
+    return f"""shardName={shardName}
+{metricsResultSummary.summary()}
+""", metricsResultSummary

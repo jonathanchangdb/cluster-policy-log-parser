@@ -1,0 +1,21 @@
+[mumbai-prod]
+======= Summary =======
+count=1381,
+total # of org=10
+total # of pipeline=14
+total # of policy=0
+
+(MATCHED_CLUSTER_SPEC):
+total = 1381, pipelineIds = 14, orgIds = 10, policies = 0
+
+(MISMATCHED_CLUSTER_SPEC):
+total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(ONLY_LEGACY_CODE_PATH_SUCCEED):
+total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(ONLY_NEW_CODE_PATH_SUCCEED):
+total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED):
+total = 0, pipelineIds = 0, orgIds = 0, policies = 0

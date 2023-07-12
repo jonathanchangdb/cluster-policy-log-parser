@@ -1,0 +1,21 @@
+[az-westeurope-c2]
+======= Summary =======
+count=10606,
+total # of org=168
+total # of pipeline=690
+total # of policy=7
+
+(MATCHED_CLUSTER_SPEC):
+total = 10000, pipelineIds = 688, orgIds = 166, policies = 0
+
+(MISMATCHED_CLUSTER_SPEC):
+total = 508, pipelineIds = 1, orgIds = 1, policies = 6
+
+(ONLY_LEGACY_CODE_PATH_SUCCEED):
+total = 71, pipelineIds = 1, orgIds = 1, policies = 1
+
+(ONLY_NEW_CODE_PATH_SUCCEED):
+total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED):
+total = 27, pipelineIds = 1, orgIds = 1, policies = 0

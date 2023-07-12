@@ -1,21 +1,8 @@
-type=MATCHED_CLUSTER_SPEC
 shardName=gcp-asia-northeast1
-total=30
-# of orgs=3
-# of pipelines=4
+[MATCHED_CLUSTER_SPEC]
+======= Summary =======
+count=30,
+total # of org=3
+total # of pipeline=4
+total # of policy=0
 
-OrgIds details:
-8764247973361324: 28
-519822318925101: 1
-7634287205381061: 1
-
-PipelineIds details:
-e1062b97-da79-409c-8bed-331a56e3e56e: 20
-aa668652-891e-4459-a9a6-077554a6291e: 8
-3247c9a0-5d24-46a7-814e-e7d3409326a7: 1
-0a0c3043-866a-40b9-a26b-9b5c2ea90dd8: 1
-
-    
-JSON dump:
-orgIds:{"8764247973361324": 28, "519822318925101": 1, "7634287205381061": 1}
-pipelines:{"aa668652-891e-4459-a9a6-077554a6291e": 8, "e1062b97-da79-409c-8bed-331a56e3e56e": 20, "3247c9a0-5d24-46a7-814e-e7d3409326a7": 1, "0a0c3043-866a-40b9-a26b-9b5c2ea90dd8": 1}
