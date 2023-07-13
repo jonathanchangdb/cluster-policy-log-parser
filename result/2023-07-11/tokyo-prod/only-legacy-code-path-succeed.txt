@@ -1,7 +1,7 @@
 shardName=tokyo-prod
 [ONLY_LEGACY_CODE_PATH_SUCCEED]
 ======= Summary =======
-count=3,
+count=4,
 total # of org=1
 total # of pipeline=1
 total # of policy=1
@@ -49,7 +49,7 @@ policyIds={"001640D5E8329F92": 3}
 attributes={"`enable_elastic_disk'": {"count": 3, "orgIds": ["7410880313725578"], "pipelineIds": ["81ba12ca-d6a1-4862-abfc-1bb884e809a9"], "policyIds": ["001640D5E8329F92"]}}
 
 -------- Uncategorized --------
-count=0
+count=1
 # of orgs=1
 # of pipelines=1
 # of policies=1

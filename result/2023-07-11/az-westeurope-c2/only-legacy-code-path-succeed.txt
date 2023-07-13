@@ -1,7 +1,7 @@
 shardName=az-westeurope-c2
 [ONLY_LEGACY_CODE_PATH_SUCCEED]
 ======= Summary =======
-count=71,
+count=72,
 total # of org=1
 total # of pipeline=1
 total # of policy=1
@@ -49,7 +49,7 @@ policyIds={"306312B97300034B": 71}
 attributes={"`cluster_source'": {"count": 71, "orgIds": ["4569255383179310"], "pipelineIds": ["1e2a4e33-2f14-4d22-9aea-bd04189f0c83"], "policyIds": ["306312B97300034B"]}}
 
 -------- Uncategorized --------
-count=0
+count=1
 # of orgs=1
 # of pipelines=1
 # of policies=1

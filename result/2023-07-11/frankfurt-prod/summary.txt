@@ -1,20 +1,44 @@
 [frankfurt-prod]
 ======= Summary =======
-count=2093,
+count=2098,
 total # of org=49
 total # of pipeline=173
 total # of policy=9
 [MATCHED_CLUSTER_SPEC]:
 total = 1565, pipelineIds = 171, orgIds = 48, policies = 0
+
+
 [MISMATCHED_CLUSTER_SPEC]:
 total = 451, pipelineIds = 1, orgIds = 1, policies = 5
+- Custom tags total = 447, pipelineIds = 1, orgIds = 1, policies = 4
+- Autoscaling retry total = 4, pipelineIds = 1, orgIds = 1, policies = 1
+- Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+
 [ONLY_LEGACY_CODE_PATH_SUCCEED]:
 total = 77, pipelineIds = 1, orgIds = 1, policies = 4
+- ApplyPolicy RPC validation total = 73, pipelineIds = 1, orgIds = 1, policies = 2
+- Disallowed cluster attributes total = 4, pipelineIds = 1, orgIds = 1, policies = 2
+- Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+
 [ONLY_NEW_CODE_PATH_SUCCEED]:
 total = 0, pipelineIds = 0, orgIds = 0, policies = 0
-[BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]:
-total = 0, pipelineIds = 1, orgIds = 1, policies = 0
+- Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
+
+[BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]:
+total = 5, pipelineIds = 1, orgIds = 1, policies = 0
+- Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Uncategorized total = 5, pipelineIds = 1, orgIds = 1, policies = 0
+
+
+    
 
 ======= Details =======
 (MATCHED_CLUSTER_SPEC)
@@ -42,7 +66,7 @@ total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED)
-total = 0, pipelineIds = 1, orgIds = 1, policies = 0
+total = 5, pipelineIds = 1, orgIds = 1, policies = 0
 - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
-- Uncategorized total = 0, pipelineIds = 1, orgIds = 1, policies = 0
+- Uncategorized total = 5, pipelineIds = 1, orgIds = 1, policies = 0
 

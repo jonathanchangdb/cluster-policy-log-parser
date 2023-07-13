@@ -1,17 +1,16 @@
 import json
 import logging
 import time
-import requests
-from datetime import datetime, timedelta
 from pathlib import Path
-from tqdm import tqdm
+
+import requests
 
 from parsers.both_failed import parseBothCodePathFailed
 from parsers.matched_cluster_spec import parseMatchedClusterSpec
 from parsers.mismatched_cluster_spec import parseMismatchClusterSpec
 from parsers.only_legacy_succeed import parseOnlyLegacySucceed
 from parsers.only_new_succeed import parseOnlyNewSucceed
-from parsers.utils import OverallSummaryResult, SummaryResult
+from parsers.utils import GlobalSummaryResult, ShardSummaryResult
 
 logging.basicConfig(level=logging.INFO)
 
@@ -203,7 +202,7 @@ def __bothFailed(url, cookie, startTimestamp, endTimestamp, directory, shardName
 
 
 def __parseOneShard(url, cookie, startTimestamp, endTimestamp, directory, shardName):
-    shardSummaryResult = OverallSummaryResult(shardName)
+    shardSummaryResult = ShardSummaryResult(shardName)
 
     shardSummaryResult.add(__matchedClusterSpec(url=url, cookie=cookie, startTimestamp=startTimestamp,
                                                 endTimestamp=endTimestamp,
@@ -228,7 +227,7 @@ def __parseOneShard(url, cookie, startTimestamp, endTimestamp, directory, shardN
 
 def parse(cookie, startTimestamp, endTimestamp):
     timestamp = endTimestamp.strftime('%Y-%m-%d')
-    overallSummaryResult = OverallSummaryResult(timestamp)
+    globalSummaryResult = GlobalSummaryResult(timestamp)
     directory = f"{__RESULT_PATH}/{timestamp}"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
@@ -240,7 +239,7 @@ def parse(cookie, startTimestamp, endTimestamp):
             url = f"https://{kibanaUri}/internal/search/opensearch"
             Path(shardDirectory).mkdir(parents=True, exist_ok=True)
 
-            overallSummaryResult.add(
+            globalSummaryResult.add(
                 __parseOneShard(url=url, cookie=cookie, startTimestamp=startTimestamp, endTimestamp=endTimestamp,
                                 directory=shardDirectory, shardName=shardName)
             )
@@ -249,5 +248,5 @@ def parse(cookie, startTimestamp, endTimestamp):
             logging.error(f"[{idx + 1}/{len(uris)}] {shardName} failed!", ex)
 
     with open(f"{directory}/summary.txt", 'w') as summaryFile:
-        summaryFile.write(overallSummaryResult.__repr__())
-    return overallSummaryResult
+        summaryFile.write(globalSummaryResult.__repr__())
+    return globalSummaryResult

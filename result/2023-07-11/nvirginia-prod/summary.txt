@@ -1,20 +1,44 @@
 [nvirginia-prod]
 ======= Summary =======
-count=11218,
+count=11233,
 total # of org=177
 total # of pipeline=1769
 total # of policy=28
 [MATCHED_CLUSTER_SPEC]:
 total = 10000, pipelineIds = 1766, orgIds = 175, policies = 0
+
+
 [MISMATCHED_CLUSTER_SPEC]:
 total = 2, pipelineIds = 1, orgIds = 1, policies = 1
+- Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Autoscaling retry total = 2, pipelineIds = 1, orgIds = 1, policies = 1
+- Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+
 [ONLY_LEGACY_CODE_PATH_SUCCEED]:
 total = 1197, pipelineIds = 1, orgIds = 1, policies = 26
+- ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Disallowed cluster attributes total = 1197, pipelineIds = 1, orgIds = 1, policies = 26
+- Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+
 [ONLY_NEW_CODE_PATH_SUCCEED]:
 total = 1, pipelineIds = 1, orgIds = 1, policies = 1
-[BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]:
-total = 18, pipelineIds = 1, orgIds = 1, policies = 0
+- Node Type ID total = 1, pipelineIds = 1, orgIds = 1, policies = 1
+- Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
+
+[BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]:
+total = 33, pipelineIds = 1, orgIds = 1, policies = 0
+- Same error message total = 18, pipelineIds = 1, orgIds = 1, policies = 0
+- Uncategorized total = 15, pipelineIds = 1, orgIds = 1, policies = 0
+
+
+    
 
 ======= Details =======
 (MATCHED_CLUSTER_SPEC)
@@ -42,7 +66,7 @@ total = 1, pipelineIds = 1, orgIds = 1, policies = 1
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED)
-total = 18, pipelineIds = 1, orgIds = 1, policies = 0
+total = 33, pipelineIds = 1, orgIds = 1, policies = 0
 - Same error message total = 18, pipelineIds = 1, orgIds = 1, policies = 0
-- Uncategorized total = 0, pipelineIds = 1, orgIds = 1, policies = 0
+- Uncategorized total = 15, pipelineIds = 1, orgIds = 1, policies = 0
 

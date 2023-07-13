@@ -1,20 +1,44 @@
 [2023-07-11]
 ======= Summary =======
-count=104466,
+count=104898,
 total # of org=1870
 total # of pipeline=11275
 total # of policy=87
 [MATCHED_CLUSTER_SPEC]:
 total = 99753, pipelineIds = 11245, orgIds = 1851, policies = 0
+
+
 [MISMATCHED_CLUSTER_SPEC]:
-total = 1882, pipelineIds = 16, orgIds = 16, policies = 37
+total = 2268, pipelineIds = 16, orgIds = 16, policies = 37
+- Custom tags total = 616, pipelineIds = 9, orgIds = 9, policies = 18
+- Autoscaling retry total = 784, pipelineIds = 11, orgIds = 11, policies = 17
+- Single node cluster in cluster policy (Enhanced) total = 386, pipelineIds = 1, orgIds = 1, policies = 2
+- Single node cluster in cluster policy (Legacy) total = 96, pipelineIds = 1, orgIds = 1, policies = 1
+- Uncategorized total = 386, pipelineIds = 1, orgIds = 1, policies = 0
+- Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+
 [ONLY_LEGACY_CODE_PATH_SUCCEED]:
-total = 2102, pipelineIds = 9, orgIds = 9, policies = 49
+total = 2105, pipelineIds = 9, orgIds = 9, policies = 49
+- ApplyPolicy RPC validation total = 76, pipelineIds = 3, orgIds = 3, policies = 4
+- Disallowed cluster attributes total = 2026, pipelineIds = 7, orgIds = 7, policies = 45
+- Uncategorized total = 3, pipelineIds = 3, orgIds = 3, policies = 0
+
+
 [ONLY_NEW_CODE_PATH_SUCCEED]:
 total = 17, pipelineIds = 5, orgIds = 5, policies = 3
-[BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]:
-total = 712, pipelineIds = 13, orgIds = 13, policies = 0
+- Node Type ID total = 3, pipelineIds = 3, orgIds = 3, policies = 3
+- Rate limited (non-error) total = 14, pipelineIds = 3, orgIds = 3, policies = 0
+- Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
+
+[BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]:
+total = 755, pipelineIds = 13, orgIds = 13, policies = 0
+- Same error message total = 712, pipelineIds = 11, orgIds = 11, policies = 0
+- Uncategorized total = 43, pipelineIds = 7, orgIds = 7, policies = 0
+
+
+    
 
 ======= Details =======
 (az-australiaeast)
@@ -50,12 +74,12 @@ total = 947, pipelineIds = 121, orgIds = 32, policies = 0
 - BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (az-centralus-c2)
-total = 1559, pipelineIds = 264, orgIds = 58, policies = 3
+total = 1561, pipelineIds = 264, orgIds = 58, policies = 3
 - MATCHED_CLUSTER_SPEC total = 1520, pipelineIds = 262, orgIds = 58, policies = 0
 - MISMATCHED_CLUSTER_SPEC total = 28, pipelineIds = 1, orgIds = 1, policies = 3
 - ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - ONLY_NEW_CODE_PATH_SUCCEED total = 1, pipelineIds = 1, orgIds = 1, policies = 1
-- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 10, pipelineIds = 1, orgIds = 1, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 12, pipelineIds = 1, orgIds = 1, policies = 0
 
 (az-chinaeast2)
 total = 0, pipelineIds = 0, orgIds = 0, policies = 0
@@ -138,12 +162,12 @@ total = 168, pipelineIds = 26, orgIds = 12, policies = 0
 - BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (az-koreacentral)
-total = 1299, pipelineIds = 18, orgIds = 9, policies = 0
+total = 1301, pipelineIds = 18, orgIds = 9, policies = 0
 - MATCHED_CLUSTER_SPEC total = 1299, pipelineIds = 18, orgIds = 9, policies = 0
 - MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
-- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 1, orgIds = 1, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 2, pipelineIds = 1, orgIds = 1, policies = 0
 
 (az-northcentralus-c2)
 total = 480, pipelineIds = 152, orgIds = 19, policies = 0
@@ -234,28 +258,28 @@ total = 57, pipelineIds = 6, orgIds = 4, policies = 0
 - BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (az-westeurope)
-total = 1593, pipelineIds = 180, orgIds = 50, policies = 2
+total = 1594, pipelineIds = 180, orgIds = 50, policies = 2
 - MATCHED_CLUSTER_SPEC total = 1582, pipelineIds = 179, orgIds = 49, policies = 0
 - MISMATCHED_CLUSTER_SPEC total = 11, pipelineIds = 1, orgIds = 1, policies = 2
-- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 1, orgIds = 1, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 1, pipelineIds = 1, orgIds = 1, policies = 0
 - ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (az-westeurope-c2)
-total = 10606, pipelineIds = 690, orgIds = 168, policies = 7
+total = 10615, pipelineIds = 690, orgIds = 168, policies = 7
 - MATCHED_CLUSTER_SPEC total = 10000, pipelineIds = 688, orgIds = 166, policies = 0
 - MISMATCHED_CLUSTER_SPEC total = 508, pipelineIds = 1, orgIds = 1, policies = 6
-- ONLY_LEGACY_CODE_PATH_SUCCEED total = 71, pipelineIds = 1, orgIds = 1, policies = 1
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 72, pipelineIds = 1, orgIds = 1, policies = 1
 - ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
-- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 27, pipelineIds = 1, orgIds = 1, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 35, pipelineIds = 1, orgIds = 1, policies = 0
 
 (az-westus)
-total = 10142, pipelineIds = 848, orgIds = 128, policies = 5
+total = 10147, pipelineIds = 848, orgIds = 128, policies = 5
 - MATCHED_CLUSTER_SPEC total = 10000, pipelineIds = 845, orgIds = 128, policies = 0
 - MISMATCHED_CLUSTER_SPEC total = 82, pipelineIds = 1, orgIds = 1, policies = 5
 - ONLY_LEGACY_CODE_PATH_SUCCEED total = 2, pipelineIds = 1, orgIds = 1, policies = 1
 - ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
-- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 58, pipelineIds = 1, orgIds = 1, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 63, pipelineIds = 1, orgIds = 1, policies = 0
 
 (az-westus3)
 total = 491, pipelineIds = 14, orgIds = 6, policies = 0
@@ -274,12 +298,12 @@ total = 291, pipelineIds = 37, orgIds = 7, policies = 0
 - BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (frankfurt-prod)
-total = 2093, pipelineIds = 173, orgIds = 49, policies = 9
+total = 2098, pipelineIds = 173, orgIds = 49, policies = 9
 - MATCHED_CLUSTER_SPEC total = 1565, pipelineIds = 171, orgIds = 48, policies = 0
 - MISMATCHED_CLUSTER_SPEC total = 451, pipelineIds = 1, orgIds = 1, policies = 5
 - ONLY_LEGACY_CODE_PATH_SUCCEED total = 77, pipelineIds = 1, orgIds = 1, policies = 4
 - ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
-- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 1, orgIds = 1, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 5, pipelineIds = 1, orgIds = 1, policies = 0
 
 (gcp-asia-northeast1)
 total = 30, pipelineIds = 4, orgIds = 3, policies = 0
@@ -370,9 +394,9 @@ total = 3, pipelineIds = 2, orgIds = 2, policies = 0
 - BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (ireland-prod)
-total = 1336, pipelineIds = 205, orgIds = 55, policies = 1
+total = 1722, pipelineIds = 205, orgIds = 55, policies = 1
 - MATCHED_CLUSTER_SPEC total = 1315, pipelineIds = 204, orgIds = 54, policies = 0
-- MISMATCHED_CLUSTER_SPEC total = 21, pipelineIds = 1, orgIds = 1, policies = 1
+- MISMATCHED_CLUSTER_SPEC total = 407, pipelineIds = 1, orgIds = 1, policies = 1
 - ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
@@ -394,12 +418,12 @@ total = 1381, pipelineIds = 14, orgIds = 10, policies = 0
 - BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (nvirginia-prod)
-total = 11218, pipelineIds = 1769, orgIds = 177, policies = 28
+total = 11233, pipelineIds = 1769, orgIds = 177, policies = 28
 - MATCHED_CLUSTER_SPEC total = 10000, pipelineIds = 1766, orgIds = 175, policies = 0
 - MISMATCHED_CLUSTER_SPEC total = 2, pipelineIds = 1, orgIds = 1, policies = 1
 - ONLY_LEGACY_CODE_PATH_SUCCEED total = 1197, pipelineIds = 1, orgIds = 1, policies = 26
 - ONLY_NEW_CODE_PATH_SUCCEED total = 1, pipelineIds = 1, orgIds = 1, policies = 1
-- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 18, pipelineIds = 1, orgIds = 1, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 33, pipelineIds = 1, orgIds = 1, policies = 0
 
 (ohio-prod)
 total = 2773, pipelineIds = 182, orgIds = 41, policies = 1
@@ -410,12 +434,12 @@ total = 2773, pipelineIds = 182, orgIds = 41, policies = 1
 - BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 4, pipelineIds = 1, orgIds = 1, policies = 0
 
 (oregon-prod)
-total = 10811, pipelineIds = 860, orgIds = 162, policies = 13
+total = 10817, pipelineIds = 860, orgIds = 162, policies = 13
 - MATCHED_CLUSTER_SPEC total = 10000, pipelineIds = 857, orgIds = 159, policies = 0
 - MISMATCHED_CLUSTER_SPEC total = 54, pipelineIds = 1, orgIds = 1, policies = 2
 - ONLY_LEGACY_CODE_PATH_SUCCEED total = 734, pipelineIds = 1, orgIds = 1, policies = 11
 - ONLY_NEW_CODE_PATH_SUCCEED total = 6, pipelineIds = 1, orgIds = 1, policies = 0
-- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 17, pipelineIds = 1, orgIds = 1, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 23, pipelineIds = 1, orgIds = 1, policies = 0
 
 (paris-prod)
 total = 10, pipelineIds = 4, orgIds = 3, policies = 0
@@ -458,10 +482,10 @@ total = 1993, pipelineIds = 240, orgIds = 49, policies = 6
 - BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (tokyo-prod)
-total = 512, pipelineIds = 49, orgIds = 19, policies = 2
+total = 513, pipelineIds = 49, orgIds = 19, policies = 2
 - MATCHED_CLUSTER_SPEC total = 495, pipelineIds = 47, orgIds = 17, policies = 0
 - MISMATCHED_CLUSTER_SPEC total = 14, pipelineIds = 1, orgIds = 1, policies = 1
-- ONLY_LEGACY_CODE_PATH_SUCCEED total = 3, pipelineIds = 1, orgIds = 1, policies = 1
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 4, pipelineIds = 1, orgIds = 1, policies = 1
 - ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 

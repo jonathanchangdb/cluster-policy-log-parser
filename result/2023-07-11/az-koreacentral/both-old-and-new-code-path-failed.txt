@@ -1,14 +1,14 @@
 shardName=az-koreacentral
 [BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
 ======= Summary =======
-count=0,
+count=2,
 total # of org=1
 total # of pipeline=1
 total # of policy=0
 
 =================== DETAILS ===================
 -------- Uncategorized --------
-count=0
+count=2
 # of orgs=1
 # of pipelines=1
 # of policies=1

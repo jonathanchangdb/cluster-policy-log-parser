@@ -1,7 +1,7 @@
 shardName=az-westeurope
 [ONLY_LEGACY_CODE_PATH_SUCCEED]
 ======= Summary =======
-count=0,
+count=1,
 total # of org=1
 total # of pipeline=1
 total # of policy=0
@@ -45,7 +45,7 @@ policyIds={}
 attributes={}
 
 -------- Uncategorized --------
-count=0
+count=1
 # of orgs=1
 # of pipelines=1
 # of policies=1
