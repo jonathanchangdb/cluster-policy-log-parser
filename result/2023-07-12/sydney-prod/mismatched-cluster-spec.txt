@@ -1,0 +1,114 @@
+shardName=sydney-prod
+[MISMATCHED_CLUSTER_SPEC]
+======= Summary =======
+count=156,
+total # of org=1
+total # of pipeline=1
+total # of policy=2
+=================== DETAILS ===================
+-------- Custom tags --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Autoscaling retry --------
+count=156
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+1855931885255555: 156
+
+PipelineIds details:
+da46bc60-3ad4-4867-bcd1-10b807191e57: 156
+
+PolicyIds details:
+D063D7FAC00003E1: 144
+D063D7FAC00004D7: 12
+
+JSON dump:
+orgIds={"1855931885255555": 156}
+pipelineIds={"da46bc60-3ad4-4867-bcd1-10b807191e57": 156}
+policyIds={"D063D7FAC00003E1": 144, "D063D7FAC00004D7": 12}
+
+-------- Single node cluster in cluster policy (Enhanced) --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Single node cluster in cluster policy (Legacy) --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+-------- Uncategorized truncated logs --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

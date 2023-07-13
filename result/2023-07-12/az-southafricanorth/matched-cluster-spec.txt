@@ -1,0 +1,7 @@
+shardName=az-southafricanorth
+[MATCHED_CLUSTER_SPEC]
+======= Summary =======
+count=87,
+total # of org=5
+total # of pipeline=15
+total # of policy=0

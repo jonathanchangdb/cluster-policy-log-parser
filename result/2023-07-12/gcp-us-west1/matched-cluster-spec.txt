@@ -1,0 +1,7 @@
+shardName=gcp-us-west1
+[MATCHED_CLUSTER_SPEC]
+======= Summary =======
+count=5,
+total # of org=3
+total # of pipeline=3
+total # of policy=0

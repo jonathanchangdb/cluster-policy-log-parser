@@ -1,0 +1,1275 @@
+[2023-07-12]
+======= Summary =======
+count=114120,
+total # of org=2022
+total # of pipeline=12119
+total # of policy=102
+[MATCHED_CLUSTER_SPEC]:
+total = 108119, pipelineIds = 12087, orgIds = 1999, policies = 0
+
+
+[MISMATCHED_CLUSTER_SPEC]:
+total = 2556, pipelineIds = 16, orgIds = 16, policies = 43
+- Custom tags total = 713, pipelineIds = 9, orgIds = 9, policies = 24
+- Autoscaling retry total = 728, pipelineIds = 10, orgIds = 10, policies = 17
+- Single node cluster in cluster policy (Enhanced) total = 360, pipelineIds = 1, orgIds = 1, policies = 2
+- Single node cluster in cluster policy (Legacy) total = 88, pipelineIds = 1, orgIds = 1, policies = 1
+- Uncategorized total = 629, pipelineIds = 4, orgIds = 4, policies = 0
+- Uncategorized truncated logs total = 38, pipelineIds = 1, orgIds = 1, policies = 0
+
+
+[ONLY_LEGACY_CODE_PATH_SUCCEED]:
+total = 2599, pipelineIds = 11, orgIds = 11, policies = 56
+- ApplyPolicy RPC validation total = 38, pipelineIds = 2, orgIds = 2, policies = 3
+- Disallowed cluster attributes total = 2550, pipelineIds = 7, orgIds = 7, policies = 53
+- Uncategorized total = 11, pipelineIds = 5, orgIds = 5, policies = 0
+
+
+[ONLY_NEW_CODE_PATH_SUCCEED]:
+total = 11, pipelineIds = 5, orgIds = 5, policies = 5
+- Node Type ID total = 6, pipelineIds = 3, orgIds = 3, policies = 5
+- Rate limited (non-error) total = 5, pipelineIds = 3, orgIds = 3, policies = 0
+- Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+
+[BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]:
+total = 835, pipelineIds = 14, orgIds = 14, policies = 0
+- Same error message total = 738, pipelineIds = 11, orgIds = 11, policies = 0
+- Uncategorized total = 97, pipelineIds = 9, orgIds = 9, policies = 0
+
+
+    
+
+======= Details =======
+(az-australiaeast)
+total = 1807, pipelineIds = 231, orgIds = 64, policies = 0
+- MATCHED_CLUSTER_SPEC total = 1806, pipelineIds = 231, orgIds = 64, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 713, pipelineIds = 9, orgIds = 9, policies = 24
+    - Autoscaling retry total = 728, pipelineIds = 10, orgIds = 10, policies = 17
+    - Single node cluster in cluster policy (Enhanced) total = 360, pipelineIds = 1, orgIds = 1, policies = 2
+    - Single node cluster in cluster policy (Legacy) total = 88, pipelineIds = 1, orgIds = 1, policies = 1
+    - Uncategorized total = 629, pipelineIds = 4, orgIds = 4, policies = 0
+    - Uncategorized truncated logs total = 38, pipelineIds = 1, orgIds = 1, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 38, pipelineIds = 2, orgIds = 2, policies = 3
+    - Disallowed cluster attributes total = 2550, pipelineIds = 7, orgIds = 7, policies = 53
+    - Uncategorized total = 11, pipelineIds = 5, orgIds = 5, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 6, pipelineIds = 3, orgIds = 3, policies = 5
+    - Rate limited (non-error) total = 5, pipelineIds = 3, orgIds = 3, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 1, pipelineIds = 1, orgIds = 1, policies = 0
+    - Same error message total = 738, pipelineIds = 11, orgIds = 11, policies = 0
+    - Uncategorized total = 97, pipelineIds = 9, orgIds = 9, policies = 0
+
+(az-brazilsouth)
+total = 877, pipelineIds = 86, orgIds = 22, policies = 0
+- MATCHED_CLUSTER_SPEC total = 877, pipelineIds = 86, orgIds = 22, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-canadacentral)
+total = 1940, pipelineIds = 218, orgIds = 44, policies = 0
+- MATCHED_CLUSTER_SPEC total = 1935, pipelineIds = 217, orgIds = 43, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 3, pipelineIds = 1, orgIds = 1, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 3, pipelineIds = 1, orgIds = 1, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 2, pipelineIds = 1, orgIds = 1, policies = 0
+    - Same error message total = 2, pipelineIds = 1, orgIds = 1, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-centralindia)
+total = 812, pipelineIds = 107, orgIds = 26, policies = 0
+- MATCHED_CLUSTER_SPEC total = 812, pipelineIds = 107, orgIds = 26, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-centralus-c2)
+total = 2361, pipelineIds = 279, orgIds = 62, policies = 3
+- MATCHED_CLUSTER_SPEC total = 2337, pipelineIds = 277, orgIds = 62, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 10, pipelineIds = 1, orgIds = 1, policies = 2
+    - Custom tags total = 10, pipelineIds = 1, orgIds = 1, policies = 2
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 2, pipelineIds = 1, orgIds = 1, policies = 2
+    - Node Type ID total = 2, pipelineIds = 1, orgIds = 1, policies = 2
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 12, pipelineIds = 1, orgIds = 1, policies = 0
+    - Same error message total = 10, pipelineIds = 1, orgIds = 1, policies = 0
+    - Uncategorized total = 2, pipelineIds = 1, orgIds = 1, policies = 0
+
+(az-chinaeast2)
+total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- MATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-chinanorth2)
+total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- MATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-eastasia-c2)
+total = 105, pipelineIds = 16, orgIds = 8, policies = 0
+- MATCHED_CLUSTER_SPEC total = 105, pipelineIds = 16, orgIds = 8, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-eastus-c3)
+total = 10012, pipelineIds = 602, orgIds = 176, policies = 1
+- MATCHED_CLUSTER_SPEC total = 10000, pipelineIds = 601, orgIds = 176, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 7, pipelineIds = 1, orgIds = 1, policies = 1
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 7, pipelineIds = 1, orgIds = 1, policies = 1
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 5, pipelineIds = 1, orgIds = 1, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 5, pipelineIds = 1, orgIds = 1, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-eastus2)
+total = 3220, pipelineIds = 301, orgIds = 65, policies = 0
+- MATCHED_CLUSTER_SPEC total = 3199, pipelineIds = 300, orgIds = 64, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 21, pipelineIds = 1, orgIds = 1, policies = 0
+    - Same error message total = 19, pipelineIds = 1, orgIds = 1, policies = 0
+    - Uncategorized total = 2, pipelineIds = 1, orgIds = 1, policies = 0
+
+(az-eastus2-c2)
+total = 10006, pipelineIds = 987, orgIds = 90, policies = 2
+- MATCHED_CLUSTER_SPEC total = 10000, pipelineIds = 986, orgIds = 89, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 3, pipelineIds = 1, orgIds = 1, policies = 1
+    - Custom tags total = 3, pipelineIds = 1, orgIds = 1, policies = 1
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 3, pipelineIds = 1, orgIds = 1, policies = 1
+    - Node Type ID total = 1, pipelineIds = 1, orgIds = 1, policies = 1
+    - Rate limited (non-error) total = 2, pipelineIds = 1, orgIds = 1, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-eastus2-c3)
+total = 2990, pipelineIds = 208, orgIds = 50, policies = 0
+- MATCHED_CLUSTER_SPEC total = 2990, pipelineIds = 208, orgIds = 50, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-francecentral)
+total = 307, pipelineIds = 40, orgIds = 13, policies = 0
+- MATCHED_CLUSTER_SPEC total = 307, pipelineIds = 40, orgIds = 13, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-germanywestcentral)
+total = 176, pipelineIds = 33, orgIds = 9, policies = 0
+- MATCHED_CLUSTER_SPEC total = 176, pipelineIds = 33, orgIds = 9, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-japaneast)
+total = 196, pipelineIds = 27, orgIds = 12, policies = 0
+- MATCHED_CLUSTER_SPEC total = 196, pipelineIds = 27, orgIds = 12, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-koreacentral)
+total = 1648, pipelineIds = 25, orgIds = 11, policies = 0
+- MATCHED_CLUSTER_SPEC total = 1648, pipelineIds = 25, orgIds = 11, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-northcentralus-c2)
+total = 682, pipelineIds = 170, orgIds = 22, policies = 0
+- MATCHED_CLUSTER_SPEC total = 682, pipelineIds = 170, orgIds = 22, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-northeurope-c2)
+total = 5778, pipelineIds = 281, orgIds = 83, policies = 0
+- MATCHED_CLUSTER_SPEC total = 5778, pipelineIds = 281, orgIds = 83, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-norwayeast)
+total = 2858, pipelineIds = 1549, orgIds = 23, policies = 0
+- MATCHED_CLUSTER_SPEC total = 2849, pipelineIds = 1549, orgIds = 23, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 7, pipelineIds = 1, orgIds = 1, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 7, pipelineIds = 1, orgIds = 1, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 2, pipelineIds = 1, orgIds = 1, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 2, pipelineIds = 1, orgIds = 1, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-southafricanorth)
+total = 87, pipelineIds = 15, orgIds = 5, policies = 0
+- MATCHED_CLUSTER_SPEC total = 87, pipelineIds = 15, orgIds = 5, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-southeastasia)
+total = 2880, pipelineIds = 230, orgIds = 32, policies = 1
+- MATCHED_CLUSTER_SPEC total = 2865, pipelineIds = 229, orgIds = 32, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 11, pipelineIds = 1, orgIds = 1, policies = 1
+    - Custom tags total = 11, pipelineIds = 1, orgIds = 1, policies = 1
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 4, pipelineIds = 1, orgIds = 1, policies = 0
+    - Same error message total = 4, pipelineIds = 1, orgIds = 1, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-swedencentral)
+total = 313, pipelineIds = 39, orgIds = 11, policies = 0
+- MATCHED_CLUSTER_SPEC total = 313, pipelineIds = 39, orgIds = 11, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-switzerlandnorth)
+total = 163, pipelineIds = 25, orgIds = 9, policies = 0
+- MATCHED_CLUSTER_SPEC total = 163, pipelineIds = 25, orgIds = 9, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-switzerlandwest)
+total = 13, pipelineIds = 5, orgIds = 2, policies = 0
+- MATCHED_CLUSTER_SPEC total = 13, pipelineIds = 5, orgIds = 2, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-uaenorth)
+total = 834, pipelineIds = 288, orgIds = 9, policies = 0
+- MATCHED_CLUSTER_SPEC total = 834, pipelineIds = 288, orgIds = 9, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-ukwest)
+total = 1181, pipelineIds = 219, orgIds = 58, policies = 3
+- MATCHED_CLUSTER_SPEC total = 1159, pipelineIds = 218, orgIds = 57, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 21, pipelineIds = 1, orgIds = 1, policies = 3
+    - Custom tags total = 21, pipelineIds = 1, orgIds = 1, policies = 3
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 1, pipelineIds = 1, orgIds = 1, policies = 0
+    - Same error message total = 1, pipelineIds = 1, orgIds = 1, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-westcentralus)
+total = 100, pipelineIds = 19, orgIds = 6, policies = 0
+- MATCHED_CLUSTER_SPEC total = 100, pipelineIds = 19, orgIds = 6, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-westeurope)
+total = 1554, pipelineIds = 176, orgIds = 55, policies = 2
+- MATCHED_CLUSTER_SPEC total = 1541, pipelineIds = 175, orgIds = 54, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 12, pipelineIds = 1, orgIds = 1, policies = 2
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 12, pipelineIds = 1, orgIds = 1, policies = 2
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 1, pipelineIds = 1, orgIds = 1, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 1, pipelineIds = 1, orgIds = 1, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(az-westeurope-c2)
+total = 10574, pipelineIds = 753, orgIds = 197, policies = 5
+- MATCHED_CLUSTER_SPEC total = 10000, pipelineIds = 750, orgIds = 194, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 496, pipelineIds = 1, orgIds = 1, policies = 4
+    - Custom tags total = 8, pipelineIds = 1, orgIds = 1, policies = 1
+    - Autoscaling retry total = 2, pipelineIds = 1, orgIds = 1, policies = 1
+    - Single node cluster in cluster policy (Enhanced) total = 360, pipelineIds = 1, orgIds = 1, policies = 2
+    - Single node cluster in cluster policy (Legacy) total = 88, pipelineIds = 1, orgIds = 1, policies = 1
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 38, pipelineIds = 1, orgIds = 1, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 52, pipelineIds = 1, orgIds = 1, policies = 1
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 51, pipelineIds = 1, orgIds = 1, policies = 1
+    - Uncategorized total = 1, pipelineIds = 1, orgIds = 1, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 26, pipelineIds = 1, orgIds = 1, policies = 0
+    - Same error message total = 24, pipelineIds = 1, orgIds = 1, policies = 0
+    - Uncategorized total = 2, pipelineIds = 1, orgIds = 1, policies = 0
+
+(az-westus)
+total = 10169, pipelineIds = 994, orgIds = 142, policies = 6
+- MATCHED_CLUSTER_SPEC total = 10000, pipelineIds = 991, orgIds = 142, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 94, pipelineIds = 1, orgIds = 1, policies = 6
+    - Custom tags total = 2, pipelineIds = 1, orgIds = 1, policies = 1
+    - Autoscaling retry total = 92, pipelineIds = 1, orgIds = 1, policies = 5
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 2, pipelineIds = 1, orgIds = 1, policies = 1
+    - ApplyPolicy RPC validation total = 2, pipelineIds = 1, orgIds = 1, policies = 1
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 73, pipelineIds = 1, orgIds = 1, policies = 0
+    - Same error message total = 63, pipelineIds = 1, orgIds = 1, policies = 0
+    - Uncategorized total = 10, pipelineIds = 1, orgIds = 1, policies = 0
+
+(az-westus3)
+total = 545, pipelineIds = 26, orgIds = 7, policies = 0
+- MATCHED_CLUSTER_SPEC total = 545, pipelineIds = 26, orgIds = 7, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(canada-prod)
+total = 304, pipelineIds = 33, orgIds = 8, policies = 0
+- MATCHED_CLUSTER_SPEC total = 304, pipelineIds = 33, orgIds = 8, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(frankfurt-prod)
+total = 2103, pipelineIds = 189, orgIds = 47, policies = 7
+- MATCHED_CLUSTER_SPEC total = 1604, pipelineIds = 188, orgIds = 46, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 458, pipelineIds = 1, orgIds = 1, policies = 5
+    - Custom tags total = 441, pipelineIds = 1, orgIds = 1, policies = 4
+    - Autoscaling retry total = 4, pipelineIds = 1, orgIds = 1, policies = 1
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 13, pipelineIds = 1, orgIds = 1, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 36, pipelineIds = 1, orgIds = 1, policies = 2
+    - ApplyPolicy RPC validation total = 36, pipelineIds = 1, orgIds = 1, policies = 2
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 5, pipelineIds = 1, orgIds = 1, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 5, pipelineIds = 1, orgIds = 1, policies = 0
+
+(gcp-asia-northeast1)
+total = 30, pipelineIds = 4, orgIds = 3, policies = 0
+- MATCHED_CLUSTER_SPEC total = 30, pipelineIds = 4, orgIds = 3, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(gcp-asia-southeast1)
+total = 538, pipelineIds = 70, orgIds = 7, policies = 0
+- MATCHED_CLUSTER_SPEC total = 538, pipelineIds = 70, orgIds = 7, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(gcp-australia-southeast1)
+total = 2, pipelineIds = 2, orgIds = 2, policies = 0
+- MATCHED_CLUSTER_SPEC total = 2, pipelineIds = 2, orgIds = 2, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(gcp-europe-west1)
+total = 93, pipelineIds = 10, orgIds = 6, policies = 0
+- MATCHED_CLUSTER_SPEC total = 93, pipelineIds = 10, orgIds = 6, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(gcp-europe-west2)
+total = 117, pipelineIds = 6, orgIds = 4, policies = 0
+- MATCHED_CLUSTER_SPEC total = 117, pipelineIds = 6, orgIds = 4, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(gcp-europe-west3)
+total = 15, pipelineIds = 6, orgIds = 4, policies = 0
+- MATCHED_CLUSTER_SPEC total = 15, pipelineIds = 6, orgIds = 4, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(gcp-us-central1)
+total = 368, pipelineIds = 44, orgIds = 9, policies = 0
+- MATCHED_CLUSTER_SPEC total = 368, pipelineIds = 44, orgIds = 9, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(gcp-us-east1)
+total = 87, pipelineIds = 25, orgIds = 9, policies = 0
+- MATCHED_CLUSTER_SPEC total = 87, pipelineIds = 25, orgIds = 9, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(gcp-us-east4)
+total = 586, pipelineIds = 85, orgIds = 6, policies = 0
+- MATCHED_CLUSTER_SPEC total = 586, pipelineIds = 85, orgIds = 6, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(gcp-us-west1)
+total = 579, pipelineIds = 4, orgIds = 4, policies = 0
+- MATCHED_CLUSTER_SPEC total = 5, pipelineIds = 3, orgIds = 3, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 574, pipelineIds = 1, orgIds = 1, policies = 0
+    - Same error message total = 574, pipelineIds = 1, orgIds = 1, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(gcp-us-west4)
+total = 3, pipelineIds = 2, orgIds = 2, policies = 0
+- MATCHED_CLUSTER_SPEC total = 3, pipelineIds = 2, orgIds = 2, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(ireland-prod)
+total = 2771, pipelineIds = 222, orgIds = 61, policies = 1
+- MATCHED_CLUSTER_SPEC total = 2142, pipelineIds = 221, orgIds = 60, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 627, pipelineIds = 1, orgIds = 1, policies = 1
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 21, pipelineIds = 1, orgIds = 1, policies = 1
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 606, pipelineIds = 1, orgIds = 1, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 2, pipelineIds = 1, orgIds = 1, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 2, pipelineIds = 1, orgIds = 1, policies = 0
+
+(london-prod)
+total = 572, pipelineIds = 48, orgIds = 18, policies = 1
+- MATCHED_CLUSTER_SPEC total = 567, pipelineIds = 47, orgIds = 17, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 5, pipelineIds = 1, orgIds = 1, policies = 1
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 5, pipelineIds = 1, orgIds = 1, policies = 1
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(mumbai-prod)
+total = 1339, pipelineIds = 19, orgIds = 11, policies = 0
+- MATCHED_CLUSTER_SPEC total = 1339, pipelineIds = 19, orgIds = 11, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(nvirginia-prod)
+total = 11778, pipelineIds = 1794, orgIds = 183, policies = 33
+- MATCHED_CLUSTER_SPEC total = 10000, pipelineIds = 1791, orgIds = 180, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 1703, pipelineIds = 1, orgIds = 1, policies = 31
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 1700, pipelineIds = 1, orgIds = 1, policies = 31
+    - Uncategorized total = 3, pipelineIds = 1, orgIds = 1, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 3, pipelineIds = 1, orgIds = 1, policies = 2
+    - Node Type ID total = 3, pipelineIds = 1, orgIds = 1, policies = 2
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 72, pipelineIds = 1, orgIds = 1, policies = 0
+    - Same error message total = 20, pipelineIds = 1, orgIds = 1, policies = 0
+    - Uncategorized total = 52, pipelineIds = 1, orgIds = 1, policies = 0
+
+(ohio-prod)
+total = 2804, pipelineIds = 198, orgIds = 43, policies = 2
+- MATCHED_CLUSTER_SPEC total = 2411, pipelineIds = 197, orgIds = 42, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 393, pipelineIds = 1, orgIds = 1, policies = 2
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 393, pipelineIds = 1, orgIds = 1, policies = 2
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(oregon-prod)
+total = 11006, pipelineIds = 969, orgIds = 180, policies = 24
+- MATCHED_CLUSTER_SPEC total = 10000, pipelineIds = 966, orgIds = 177, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 219, pipelineIds = 1, orgIds = 1, policies = 11
+    - Custom tags total = 215, pipelineIds = 1, orgIds = 1, policies = 10
+    - Autoscaling retry total = 4, pipelineIds = 1, orgIds = 1, policies = 1
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 756, pipelineIds = 1, orgIds = 1, policies = 13
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 756, pipelineIds = 1, orgIds = 1, policies = 13
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 1, pipelineIds = 1, orgIds = 1, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 1, pipelineIds = 1, orgIds = 1, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 30, pipelineIds = 1, orgIds = 1, policies = 0
+    - Same error message total = 20, pipelineIds = 1, orgIds = 1, policies = 0
+    - Uncategorized total = 10, pipelineIds = 1, orgIds = 1, policies = 0
+
+(paris-prod)
+total = 12, pipelineIds = 9, orgIds = 3, policies = 0
+- MATCHED_CLUSTER_SPEC total = 12, pipelineIds = 9, orgIds = 3, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(saopaulo-prod)
+total = 34, pipelineIds = 11, orgIds = 5, policies = 0
+- MATCHED_CLUSTER_SPEC total = 34, pipelineIds = 11, orgIds = 5, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(seoul-prod)
+total = 124, pipelineIds = 36, orgIds = 11, policies = 1
+- MATCHED_CLUSTER_SPEC total = 115, pipelineIds = 35, orgIds = 11, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 9, pipelineIds = 1, orgIds = 1, policies = 1
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 9, pipelineIds = 1, orgIds = 1, policies = 1
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(singapore-prod)
+total = 2094, pipelineIds = 67, orgIds = 20, policies = 0
+- MATCHED_CLUSTER_SPEC total = 2094, pipelineIds = 67, orgIds = 20, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(sydney-prod)
+total = 2027, pipelineIds = 265, orgIds = 47, policies = 7
+- MATCHED_CLUSTER_SPEC total = 1832, pipelineIds = 262, orgIds = 45, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 156, pipelineIds = 1, orgIds = 1, policies = 2
+    - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Autoscaling retry total = 156, pipelineIds = 1, orgIds = 1, policies = 2
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 27, pipelineIds = 1, orgIds = 1, policies = 5
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 27, pipelineIds = 1, orgIds = 1, policies = 5
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 12, pipelineIds = 1, orgIds = 1, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 12, pipelineIds = 1, orgIds = 1, policies = 0
+
+(tokyo-prod)
+total = 546, pipelineIds = 52, orgIds = 16, policies = 3
+- MATCHED_CLUSTER_SPEC total = 504, pipelineIds = 50, orgIds = 14, policies = 0
+- MISMATCHED_CLUSTER_SPEC total = 39, pipelineIds = 1, orgIds = 1, policies = 2
+    - Custom tags total = 2, pipelineIds = 1, orgIds = 1, policies = 1
+    - Autoscaling retry total = 37, pipelineIds = 1, orgIds = 1, policies = 1
+    - Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- ONLY_LEGACY_CODE_PATH_SUCCEED total = 3, pipelineIds = 1, orgIds = 1, policies = 1
+    - ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Disallowed cluster attributes total = 2, pipelineIds = 1, orgIds = 1, policies = 1
+    - Uncategorized total = 1, pipelineIds = 1, orgIds = 1, policies = 0
+- ONLY_NEW_CODE_PATH_SUCCEED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+    - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+

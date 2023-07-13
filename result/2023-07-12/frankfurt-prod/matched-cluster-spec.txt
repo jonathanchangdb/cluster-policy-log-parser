@@ -1,0 +1,7 @@
+shardName=frankfurt-prod
+[MATCHED_CLUSTER_SPEC]
+======= Summary =======
+count=1604,
+total # of org=46
+total # of pipeline=188
+total # of policy=0

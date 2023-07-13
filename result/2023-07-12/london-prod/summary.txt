@@ -1,0 +1,72 @@
+[london-prod]
+======= Summary =======
+count=572,
+total # of org=18
+total # of pipeline=48
+total # of policy=1
+[MATCHED_CLUSTER_SPEC]:
+total = 567, pipelineIds = 47, orgIds = 17, policies = 0
+
+
+[MISMATCHED_CLUSTER_SPEC]:
+total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+
+[ONLY_LEGACY_CODE_PATH_SUCCEED]:
+total = 5, pipelineIds = 1, orgIds = 1, policies = 1
+- ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Disallowed cluster attributes total = 5, pipelineIds = 1, orgIds = 1, policies = 1
+- Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+
+[ONLY_NEW_CODE_PATH_SUCCEED]:
+total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+
+[BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]:
+total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+
+    
+
+======= Details =======
+(MATCHED_CLUSTER_SPEC)
+total = 567, pipelineIds = 47, orgIds = 17, policies = 0
+
+(MISMATCHED_CLUSTER_SPEC)
+total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Autoscaling retry total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Single node cluster in cluster policy (Enhanced) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Single node cluster in cluster policy (Legacy) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(ONLY_LEGACY_CODE_PATH_SUCCEED)
+total = 5, pipelineIds = 1, orgIds = 1, policies = 1
+- ApplyPolicy RPC validation total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Disallowed cluster attributes total = 5, pipelineIds = 1, orgIds = 1, policies = 1
+- Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(ONLY_NEW_CODE_PATH_SUCCEED)
+total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Rate limited (non-error) total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+
+(BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED)
+total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Same error message total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+

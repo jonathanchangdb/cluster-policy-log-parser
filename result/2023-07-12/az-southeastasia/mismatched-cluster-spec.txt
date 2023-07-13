@@ -1,0 +1,113 @@
+shardName=az-southeastasia
+[MISMATCHED_CLUSTER_SPEC]
+======= Summary =======
+count=11,
+total # of org=1
+total # of pipeline=1
+total # of policy=1
+=================== DETAILS ===================
+-------- Custom tags --------
+count=11
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+8959478811634114: 11
+
+PipelineIds details:
+303b4daf-3364-4b7e-9b86-f4d10a6ed7df: 11
+
+PolicyIds details:
+EB63499A58000F7C: 11
+
+JSON dump:
+orgIds={"8959478811634114": 11}
+pipelineIds={"303b4daf-3364-4b7e-9b86-f4d10a6ed7df": 11}
+policyIds={"EB63499A58000F7C": 11}
+
+-------- Autoscaling retry --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Single node cluster in cluster policy (Enhanced) --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Single node cluster in cluster policy (Legacy) --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+-------- Uncategorized truncated logs --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

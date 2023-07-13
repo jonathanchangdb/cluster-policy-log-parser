@@ -1,0 +1,7 @@
+shardName=gcp-europe-west1
+[MATCHED_CLUSTER_SPEC]
+======= Summary =======
+count=93,
+total # of org=6
+total # of pipeline=10
+total # of policy=0

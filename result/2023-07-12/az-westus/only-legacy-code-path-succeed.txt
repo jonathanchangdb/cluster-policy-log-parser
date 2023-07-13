@@ -1,0 +1,68 @@
+shardName=az-westus
+[ONLY_LEGACY_CODE_PATH_SUCCEED]
+======= Summary =======
+count=2,
+total # of org=1
+total # of pipeline=1
+total # of policy=1
+=================== DETAILS ===================
+-------- ApplyPolicy RPC validation --------
+count=2
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+2548836972759138: 2
+
+PipelineIds details:
+411e9930-5858-48c0-8254-72611ee8ef26: 2
+
+PolicyIds details:
+D06290414F000422: 2
+
+JSON dump:
+orgIds={"2548836972759138": 2}
+pipelineIds={"411e9930-5858-48c0-8254-72611ee8ef26": 2}
+policyIds={"D06290414F000422": 2}
+
+-------- Disallowed cluster attributes --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+attributes=None
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+attributes={}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

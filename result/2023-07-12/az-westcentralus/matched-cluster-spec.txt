@@ -1,0 +1,7 @@
+shardName=az-westcentralus
+[MATCHED_CLUSTER_SPEC]
+======= Summary =======
+count=100,
+total # of org=6
+total # of pipeline=19
+total # of policy=0

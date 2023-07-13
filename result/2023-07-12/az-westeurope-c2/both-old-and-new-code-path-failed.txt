@@ -1,0 +1,30 @@
+shardName=az-westeurope-c2
+[BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
+======= Summary =======
+count=26,
+total # of org=1
+total # of pipeline=1
+total # of policy=0
+
+=================== DETAILS ===================
+-------- Uncategorized --------
+count=2
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+6444418562004901: 2
+
+PipelineIds details:
+959e6ca7-384d-4332-9902-750bb5cdfe36: 2
+
+JSON dump:
+orgIds={"6444418562004901": 2}
+pipelineIds={"959e6ca7-384d-4332-9902-750bb5cdfe36": 2}
+logs={"6444418562004901_959e6ca7-384d-4332-9902-750bb5cdfe36": [{"legacy": "INVALID_PARAMETER_VALUE: Validation failed for num_workers, the value must be 1 (is \"0\")\n\n", "latest": "The cluster policy specified for the \"default\" cluster in the pipeline settings is\nnot compatible with cluster settings managed by Delta Live Tables.\n\nINVALID_PARAMETER_VALUE: Validation failed for num_workers, the value must be 1 (is \"0\")\n\nYou cannot change cluster settings managed by Delta Live Tables. To fix it, please\nupdate the cluster policy accordingly.\n\n"}, {"legacy": "INVALID_PARAMETER_VALUE: Validation failed for spark_version, must be 11.3.x-scala2.12 (is an element in \"List(dlt:12.2-delta-pipelines-33a695c-80beb56-3dbb155-custom-local, dlt:12.2-delta-pipelines-33a695c-80beb56-3dbb155-custom-local)\"); Validation failed for node_type_id, the value must be Standard_DS3_v2 (is \"Standard_F8s\"); Validation failed for data_security_mode, the value needs to be one of (SINGLE_USER, LEGACY_SINGLE_USER, LEGACY_SINGLE_USER_STANDARD) (is \"USER_ISOLATION\")\n\n", "latest": "The cluster policy specified for the \"default\" cluster in the pipeline settings is\nnot compatible with cluster settings managed by Delta Live Tables.\n\nINVALID_PARAMETER_VALUE: Validation failed for spark_version, must be 11.3.x-scala2.12 (is an element in \"List(dlt:12.2-delta-pipelines-33a695c-80beb56-3dbb155-custom-local, dlt:12.2-delta-pipelines-33a695c-80beb56-3dbb155-custom-local)\"); Validation failed for data_security_mode, the value needs to be one of (SINGLE_USER, LEGACY_SINGLE_USER, LEGACY_SINGLE_USER_STANDARD) (is \"USER_ISOLATION\")\n\nYou cannot change cluster settings managed by Delta Live Tables. To fix it, please\nupdate the cluster policy accordingly.\n\n"}]}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

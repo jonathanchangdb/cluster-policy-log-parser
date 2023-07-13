@@ -1,0 +1,7 @@
+shardName=az-canadacentral
+[MATCHED_CLUSTER_SPEC]
+======= Summary =======
+count=1935,
+total # of org=43
+total # of pipeline=217
+total # of policy=0

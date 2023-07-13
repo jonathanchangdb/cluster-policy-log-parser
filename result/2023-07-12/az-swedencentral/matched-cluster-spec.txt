@@ -1,0 +1,7 @@
+shardName=az-swedencentral
+[MATCHED_CLUSTER_SPEC]
+======= Summary =======
+count=313,
+total # of org=11
+total # of pipeline=39
+total # of policy=0

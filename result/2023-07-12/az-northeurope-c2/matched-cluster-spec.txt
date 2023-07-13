@@ -1,0 +1,7 @@
+shardName=az-northeurope-c2
+[MATCHED_CLUSTER_SPEC]
+======= Summary =======
+count=5778,
+total # of org=83
+total # of pipeline=281
+total # of policy=0

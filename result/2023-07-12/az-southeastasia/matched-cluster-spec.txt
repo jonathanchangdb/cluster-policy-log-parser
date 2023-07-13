@@ -1,0 +1,7 @@
+shardName=az-southeastasia
+[MATCHED_CLUSTER_SPEC]
+======= Summary =======
+count=2865,
+total # of org=32
+total # of pipeline=229
+total # of policy=0
