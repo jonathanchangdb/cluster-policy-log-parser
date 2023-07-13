@@ -391,10 +391,13 @@ class ShardSummaryResult(SummaryResult):
         return merged
 
     @staticmethod
-    def summarySubResults(result):
+    def summarySubResults(result, detailed=False):
         resultStr = result.summaryOneLine()
         for subResult in result.results:
             resultStr += f"- {subResult.name} " + subResult.summaryOneLine()
+            if detailed:
+                for categoryResult in subResult.results:
+                    resultStr += f"    - {categoryResult.name} " + categoryResult.summaryOneLine()
         return resultStr + '\n'
 
     def summaryPerShard(self):
@@ -476,10 +479,13 @@ class GlobalSummaryResult(SummaryResult):
         return merged
 
     @staticmethod
-    def summarySubResults(result):
+    def summarySubResults(result, detailed=False):
         resultStr = result.summaryOneLine()
         for subResult in result.results:
             resultStr += f"- {subResult.name} " + subResult.summaryOneLine()
+            if detailed:
+                for categoryResult in subResult.results:
+                    resultStr += f"    - {categoryResult.name} " + categoryResult.summaryOneLine()
         return resultStr + '\n'
 
     def summaryPerShard(self):
@@ -511,5 +517,5 @@ total # of policy={len(self.policyIds)}
         resultStr += "\n\n======= Details =======\n"
         for result in self.results:
             resultStr += f"({result.name})\n"
-            resultStr += self.summarySubResults(result)
+            resultStr += self.summarySubResults(result, detailed=True)
         return resultStr
