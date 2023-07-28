@@ -1,7 +1,0 @@
-shardName=saopaulo-prod
-[MATCHED_CLUSTER_SPEC]
-======= Summary =======
-count=34,
-total # of org=5
-total # of pipeline=11
-total # of policy=0

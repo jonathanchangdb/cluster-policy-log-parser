@@ -1,0 +1,67 @@
+shardName=az-westeurope-c2
+[BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
+======= Summary =======
+count=72,
+total # of org=1
+total # of pipeline=1
+total # of policy=0
+
+
+=================== DETAILS ===================
+-------- Same error message --------
+count=62
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+5984532590469959: 62
+
+PipelineIds details:
+32f3de2d-5066-4ade-8f83-19a3c80ec08e: 62
+
+PolicyIds details:
+
+JSON dump:
+orgIds={"5984532590469959": 62}
+pipelineIds={"32f3de2d-5066-4ade-8f83-19a3c80ec08e": 62}
+policyIds={}
+
+-------- Latest error is subset of legacy --------
+count=10
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+5984532590469959: 10
+
+PipelineIds details:
+32f3de2d-5066-4ade-8f83-19a3c80ec08e: 10
+
+PolicyIds details:
+
+JSON dump:
+orgIds={"5984532590469959": 10}
+pipelineIds={"32f3de2d-5066-4ade-8f83-19a3c80ec08e": 10}
+policyIds={}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

@@ -1,0 +1,67 @@
+shardName=az-westus
+[BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
+======= Summary =======
+count=736,
+total # of org=1
+total # of pipeline=1
+total # of policy=0
+
+
+=================== DETAILS ===================
+-------- Same error message --------
+count=730
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+2548836972759138: 730
+
+PipelineIds details:
+6060ca8a-db6b-47a8-bf33-830252ca1c32: 730
+
+PolicyIds details:
+
+JSON dump:
+orgIds={"2548836972759138": 730}
+pipelineIds={"6060ca8a-db6b-47a8-bf33-830252ca1c32": 730}
+policyIds={}
+
+-------- Latest error is subset of legacy --------
+count=6
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+2548836972759138: 6
+
+PipelineIds details:
+6060ca8a-db6b-47a8-bf33-830252ca1c32: 6
+
+PolicyIds details:
+
+JSON dump:
+orgIds={"2548836972759138": 6}
+pipelineIds={"6060ca8a-db6b-47a8-bf33-830252ca1c32": 6}
+policyIds={}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

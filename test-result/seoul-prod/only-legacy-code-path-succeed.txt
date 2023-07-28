@@ -1,0 +1,87 @@
+shardName=seoul-prod
+[ONLY_LEGACY_CODE_PATH_SUCCEED]
+======= Summary =======
+count=40,
+total # of org=1
+total # of pipeline=1
+total # of policy=2
+
+=================== DETAILS ===================
+-------- ApplyPolicy RPC validation --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- enable_elastic_disk=True --------
+count=40
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+7886422901770790: 40
+
+PipelineIds details:
+6f2a5ce8-6d61-462c-9255-385bfe077cd8: 40
+
+PolicyIds details:
+3064121E6E00018D: 29
+30645BF260000009: 11
+
+JSON dump:
+orgIds={"7886422901770790": 40}
+pipelineIds={"6f2a5ce8-6d61-462c-9255-385bfe077cd8": 40}
+policyIds={"3064121E6E00018D": 29, "30645BF260000009": 11}
+
+-------- Disallowed cluster attributes --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+attributes=None
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+attributes={}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

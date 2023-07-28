@@ -1,0 +1,123 @@
+shardName=az-westeurope-c2
+[MISMATCHED_CLUSTER_SPEC]
+======= Summary =======
+count=4829,
+total # of org=1
+total # of pipeline=1
+total # of policy=2
+
+=================== DETAILS ===================
+-------- Autoscaling retry --------
+count=22
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+6323684724531787: 22
+
+PipelineIds details:
+3fd9ff78-5565-4a83-81de-27331cb89bc9: 22
+
+PolicyIds details:
+30640179C4001631: 14
+0000056953A5DDAD: 6
+306483B2F70001B9: 2
+
+JSON dump:
+orgIds={"6323684724531787": 22}
+pipelineIds={"3fd9ff78-5565-4a83-81de-27331cb89bc9": 22}
+policyIds={"30640179C4001631": 14, "0000056953A5DDAD": 6, "306483B2F70001B9": 2}
+
+-------- First on demand --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Single node cluster in cluster policy (Enhanced) --------
+count=3905
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+6323684724531787: 3905
+
+PipelineIds details:
+3fd9ff78-5565-4a83-81de-27331cb89bc9: 3905
+
+PolicyIds details:
+30640179C4005E9A: 3875
+30640179C4005A99: 30
+
+JSON dump:
+orgIds={"6323684724531787": 3905}
+pipelineIds={"3fd9ff78-5565-4a83-81de-27331cb89bc9": 3905}
+policyIds={"30640179C4005E9A": 3875, "30640179C4005A99": 30}
+
+-------- Single node cluster in cluster policy (Legacy) --------
+count=924
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+6323684724531787: 924
+
+PipelineIds details:
+3fd9ff78-5565-4a83-81de-27331cb89bc9: 924
+
+PolicyIds details:
+30640179C4005E9A: 924
+
+JSON dump:
+orgIds={"6323684724531787": 924}
+pipelineIds={"3fd9ff78-5565-4a83-81de-27331cb89bc9": 924}
+policyIds={"30640179C4005E9A": 924}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+-------- Uncategorized truncated logs --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

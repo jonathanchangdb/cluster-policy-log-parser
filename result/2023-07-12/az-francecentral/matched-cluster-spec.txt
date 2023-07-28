@@ -1,7 +1,0 @@
-shardName=az-francecentral
-[MATCHED_CLUSTER_SPEC]
-======= Summary =======
-count=307,
-total # of org=13
-total # of pipeline=40
-total # of policy=0

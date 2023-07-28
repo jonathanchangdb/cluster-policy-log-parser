@@ -1,7 +1,0 @@
-shardName=canada-prod
-[MATCHED_CLUSTER_SPEC]
-======= Summary =======
-count=304,
-total # of org=8
-total # of pipeline=33
-total # of policy=0

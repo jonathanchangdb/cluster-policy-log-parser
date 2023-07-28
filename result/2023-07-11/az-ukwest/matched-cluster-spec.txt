@@ -1,7 +1,0 @@
-shardName=az-ukwest
-[MATCHED_CLUSTER_SPEC]
-======= Summary =======
-count=1139,
-total # of org=52
-total # of pipeline=187
-total # of policy=0

@@ -1,7 +1,0 @@
-shardName=az-australiaeast
-[MATCHED_CLUSTER_SPEC]
-======= Summary =======
-count=1806,
-total # of org=64
-total # of pipeline=231
-total # of policy=0

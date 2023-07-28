@@ -1,0 +1,65 @@
+shardName=gcp-us-west4
+[BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
+======= Summary =======
+count=6,
+total # of org=1
+total # of pipeline=1
+total # of policy=0
+
+
+=================== DETAILS ===================
+-------- Same error message --------
+count=6
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+1296450390829269: 6
+
+PipelineIds details:
+5e501965-ea1b-4da6-a741-229084b83fcb: 6
+
+PolicyIds details:
+
+JSON dump:
+orgIds={"1296450390829269": 6}
+pipelineIds={"5e501965-ea1b-4da6-a741-229084b83fcb": 6}
+policyIds={}
+
+-------- Latest error is subset of legacy --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

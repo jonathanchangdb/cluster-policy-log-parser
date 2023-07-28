@@ -1,0 +1,93 @@
+shardName=sydney-prod
+[ONLY_LEGACY_CODE_PATH_SUCCEED]
+======= Summary =======
+count=277,
+total # of org=1
+total # of pipeline=1
+total # of policy=8
+
+=================== DETAILS ===================
+-------- ApplyPolicy RPC validation --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- enable_elastic_disk=True --------
+count=277
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+8924031511115595: 277
+
+PipelineIds details:
+aeb6c6ce-0ec0-4f30-890e-ad11add04504: 277
+
+PolicyIds details:
+D061EEE039000946: 144
+D063D7FAC0000944: 40
+D063D7FAC0000B15: 40
+D063D7FAC00009AD: 34
+D063D7FAC0000602: 7
+D063D7FAC0000601: 6
+D063D7FAC00006A0: 5
+D063D7FAC0000603: 1
+
+JSON dump:
+orgIds={"8924031511115595": 277}
+pipelineIds={"aeb6c6ce-0ec0-4f30-890e-ad11add04504": 277}
+policyIds={"D061EEE039000946": 144, "D063D7FAC0000944": 40, "D063D7FAC0000B15": 40, "D063D7FAC00009AD": 34, "D063D7FAC0000602": 7, "D063D7FAC0000601": 6, "D063D7FAC00006A0": 5, "D063D7FAC0000603": 1}
+
+-------- Disallowed cluster attributes --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+attributes=None
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+attributes={}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

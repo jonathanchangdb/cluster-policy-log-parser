@@ -1,7 +1,0 @@
-shardName=az-germanywestcentral
-[MATCHED_CLUSTER_SPEC]
-======= Summary =======
-count=176,
-total # of org=9
-total # of pipeline=33
-total # of policy=0

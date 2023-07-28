@@ -1,0 +1,116 @@
+shardName=frankfurt-prod
+[MISMATCHED_CLUSTER_SPEC]
+======= Summary =======
+count=1,
+total # of org=1
+total # of pipeline=1
+total # of policy=0
+
+=================== DETAILS ===================
+-------- Autoscaling retry --------
+count=33
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+540054656755588: 33
+
+PipelineIds details:
+91d3626c-4535-4197-ab47-b99fa37d7e18: 33
+
+PolicyIds details:
+0F63CF324F0006A4: 33
+
+JSON dump:
+orgIds={"540054656755588": 33}
+pipelineIds={"91d3626c-4535-4197-ab47-b99fa37d7e18": 33}
+policyIds={"0F63CF324F0006A4": 33}
+
+-------- First on demand --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Single node cluster in cluster policy (Enhanced) --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Single node cluster in cluster policy (Legacy) --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Uncategorized --------
+count=1
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+540054656755588: 1
+
+PipelineIds details:
+91d3626c-4535-4197-ab47-b99fa37d7e18: 1
+
+JSON dump:
+orgIds={"540054656755588": 1}
+pipelineIds={"91d3626c-4535-4197-ab47-b99fa37d7e18": 1}
+logs={"540054656755588_91d3626c-4535-4197-ab47-b99fa37d7e18": [{"legacy": {"new_cluster": {"cluster_name": "dlt-execution-59f0537a-b645-46c0-973b-e3d0d8d355d8", "spark_version": "dlt:11.3-delta-pipelines-33a695c-80beb56-0a8a424-custom-local", "spark_conf": {"pipelines.advancedAutoscaling.enabled": "true", "pipelines.autoscaling.enableAutoscalingProfile": "true", "pipelines.autoscaling.maxNumExecutors": "5", "pipelines.autoscaling.maxUnfinishedDecommissioningRatioDefaultValue": "0.0", "pipelines.autoscaling.minNumExecutors": "1", "pipelines.cloud": "AWS", "pipelines.dbrVersion": "11.3", "pipelines.dltDebugger.enabled": "true", "pipelines.enableTrackHistory": "true", "pipelines.enzyme.enabled": "true", "pipelines.eventLevelDataFrameCollectUsage": "warn", "pipelines.eventLevelDataFrameSaveAsTableUsage": "warn", "pipelines.eventLevelDataFrameSaveUsage": "warn", "pipelines.eventLevelDataStreamWriterStartUsage": "warn", "pipelines.eventLevelPivotUsage": "warn", "pipelines.id": "59f0537a-b645-46c0-973b-e3d0d8d355d8", "pipelines.longRunningStageDetector.enabled": "true", "pipelines.metrics.clusterResources.enabled": "true", "pipelines.metrics.clusterUtilization.enabled": "true", "pipelines.metrics.flowProgressBacklog.enabled": "true", "pipelines.metrics.flowTimeReporter.enabled": "true", "pipelines.updateSnapshot.enabled": "true", "spark.databricks.acceptSoakingFeatures": "false", "spark.databricks.cloudFiles.rootSchemaLocation": "dbfs:/pipelines/59f0537a-b645-46c0-973b-e3d0d8d355d8/autoloader", "spark.databricks.cloudFiles.sqlApi.enabled": "true", "spark.databricks.delta.optimizeWrite.enabled": "true", "spark.databricks.delta.snapshot.prefetchCommitJson.enabled": "false", "spark.databricks.driver.hardKillUnresponsive.enabled": "false", "spark.databricks.driver.ipykernel.commChannelEnabled": "false", "spark.databricks.driverNfs.enabled": "true", "spark.databricks.preemption.enabled": "false", "spark.databricks.sql.MaterializedViewReadAllowInDBR": "true", "spark.debugger.enabled": "true", "spark.debugger.eventListener": "org.apache.spark.debugger.DLTDebuggerEventReporter", "spark.decommission.enabled": "true", "spark.scheduler.listenerbus.eventqueue.databricks.capacity": "1000000", "spark.sql.streaming.metricsEnabled": "true", "spark.sql.streaming.stopTimeout": "60s", "spark.storage.decommission.enabled": "true", "spark.storage.decommission.rddBlocks.enabled": "true", "spark.storage.decommission.shuffleBlocks.enabled": "true", "pipelines.clusterSpecChecksum": "B2A6365E532EBD48680D328D6D5F859D"}, "cluster_creator": "PIPELINE_LAUNCHER", "aws_attributes": {"first_on_demand": 1, "availability": "SPOT_WITH_FALLBACK", "zone_id": "auto", "instance_profile_arn": "arn:aws:iam::332251753860:instance-profile/dataplatform-dataengineering-role"}, "node_type_id": "c5.2xlarge", "driver_node_type_id": "m5a.xlarge", "custom_tags": {"ClusterType": "dlt", "TaskType": "ingestion", "ETL_NAME": "fsot-pasa", "Team": "dataengineering", "EnvType": "test", "Component": "over-time", "JobType": "job", "DataType": "fsot-pasa"}, "spark_env_vars": {"JOB_TYPE": "job", "DD_API_KEY": "{{secrets/dd/api_key}}", "branch": "develop", "ETL_NAME": "fsot-pasa", "DD_ENV": "test", "token": "{{secrets/github/token}}", "DD_SITE": "datadoghq.eu"}, "autotermination_minutes": 0, "enable_elastic_disk": true, "enable_jobs_autostart": false, "init_scripts": [{"workspace": {"destination": "/Shared/init-scripts/datadog-job-prod.sh"}}], "policy_id": "0F63CF324F000682", "enable_local_disk_encryption": false, "billing_info": {"dlt_billing_info": {"tier": "ADVANCED", "is_photon_enabled": false}}, "runtime_engine": "STANDARD", "autoscale": {"min_workers": 1, "max_workers": 5, "profile": "ENHANCED"}, "apply_policy_default_values": true}}, "latest": {"new_cluster": {"cluster_name": "dlt-execution-59f0537a-b645-46c0-973b-e3d0d8d355d8", "spark_version": "dlt:11.3-delta-pipelines-33a695c-80beb56-0a8a424-custom-local", "spark_conf": {"pipelines.advancedAutoscaling.enabled": "true", "pipelines.autoscaling.enableAutoscalingProfile": "true", "pipelines.autoscaling.maxNumExecutors": "5", "pipelines.autoscaling.maxUnfinishedDecommissioningRatioDefaultValue": "0.0", "pipelines.autoscaling.minNumExecutors": "1", "pipelines.cloud": "AWS", "pipelines.dbrVersion": "11.3", "pipelines.dltDebugger.enabled": "true", "pipelines.enableTrackHistory": "true", "pipelines.enzyme.enabled": "true", "pipelines.eventLevelDataFrameCollectUsage": "warn", "pipelines.eventLevelDataFrameSaveAsTableUsage": "warn", "pipelines.eventLevelDataFrameSaveUsage": "warn", "pipelines.eventLevelDataStreamWriterStartUsage": "warn", "pipelines.eventLevelPivotUsage": "warn", "pipelines.id": "59f0537a-b645-46c0-973b-e3d0d8d355d8", "pipelines.longRunningStageDetector.enabled": "true", "pipelines.metrics.clusterResources.enabled": "true", "pipelines.metrics.clusterUtilization.enabled": "true", "pipelines.metrics.flowProgressBacklog.enabled": "true", "pipelines.metrics.flowTimeReporter.enabled": "true", "pipelines.updateSnapshot.enabled": "true", "spark.databricks.acceptSoakingFeatures": "false", "spark.databricks.cloudFiles.rootSchemaLocation": "dbfs:/pipelines/59f0537a-b645-46c0-973b-e3d0d8d355d8/autoloader", "spark.databricks.cloudFiles.sqlApi.enabled": "true", "spark.databricks.delta.optimizeWrite.enabled": "true", "spark.databricks.delta.snapshot.prefetchCommitJson.enabled": "false", "spark.databricks.driver.hardKillUnresponsive.enabled": "false", "spark.databricks.driver.ipykernel.commChannelEnabled": "false", "spark.databricks.driverNfs.enabled": "true", "spark.databricks.preemption.enabled": "false", "spark.databricks.sql.MaterializedViewReadAllowInDBR": "true", "spark.debugger.enabled": "true", "spark.debugger.eventListener": "org.apache.spark.debugger.DLTDebuggerEventReporter", "spark.decommission.enabled": "true", "spark.scheduler.listenerbus.eventqueue.databricks.capacity": "1000000", "spark.sql.streaming.metricsEnabled": "true", "spark.sql.streaming.stopTimeout": "60s", "spark.storage.decommission.enabled": "true", "spark.storage.decommission.rddBlocks.enabled": "true", "spark.storage.decommission.shuffleBlocks.enabled": "true", "pipelines.clusterSpecChecksum": "B1B888A72EF40D5F3A348CC3C05469D4"}, "cluster_creator": "PIPELINE_LAUNCHER", "aws_attributes": {"first_on_demand": 2, "availability": "SPOT_WITH_FALLBACK", "zone_id": "auto", "instance_profile_arn": "arn:aws:iam::332251753860:instance-profile/dataplatform-dataengineering-role"}, "node_type_id": "m5a.xlarge", "driver_node_type_id": "m5a.xlarge", "custom_tags": {"ClusterType": "dlt", "TaskType": "ingestion", "ETL_NAME": "fsot-pasa", "Team": "dataengineering", "EnvType": "test", "Component": "over-time", "JobType": "job", "DataType": "fsot-pasa"}, "spark_env_vars": {"JOB_TYPE": "job", "DD_API_KEY": "{{secrets/dd/api_key}}", "branch": "develop", "ETL_NAME": "fsot-pasa", "DD_ENV": "test", "token": "{{secrets/github/token}}", "DD_SITE": "datadoghq.eu"}, "autotermination_minutes": 0, "enable_elastic_disk": true, "enable_jobs_autostart": false, "init_scripts": [{"workspace": {"destination": "/Shared/init-scripts/datadog-job-prod.sh"}}], "policy_id": "0F63CF324F000682", "enable_local_disk_encryption": false, "billing_info": {"dlt_billing_info": {"tier": "ADVANCED", "is_photon_enabled": false}}, "runtime_engine": "STANDARD", "autoscale": {"min_workers": 1, "max_workers": 5, "profile": "ENHANCED"}, "apply_policy_default_values": true}}}]}
+
+-------- Uncategorized truncated logs --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

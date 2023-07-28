@@ -1,0 +1,94 @@
+shardName=frankfurt-prod
+[ONLY_LEGACY_CODE_PATH_SUCCEED]
+======= Summary =======
+count=264,
+total # of org=1
+total # of pipeline=1
+total # of policy=5
+
+=================== DETAILS ===================
+-------- ApplyPolicy RPC validation --------
+count=431
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+3726185482832627: 431
+
+PipelineIds details:
+3faeb69d-7102-4f13-b4b4-e12d855e6359: 431
+
+PolicyIds details:
+0F63CF324F000682: 312
+0F63CF324F0006C9: 119
+
+JSON dump:
+orgIds={"3726185482832627": 431}
+pipelineIds={"3faeb69d-7102-4f13-b4b4-e12d855e6359": 431}
+policyIds={"0F63CF324F000682": 312, "0F63CF324F0006C9": 119}
+
+-------- enable_elastic_disk=True --------
+count=264
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+3726185482832627: 264
+
+PipelineIds details:
+3faeb69d-7102-4f13-b4b4-e12d855e6359: 264
+
+PolicyIds details:
+0F63CF324F000F57: 212
+001EA42136F515A1: 27
+0F63CF324F000DE7: 18
+00187DB1352FD7B7: 6
+00038B073F6D7E3F: 1
+
+JSON dump:
+orgIds={"3726185482832627": 264}
+pipelineIds={"3faeb69d-7102-4f13-b4b4-e12d855e6359": 264}
+policyIds={"0F63CF324F000F57": 212, "001EA42136F515A1": 27, "0F63CF324F000DE7": 18, "00187DB1352FD7B7": 6, "00038B073F6D7E3F": 1}
+
+-------- Disallowed cluster attributes --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+attributes=None
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+attributes={}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

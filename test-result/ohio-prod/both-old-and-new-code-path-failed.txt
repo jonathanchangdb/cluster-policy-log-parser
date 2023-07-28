@@ -1,0 +1,67 @@
+shardName=ohio-prod
+[BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
+======= Summary =======
+count=30,
+total # of org=1
+total # of pipeline=1
+total # of policy=0
+
+
+=================== DETAILS ===================
+-------- Same error message --------
+count=28
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+382843298319388: 28
+
+PipelineIds details:
+d74d52bd-4b0b-4544-a801-06c3e9dd6475: 28
+
+PolicyIds details:
+
+JSON dump:
+orgIds={"382843298319388": 28}
+pipelineIds={"d74d52bd-4b0b-4544-a801-06c3e9dd6475": 28}
+policyIds={}
+
+-------- Latest error is subset of legacy --------
+count=2
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+382843298319388: 2
+
+PipelineIds details:
+d74d52bd-4b0b-4544-a801-06c3e9dd6475: 2
+
+PolicyIds details:
+
+JSON dump:
+orgIds={"382843298319388": 2}
+pipelineIds={"d74d52bd-4b0b-4544-a801-06c3e9dd6475": 2}
+policyIds={}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

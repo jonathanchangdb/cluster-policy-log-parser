@@ -1,0 +1,8 @@
+shardName=gcp-asia-southeast1
+[MATCHED_CLUSTER_SPEC]
+======= Summary =======
+count=4702,
+total # of org=12
+total # of pipeline=141
+total # of policy=0
+

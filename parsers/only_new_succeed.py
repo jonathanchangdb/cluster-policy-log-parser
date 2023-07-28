@@ -14,20 +14,10 @@ def __dueToNodeTypeId(only_legacy_succeed_specs):
         orgId, pipelineId = metadata['org_id'], metadata['pipeline_id']
         if error in legacyError:
             result.addWithPolicyId(orgId, pipelineId, policyId)
+        elif 'REQUEST_LIMIT_EXCEEDED' in legacyError:
+            continue
         else:
             filtered.append(data)
-    return result, filtered
-
-
-def __dueToRatelimiting(only_legacy_succeed_specs):
-    filtered = []
-    result = CategorizationResult("Rate limited (non-error)")
-    errorCode = "REQUEST_LIMIT_EXCEEDED"
-    for data in only_legacy_succeed_specs:
-        (legacyError, latestClusterSpec, metadata) = data
-        orgId, pipelineId = metadata['org_id'], metadata['pipeline_id']
-        if errorCode in legacyError:
-            result.add(orgId, pipelineId)
     return result, filtered
 
 
@@ -35,19 +25,16 @@ def parseOnlyNewSucceed(response, shardName):
     parsedLogs, failedToParse = parseLogsFromResponse(response, __ONLY_NEW_SUCCEED_REGEX)
     onlyNewSucceedLogs = [(x, json.loads(y), metadata) for (x, y, metadata) in parsedLogs]
     nodeTypeIdResult, ignoreNodeTypeId = __dueToNodeTypeId(onlyNewSucceedLogs)
-    rateLimitingResult, ignoreRateLimiting = __dueToRatelimiting(ignoreNodeTypeId)
 
-    uncategorized = UncategorizedResult(ignoreRateLimiting)
+    uncategorized = UncategorizedResult(ignoreNodeTypeId)
     metricsResultSummary = SummaryResult("ONLY_NEW_CODE_PATH_SUCCEED")
     metricsResultSummary.add(nodeTypeIdResult)
-    metricsResultSummary.add(rateLimitingResult)
     metricsResultSummary.add(uncategorized)
 
     return f"""shardName={shardName}
 {metricsResultSummary.summary()}
 =================== DETAILS ===================
 {nodeTypeIdResult}
-{rateLimitingResult}
 {uncategorized}
 
 -------- Failed to parse --------

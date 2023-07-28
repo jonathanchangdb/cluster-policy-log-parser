@@ -1,0 +1,65 @@
+shardName=gcp-asia-southeast1
+[BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
+======= Summary =======
+count=15,
+total # of org=1
+total # of pipeline=1
+total # of policy=0
+
+
+=================== DETAILS ===================
+-------- Same error message --------
+count=15
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+1660803254416451: 15
+
+PipelineIds details:
+dd42b25a-4b59-45ae-8f07-c709c99b5bc7: 15
+
+PolicyIds details:
+
+JSON dump:
+orgIds={"1660803254416451": 15}
+pipelineIds={"dd42b25a-4b59-45ae-8f07-c709c99b5bc7": 15}
+policyIds={}
+
+-------- Latest error is subset of legacy --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

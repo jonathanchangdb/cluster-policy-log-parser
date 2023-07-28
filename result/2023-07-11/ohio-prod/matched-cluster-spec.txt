@@ -1,7 +1,0 @@
-shardName=ohio-prod
-[MATCHED_CLUSTER_SPEC]
-======= Summary =======
-count=2299,
-total # of org=41
-total # of pipeline=181
-total # of policy=0

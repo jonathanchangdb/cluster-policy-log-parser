@@ -1,7 +1,0 @@
-shardName=gcp-asia-northeast1
-[MATCHED_CLUSTER_SPEC]
-======= Summary =======
-count=30,
-total # of org=3
-total # of pipeline=4
-total # of policy=0

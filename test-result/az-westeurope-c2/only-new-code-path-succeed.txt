@@ -1,0 +1,47 @@
+shardName=az-westeurope-c2
+[ONLY_NEW_CODE_PATH_SUCCEED]
+======= Summary =======
+count=1,
+total # of org=1
+total # of pipeline=1
+total # of policy=0
+
+=================== DETAILS ===================
+-------- Node Type ID --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Uncategorized --------
+count=1
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+8403533519965870: 1
+
+PipelineIds details:
+37125cca-8c85-4e18-a84b-43ec65b36d89: 1
+
+JSON dump:
+orgIds={"8403533519965870": 1}
+pipelineIds={"37125cca-8c85-4e18-a84b-43ec65b36d89": 1}
+logs={"8403533519965870_37125cca-8c85-4e18-a84b-43ec65b36d89": [{"legacy": "INVALID_PARAMETER_VALUE: Validation failed for enable_local_disk_encryption, the value must be true (is \"false\")\n\n", "latest": {"new_cluster": {"cluster_name": "dlt-execution-37125cca-8c85-4e18-a84b-43ec65b36d89", "spark_version": "dlt:11.3-delta-pipelines-dlt-release-2023.29-commit-499a946-image-a8a17ac", "spark_conf": {"fs.azure.sas.951bd0bd-0f25-46fc-a8c8-6fc040727d6c.pzigxpwepldropzonep001.blob.core.windows.net": "{{secrets/robs_test_workspace-951bd0bd/drop_wasbHttpsUrl}}", "fs.azure.sas.951bd0bd-0f25-46fc-a8c8-6fc040727d6c.pzigxpwesrbluzp001.blob.core.windows.net": "{{secrets/robs_test_workspace-951bd0bd/trusted_wasbHttpsUrl}}", "pipelines.advancedAutoscaling.enabled": "true", "pipelines.autoscaling.maxNumExecutors": "5", "pipelines.autoscaling.minNumExecutors": "1", "pipelines.cloud": "Azure", "pipelines.dbrVersion": "11.3", "pipelines.dltDebugger.enabled": "true", "pipelines.enableExpectationsOnApplyChanges": "false", "pipelines.enableTrackHistory": "false", "pipelines.enzyme.enabled": "true", "pipelines.eventLevelDataFrameCollectUsage": "warn", "pipelines.eventLevelDataFrameSaveAsTableUsage": "warn", "pipelines.eventLevelDataFrameSaveUsage": "warn", "pipelines.eventLevelDataStreamWriterStartUsage": "warn", "pipelines.eventLevelPivotUsage": "warn", "pipelines.id": "37125cca-8c85-4e18-a84b-43ec65b36d89", "pipelines.longRunningStageDetector.enabled": "true", "pipelines.metrics.clusterResources.enabled": "true", "pipelines.metrics.clusterUtilization.enabled": "true", "pipelines.metrics.flowProgressBacklog.enabled": "true", "pipelines.metrics.flowTimeReporter.enabled": "true", "pipelines.updateSnapshot.enabled": "true", "spark.databricks.acceptSoakingFeatures": "false", "spark.databricks.cloudFiles.rootSchemaLocation": "dbfs:/pipelines/37125cca-8c85-4e18-a84b-43ec65b36d89/autoloader", "spark.databricks.cloudFiles.sqlApi.enabled": "true", "spark.databricks.delta.optimizeWrite.enabled": "true", "spark.databricks.delta.snapshot.prefetchCommitJson.enabled": "false", "spark.databricks.driver.hardKillUnresponsive.enabled": "false", "spark.databricks.driver.ipykernel.commChannelEnabled": "false", "spark.databricks.driverNfs.enabled": "true", "spark.databricks.preemption.enabled": "false", "spark.databricks.sql.MaterializedViewReadAllowInDBR": "true", "spark.debugger.enabled": "true", "spark.debugger.eventListener": "org.apache.spark.debugger.DLTDebuggerEventReporter", "spark.decommission.enabled": "true", "spark.drop_container": "951bd0bd-0f25-46fc-a8c8-6fc040727d6c", "spark.drop_sasToken": "{{secrets/robs_test_workspace-951bd0bd/drop_sasToken}}", "spark.drop_storage_account_name": "pzigxpwepldropzonep001", "spark.drop_wasbHttpsUrl": "{{secrets/robs_test_workspace-951bd0bd/drop_wasbHttpsUrl}}", "spark.scheduler.listenerbus.eventqueue.databricks.capacity": "1000000", "spark.sql.streaming.stopTimeout": "60s", "spark.storage.decommission.enabled": "true", "spark.storage.decommission.rddBlocks.enabled": "true", "spark.storage.decommission.shuffleBlocks.enabled": "true", "spark.trusted_container": "951bd0bd-0f25-46fc-a8c8-6fc040727d6c", "spark.trusted_sasToken": "{{secrets/robs_test_workspace-951bd0bd/trusted_sasToken}}", "spark.trusted_storage_account_name": "pzigxpwesrbluzp001", "spark.trusted_wasbHttpsUrl": "{{secrets/robs_test_workspace-951bd0bd/trusted_wasbHttpsUrl}}", "pipelines.clusterSpecChecksum": "B97224C07484CDBEE9060D71F902FB48"}, "cluster_creator": "PIPELINE_LAUNCHER", "node_type_id": "Standard_F8s", "custom_tags": {"engagement-id": "951bd0bd-0f25-46fc-a8c8-6fc040727d6c", "cluster-apptioid": "globalpwcit5188"}, "autotermination_minutes": 0, "enable_elastic_disk": true, "enable_jobs_autostart": false, "policy_id": "30644216E4003A5F", "enable_local_disk_encryption": true, "billing_info": {"dlt_billing_info": {"tier": "ADVANCED", "is_photon_enabled": false, "dlt_workload_type": "DLT_UPDATE"}}, "runtime_engine": "STANDARD", "autoscale": {"min_workers": 1, "max_workers": 5, "profile": "ENHANCED"}}}}]}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

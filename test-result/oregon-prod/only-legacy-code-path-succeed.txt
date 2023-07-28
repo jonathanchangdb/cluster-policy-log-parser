@@ -1,0 +1,110 @@
+shardName=oregon-prod
+[ONLY_LEGACY_CODE_PATH_SUCCEED]
+======= Summary =======
+count=8285,
+total # of org=1
+total # of pipeline=1
+total # of policy=22
+
+=================== DETAILS ===================
+-------- ApplyPolicy RPC validation --------
+count=2
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+1046427578849498: 2
+
+PipelineIds details:
+5744001c-6f67-4acb-b1a8-dd32a633c07b: 2
+
+PolicyIds details:
+E06216CAA0000360: 2
+
+JSON dump:
+orgIds={"1046427578849498": 2}
+pipelineIds={"5744001c-6f67-4acb-b1a8-dd32a633c07b": 2}
+policyIds={"E06216CAA0000360": 2}
+
+-------- enable_elastic_disk=True --------
+count=8285
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+1046427578849498: 8285
+
+PipelineIds details:
+5744001c-6f67-4acb-b1a8-dd32a633c07b: 8285
+
+PolicyIds details:
+E06216CAA00011FD: 4456
+E06216CAA0001195: 1712
+E0631F5C0D000441: 689
+E0641B99CA0027B0: 324
+E06216CAA0000E7A: 313
+E0631F5C0D000443: 243
+001655BAAA11AE5B: 151
+001C77185E713B26: 106
+E0631F5C0D0031AA: 74
+E0641B99CA00209F: 49
+E063D86F5F001550: 31
+E0641B99CA001B14: 29
+E06216CAA0001104: 28
+E061EF4F1D000128: 22
+E063D86F5F0035CF: 10
+E063D86F5F0035CE: 10
+E063D86F5F0002AA: 9
+E0631F5C0D00347F: 9
+00143F1F85A83ACE: 8
+E0631F5C0D00302F: 6
+E0631F5C0D00381D: 3
+E0631F5C0D00302E: 3
+
+JSON dump:
+orgIds={"1046427578849498": 8285}
+pipelineIds={"5744001c-6f67-4acb-b1a8-dd32a633c07b": 8285}
+policyIds={"E06216CAA00011FD": 4456, "E06216CAA0001195": 1712, "E0631F5C0D000441": 689, "E0641B99CA0027B0": 324, "E06216CAA0000E7A": 313, "E0631F5C0D000443": 243, "001655BAAA11AE5B": 151, "001C77185E713B26": 106, "E0631F5C0D0031AA": 74, "E0641B99CA00209F": 49, "E063D86F5F001550": 31, "E0641B99CA001B14": 29, "E06216CAA0001104": 28, "E061EF4F1D000128": 22, "E063D86F5F0035CF": 10, "E063D86F5F0035CE": 10, "E063D86F5F0002AA": 9, "E0631F5C0D00347F": 9, "00143F1F85A83ACE": 8, "E0631F5C0D00302F": 6, "E0631F5C0D00381D": 3, "E0631F5C0D00302E": 3}
+
+-------- Disallowed cluster attributes --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+attributes=None
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+attributes={}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

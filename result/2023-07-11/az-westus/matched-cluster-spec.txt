@@ -1,7 +1,0 @@
-shardName=az-westus
-[MATCHED_CLUSTER_SPEC]
-======= Summary =======
-count=10000,
-total # of org=128
-total # of pipeline=845
-total # of policy=0

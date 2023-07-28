@@ -1,0 +1,65 @@
+shardName=az-eastus2
+[BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
+======= Summary =======
+count=8,
+total # of org=1
+total # of pipeline=1
+total # of policy=0
+
+
+=================== DETAILS ===================
+-------- Same error message --------
+count=8
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+8336238433566097: 8
+
+PipelineIds details:
+1f6de43a-8f79-47f2-9bea-c0b26535d4f5: 8
+
+PolicyIds details:
+
+JSON dump:
+orgIds={"8336238433566097": 8}
+pipelineIds={"1f6de43a-8f79-47f2-9bea-c0b26535d4f5": 8}
+policyIds={}
+
+-------- Latest error is subset of legacy --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

@@ -1,7 +1,0 @@
-shardName=mumbai-prod
-[MATCHED_CLUSTER_SPEC]
-======= Summary =======
-count=1381,
-total # of org=10
-total # of pipeline=14
-total # of policy=0

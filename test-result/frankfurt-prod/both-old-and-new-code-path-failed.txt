@@ -1,0 +1,65 @@
+shardName=frankfurt-prod
+[BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
+======= Summary =======
+count=25,
+total # of org=1
+total # of pipeline=1
+total # of policy=0
+
+
+=================== DETAILS ===================
+-------- Same error message --------
+count=25
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+3428010741580806: 25
+
+PipelineIds details:
+764e7b39-952d-4840-9128-af7ee2719aac: 25
+
+PolicyIds details:
+
+JSON dump:
+orgIds={"3428010741580806": 25}
+pipelineIds={"764e7b39-952d-4840-9128-af7ee2719aac": 25}
+policyIds={}
+
+-------- Latest error is subset of legacy --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

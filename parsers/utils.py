@@ -1,3 +1,4 @@
+import copy
 import json
 import logging
 import re
@@ -34,6 +35,16 @@ def get_pipeline_id(log):
     regex = r'deltaPipelinesPipelineId=(.{36})'
     result = re.search(regex, log)
     return result.group(1)
+
+
+def mergeTwoDictionary(dict1, dict2):
+    result = copy.deepcopy(dict1)
+    for key in dict2:
+        if key in result:
+            result[key] += dict2[key]
+        else:
+            result[key] = dict2[key]
+    return result
 
 
 def get_message_texts(log):
@@ -181,12 +192,30 @@ class DisallowedClusterAttributesResult:
         self.policyIds = {}
         self.attributes = {}
 
-    def add(self, attribute, orgId, pipelineId, policyId):
+    def addWithoutPolicyId(self, attribute, orgId, pipelineId):
+        self.count += 1
+        self.orgIds.setdefault(orgId, 0)
+        self.pipelineIds.setdefault(pipelineId, 0)
+        self.attributes.setdefault(attribute, {
+            "count": 0,
+            "orgIds": set(),
+            "pipelineIds": set(),
+            "policyIds": set()
+        })
+
+        self.orgIds[orgId] += 1
+        self.pipelineIds[pipelineId] += 1
+
+        self.attributes[attribute]["count"] += 1
+        self.attributes[attribute]["orgIds"].add(orgId)
+        self.attributes[attribute]["pipelineIds"].add(pipelineId)
+
+    def add(self, attribute, policyValue, orgId, pipelineId, policyId):
         self.count += 1
         self.orgIds.setdefault(orgId, 0)
         self.policyIds.setdefault(policyId, 0)
         self.pipelineIds.setdefault(pipelineId, 0)
-        self.attributes.setdefault(attribute, {
+        self.attributes.setdefault(f'{attribute}_{policyValue}', {
             "count": 0,
             "orgIds": set(),
             "pipelineIds": set(),
@@ -197,10 +226,10 @@ class DisallowedClusterAttributesResult:
         self.policyIds[policyId] += 1
         self.pipelineIds[pipelineId] += 1
 
-        self.attributes[attribute]["count"] += 1
-        self.attributes[attribute]["orgIds"].add(orgId)
-        self.attributes[attribute]["policyIds"].add(policyId)
-        self.attributes[attribute]["pipelineIds"].add(pipelineId)
+        self.attributes[f'{attribute}_{policyValue}']["count"] += 1
+        self.attributes[f'{attribute}_{policyValue}']["orgIds"].add(orgId)
+        self.attributes[f'{attribute}_{policyValue}']["policyIds"].add(policyId)
+        self.attributes[f'{attribute}_{policyValue}']["pipelineIds"].add(pipelineId)
 
     def __printAttributes(self):
         result = ""
@@ -315,17 +344,18 @@ logs={json.dumps(self.logs)}
 class SummaryResult:
     def __init__(self, name):
         self.count = 0
-        self.orgIds = set()
-        self.pipelineIds = set()
-        self.policyIds = set()
+        self.orgIds = {}
+        self.pipelineIds = {}
+        self.policyIds = {}
+        self.attributes = {}
         self.results = []
         self.name = name
 
     def add(self, result):
         self.count += result.count
-        self.orgIds = self.orgIds.union(convertToSetIfNeeded(result.orgIds))
-        self.pipelineIds = self.pipelineIds.union(convertToSetIfNeeded(result.pipelineIds))
-        self.policyIds = self.policyIds.union(convertToSetIfNeeded(result.policyIds))
+        self.orgIds = mergeTwoDictionary(self.orgIds, result.orgIds)
+        self.pipelineIds = mergeTwoDictionary(self.pipelineIds, result.pipelineIds)
+        self.policyIds = mergeTwoDictionary(self.policyIds, result.policyIds)
         self.results.append(result)
 
     def summary(self):
@@ -334,7 +364,8 @@ class SummaryResult:
 count={self.count},
 total # of org={len(self.orgIds)}
 total # of pipeline={len(self.pipelineIds)}
-total # of policy={len(self.policyIds)}"""
+total # of policy={len(self.policyIds)}
+"""
 
     def summaryOneLine(self):
         return f"""total = {self.count}, pipelineIds = {len(self.pipelineIds)}, orgIds = {len(self.orgIds)}, policies = {len(self.policyIds)}\n"""
@@ -376,12 +407,11 @@ class ShardSummaryResult(SummaryResult):
                 for mergedCategoryResult in merged.results:
                     toMerge = findOne(lambda x: x.name == mergedCategoryResult.name, categoryResults)
                     mergedCategoryResult.count += toMerge.count
-                    mergedCategoryResult.orgIds = convertToSetIfNeeded(mergedCategoryResult.orgIds).union(
-                        convertToSetIfNeeded(toMerge.orgIds))
-                    mergedCategoryResult.pipelineIds = convertToSetIfNeeded(mergedCategoryResult.pipelineIds).union(
-                        convertToSetIfNeeded(toMerge.pipelineIds))
-                    mergedCategoryResult.policyIds = convertToSetIfNeeded(mergedCategoryResult.policyIds).union(
-                        convertToSetIfNeeded(toMerge.policyIds))
+                    mergedCategoryResult.orgIds = mergeTwoDictionary(mergedCategoryResult.orgIds, toMerge.orgIds)
+                    mergedCategoryResult.pipelineIds = mergeTwoDictionary(mergedCategoryResult.pipelineIds,
+                                                                          toMerge.pipelineIds)
+                    mergedCategoryResult.policyIds = mergeTwoDictionary(mergedCategoryResult.policyIds,
+                                                                        toMerge.policyIds)
 
         merged.count = metricSummaryResult.count
         merged.orgIds = metricSummaryResult.orgIds
@@ -489,11 +519,11 @@ class GlobalSummaryResult(SummaryResult):
         return resultStr + '\n'
 
     def summaryPerShard(self):
-        self.matchedClusterSpec = GlobalSummaryResult.mergeSubResults(self.matchedClusterSpec)
-        self.mismatchedClusterSpec = GlobalSummaryResult.mergeSubResults(self.mismatchedClusterSpec)
-        self.onlyNewSucceed = GlobalSummaryResult.mergeSubResults(self.onlyNewSucceed)
-        self.onlyLegacySucceed = GlobalSummaryResult.mergeSubResults(self.onlyLegacySucceed)
-        self.bothFailed = GlobalSummaryResult.mergeSubResults(self.bothFailed)
+        matchedClusterSpec = GlobalSummaryResult.mergeSubResults(self.matchedClusterSpec)
+        mismatchedClusterSpec = GlobalSummaryResult.mergeSubResults(self.mismatchedClusterSpec)
+        onlyNewSucceed = GlobalSummaryResult.mergeSubResults(self.onlyNewSucceed)
+        onlyLegacySucceed = GlobalSummaryResult.mergeSubResults(self.onlyLegacySucceed)
+        bothFailed = GlobalSummaryResult.mergeSubResults(self.bothFailed)
         return f"""[{self.name}]
 ======= Summary =======
 count={self.count},
@@ -501,15 +531,15 @@ total # of org={len(self.orgIds)}
 total # of pipeline={len(self.pipelineIds)}
 total # of policy={len(self.policyIds)}
 [MATCHED_CLUSTER_SPEC]:
-{self.summarySubResults(self.matchedClusterSpec)}
+{self.summarySubResults(matchedClusterSpec)}
 [MISMATCHED_CLUSTER_SPEC]:
-{self.summarySubResults(self.mismatchedClusterSpec)}
+{self.summarySubResults(mismatchedClusterSpec)}
 [ONLY_LEGACY_CODE_PATH_SUCCEED]:
-{self.summarySubResults(self.onlyLegacySucceed)}
+{self.summarySubResults(onlyLegacySucceed)}
 [ONLY_NEW_CODE_PATH_SUCCEED]:
-{self.summarySubResults(self.onlyNewSucceed)}
+{self.summarySubResults(onlyNewSucceed)}
 [BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]:
-{self.summarySubResults(self.bothFailed)}
+{self.summarySubResults(bothFailed)}
     """
 
     def __repr__(self):

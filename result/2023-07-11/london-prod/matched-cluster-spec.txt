@@ -1,7 +1,0 @@
-shardName=london-prod
-[MATCHED_CLUSTER_SPEC]
-======= Summary =======
-count=450,
-total # of org=21
-total # of pipeline=54
-total # of policy=0

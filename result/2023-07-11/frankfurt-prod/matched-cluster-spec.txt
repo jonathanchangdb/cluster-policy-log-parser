@@ -1,7 +1,0 @@
-shardName=frankfurt-prod
-[MATCHED_CLUSTER_SPEC]
-======= Summary =======
-count=1565,
-total # of org=48
-total # of pipeline=171
-total # of policy=0

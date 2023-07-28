@@ -1,7 +1,0 @@
-shardName=tokyo-prod
-[MATCHED_CLUSTER_SPEC]
-======= Summary =======
-count=504,
-total # of org=14
-total # of pipeline=50
-total # of policy=0

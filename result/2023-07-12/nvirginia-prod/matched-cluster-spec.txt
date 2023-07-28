@@ -1,7 +1,0 @@
-shardName=nvirginia-prod
-[MATCHED_CLUSTER_SPEC]
-======= Summary =======
-count=10000,
-total # of org=180
-total # of pipeline=1791
-total # of policy=0

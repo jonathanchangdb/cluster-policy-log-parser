@@ -1,0 +1,48 @@
+shardName=gcp-us-central1
+[ONLY_NEW_CODE_PATH_SUCCEED]
+======= Summary =======
+count=2,
+total # of org=1
+total # of pipeline=1
+total # of policy=1
+
+=================== DETAILS ===================
+-------- Node Type ID --------
+count=2
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+416411475796958: 2
+
+PipelineIds details:
+f5414cb3-73f7-4d45-83ae-b154f0096cb4: 2
+
+PolicyIds details:
+00120C619D111FDF: 2
+
+JSON dump:
+orgIds={"416411475796958": 2}
+pipelineIds={"f5414cb3-73f7-4d45-83ae-b154f0096cb4": 2}
+policyIds={"00120C619D111FDF": 2}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

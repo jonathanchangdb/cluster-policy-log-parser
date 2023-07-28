@@ -1,0 +1,86 @@
+shardName=ohio-prod
+[ONLY_LEGACY_CODE_PATH_SUCCEED]
+======= Summary =======
+count=202,
+total # of org=1
+total # of pipeline=1
+total # of policy=1
+
+=================== DETAILS ===================
+-------- ApplyPolicy RPC validation --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- enable_elastic_disk=True --------
+count=202
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+8507950582558974: 202
+
+PipelineIds details:
+27e7bf9d-60d0-4e4d-9cd1-d378c94a9de4: 202
+
+PolicyIds details:
+0004033439251EBA: 202
+
+JSON dump:
+orgIds={"8507950582558974": 202}
+pipelineIds={"27e7bf9d-60d0-4e4d-9cd1-d378c94a9de4": 202}
+policyIds={"0004033439251EBA": 202}
+
+-------- Disallowed cluster attributes --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+attributes=None
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+attributes={}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

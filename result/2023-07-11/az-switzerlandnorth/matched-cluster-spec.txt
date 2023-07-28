@@ -1,7 +1,0 @@
-shardName=az-switzerlandnorth
-[MATCHED_CLUSTER_SPEC]
-======= Summary =======
-count=121,
-total # of org=6
-total # of pipeline=18
-total # of policy=0

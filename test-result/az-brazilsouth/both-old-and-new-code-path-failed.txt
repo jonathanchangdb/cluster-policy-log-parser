@@ -1,0 +1,65 @@
+shardName=az-brazilsouth
+[BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
+======= Summary =======
+count=1,
+total # of org=1
+total # of pipeline=1
+total # of policy=0
+
+
+=================== DETAILS ===================
+-------- Same error message --------
+count=1
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+4888082877993055: 1
+
+PipelineIds details:
+c363bf06-859c-496f-b250-2f5f126b646f: 1
+
+PolicyIds details:
+
+JSON dump:
+orgIds={"4888082877993055": 1}
+pipelineIds={"c363bf06-859c-496f-b250-2f5f126b646f": 1}
+policyIds={}
+
+-------- Latest error is subset of legacy --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

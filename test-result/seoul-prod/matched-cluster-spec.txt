@@ -1,0 +1,8 @@
+shardName=seoul-prod
+[MATCHED_CLUSTER_SPEC]
+======= Summary =======
+count=893,
+total # of org=20
+total # of pipeline=81
+total # of policy=0
+

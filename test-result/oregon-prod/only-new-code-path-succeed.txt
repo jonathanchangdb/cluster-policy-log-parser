@@ -1,0 +1,49 @@
+shardName=oregon-prod
+[ONLY_NEW_CODE_PATH_SUCCEED]
+======= Summary =======
+count=5,
+total # of org=1
+total # of pipeline=1
+total # of policy=2
+
+=================== DETAILS ===================
+-------- Node Type ID --------
+count=5
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+2736046192934091: 5
+
+PipelineIds details:
+f44793cd-e72f-40da-a806-89428052c699: 5
+
+PolicyIds details:
+00134DE85DA9B921: 3
+E064568AAE001923: 2
+
+JSON dump:
+orgIds={"2736046192934091": 5}
+pipelineIds={"f44793cd-e72f-40da-a806-89428052c699": 5}
+policyIds={"00134DE85DA9B921": 3, "E064568AAE001923": 2}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

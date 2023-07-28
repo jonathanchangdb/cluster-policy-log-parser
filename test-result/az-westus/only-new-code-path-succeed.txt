@@ -1,0 +1,48 @@
+shardName=az-westus
+[ONLY_NEW_CODE_PATH_SUCCEED]
+======= Summary =======
+count=3,
+total # of org=1
+total # of pipeline=1
+total # of policy=1
+
+=================== DETAILS ===================
+-------- Node Type ID --------
+count=3
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+330310747492454: 3
+
+PipelineIds details:
+a68e599b-08f6-44d1-b5cb-231dc90c7f8e: 3
+
+PolicyIds details:
+00003A94B29177F6: 3
+
+JSON dump:
+orgIds={"330310747492454": 3}
+pipelineIds={"a68e599b-08f6-44d1-b5cb-231dc90c7f8e": 3}
+policyIds={"00003A94B29177F6": 3}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

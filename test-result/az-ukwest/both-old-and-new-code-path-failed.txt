@@ -1,0 +1,67 @@
+shardName=az-ukwest
+[BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
+======= Summary =======
+count=20,
+total # of org=1
+total # of pipeline=1
+total # of policy=0
+
+
+=================== DETAILS ===================
+-------- Same error message --------
+count=14
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+7506563293462525: 14
+
+PipelineIds details:
+1906c0ae-0e28-45e0-82b0-46dc796861e7: 14
+
+PolicyIds details:
+
+JSON dump:
+orgIds={"7506563293462525": 14}
+pipelineIds={"1906c0ae-0e28-45e0-82b0-46dc796861e7": 14}
+policyIds={}
+
+-------- Latest error is subset of legacy --------
+count=6
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+7506563293462525: 6
+
+PipelineIds details:
+1906c0ae-0e28-45e0-82b0-46dc796861e7: 6
+
+PolicyIds details:
+
+JSON dump:
+orgIds={"7506563293462525": 6}
+pipelineIds={"1906c0ae-0e28-45e0-82b0-46dc796861e7": 6}
+policyIds={}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

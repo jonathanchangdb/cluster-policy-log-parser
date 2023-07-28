@@ -1,7 +1,0 @@
-shardName=az-uaenorth
-[MATCHED_CLUSTER_SPEC]
-======= Summary =======
-count=753,
-total # of org=7
-total # of pipeline=278
-total # of policy=0

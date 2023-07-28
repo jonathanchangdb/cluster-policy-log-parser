@@ -1,0 +1,86 @@
+shardName=singapore-prod
+[ONLY_LEGACY_CODE_PATH_SUCCEED]
+======= Summary =======
+count=9,
+total # of org=1
+total # of pipeline=1
+total # of policy=1
+
+=================== DETAILS ===================
+-------- ApplyPolicy RPC validation --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- enable_elastic_disk=True --------
+count=9
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+2740144415803060: 9
+
+PipelineIds details:
+304d1cef-5209-4359-8bbf-c1be6da145d4: 9
+
+PolicyIds details:
+3A61EF4E4F00059D: 9
+
+JSON dump:
+orgIds={"2740144415803060": 9}
+pipelineIds={"304d1cef-5209-4359-8bbf-c1be6da145d4": 9}
+policyIds={"3A61EF4E4F00059D": 9}
+
+-------- Disallowed cluster attributes --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+attributes=None
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+attributes={}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

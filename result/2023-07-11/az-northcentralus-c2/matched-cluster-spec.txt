@@ -1,7 +1,0 @@
-shardName=az-northcentralus-c2
-[MATCHED_CLUSTER_SPEC]
-======= Summary =======
-count=480,
-total # of org=19
-total # of pipeline=152
-total # of policy=0

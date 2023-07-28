@@ -1,0 +1,114 @@
+shardName=az-centralus-c2
+[MISMATCHED_CLUSTER_SPEC]
+======= Summary =======
+count=0,
+total # of org=0
+total # of pipeline=0
+total # of policy=0
+
+=================== DETAILS ===================
+-------- Autoscaling retry --------
+count=3
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+6056897725116273: 3
+
+PipelineIds details:
+86d415d4-4a16-4060-b7f4-6c5020bf5cbd: 3
+
+PolicyIds details:
+0009913CAE90694F: 3
+
+JSON dump:
+orgIds={"6056897725116273": 3}
+pipelineIds={"86d415d4-4a16-4060-b7f4-6c5020bf5cbd": 3}
+policyIds={"0009913CAE90694F": 3}
+
+-------- First on demand --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Single node cluster in cluster policy (Enhanced) --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Single node cluster in cluster policy (Legacy) --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+-------- Uncategorized truncated logs --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

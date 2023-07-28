@@ -1,0 +1,114 @@
+shardName=az-northeurope-c2
+[MISMATCHED_CLUSTER_SPEC]
+======= Summary =======
+count=0,
+total # of org=0
+total # of pipeline=0
+total # of policy=0
+
+=================== DETAILS ===================
+-------- Autoscaling retry --------
+count=4
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+5678659344564033: 4
+
+PipelineIds details:
+9cbc90cc-71f3-45be-a2d2-a2c6710e5149: 4
+
+PolicyIds details:
+0014994825CC420C: 4
+
+JSON dump:
+orgIds={"5678659344564033": 4}
+pipelineIds={"9cbc90cc-71f3-45be-a2d2-a2c6710e5149": 4}
+policyIds={"0014994825CC420C": 4}
+
+-------- First on demand --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Single node cluster in cluster policy (Enhanced) --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Single node cluster in cluster policy (Legacy) --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+-------- Uncategorized truncated logs --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

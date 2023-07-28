@@ -1,0 +1,87 @@
+shardName=gcp-asia-southeast1
+[ONLY_LEGACY_CODE_PATH_SUCCEED]
+======= Summary =======
+count=1,
+total # of org=1
+total # of pipeline=1
+total # of policy=1
+
+=================== DETAILS ===================
+-------- ApplyPolicy RPC validation --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- enable_elastic_disk=True --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Disallowed cluster attributes --------
+count=1
+# of orgs=1
+# of pipelines=1
+# of policies=1
+attributes=None
+
+OrgIds details:
+5028705210016768: 1
+
+PipelineIds details:
+0c3f3a1d-549b-4eeb-a8f4-e1f35cccf3cf: 1
+
+PolicyIds details:
+000714A9DD8CFE6A: 1
+
+PolicyIds details:
+single_user_name_databrick02@gcp.cimb-bank.com.vn: {'count': 1, 'orgIds': {'5028705210016768'}, 'pipelineIds': {'0c3f3a1d-549b-4eeb-a8f4-e1f35cccf3cf'}, 'policyIds': {'000714A9DD8CFE6A'}}
+
+JSON dump:
+orgIds={"5028705210016768": 1}
+pipelineIds={"0c3f3a1d-549b-4eeb-a8f4-e1f35cccf3cf": 1}
+policyIds={"000714A9DD8CFE6A": 1}
+attributes={"single_user_name_databrick02@gcp.cimb-bank.com.vn": {"count": 1, "orgIds": ["5028705210016768"], "pipelineIds": ["0c3f3a1d-549b-4eeb-a8f4-e1f35cccf3cf"], "policyIds": ["000714A9DD8CFE6A"]}}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

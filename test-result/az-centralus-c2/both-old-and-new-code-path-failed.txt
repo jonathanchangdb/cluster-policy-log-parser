@@ -1,0 +1,67 @@
+shardName=az-centralus-c2
+[BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
+======= Summary =======
+count=16,
+total # of org=1
+total # of pipeline=1
+total # of policy=0
+
+
+=================== DETAILS ===================
+-------- Same error message --------
+count=14
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+6056897725116273: 14
+
+PipelineIds details:
+a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15: 14
+
+PolicyIds details:
+
+JSON dump:
+orgIds={"6056897725116273": 14}
+pipelineIds={"a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15": 14}
+policyIds={}
+
+-------- Latest error is subset of legacy --------
+count=2
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+6056897725116273: 2
+
+PipelineIds details:
+a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15: 2
+
+PolicyIds details:
+
+JSON dump:
+orgIds={"6056897725116273": 2}
+pipelineIds={"a37b82e0-1e7b-4f3b-ad6a-a45e9cd03e15": 2}
+policyIds={}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

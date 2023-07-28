@@ -1,7 +1,0 @@
-shardName=az-eastus-c3
-[MATCHED_CLUSTER_SPEC]
-======= Summary =======
-count=9930,
-total # of org=150
-total # of pipeline=563
-total # of policy=0

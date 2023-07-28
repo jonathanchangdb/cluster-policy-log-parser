@@ -1,0 +1,67 @@
+shardName=az-canadacentral
+[BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
+======= Summary =======
+count=55,
+total # of org=1
+total # of pipeline=1
+total # of policy=0
+
+
+=================== DETAILS ===================
+-------- Same error message --------
+count=53
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+6118191587384187: 53
+
+PipelineIds details:
+7f44aa2a-e999-403c-9629-7ef5871e98e7: 53
+
+PolicyIds details:
+
+JSON dump:
+orgIds={"6118191587384187": 53}
+pipelineIds={"7f44aa2a-e999-403c-9629-7ef5871e98e7": 53}
+policyIds={}
+
+-------- Latest error is subset of legacy --------
+count=2
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+6118191587384187: 2
+
+PipelineIds details:
+7f44aa2a-e999-403c-9629-7ef5871e98e7: 2
+
+PolicyIds details:
+
+JSON dump:
+orgIds={"6118191587384187": 2}
+pipelineIds={"7f44aa2a-e999-403c-9629-7ef5871e98e7": 2}
+policyIds={}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

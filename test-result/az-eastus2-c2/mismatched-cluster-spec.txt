@@ -1,0 +1,114 @@
+shardName=az-eastus2-c2
+[MISMATCHED_CLUSTER_SPEC]
+======= Summary =======
+count=0,
+total # of org=0
+total # of pipeline=0
+total # of policy=0
+
+=================== DETAILS ===================
+-------- Autoscaling retry --------
+count=2
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+1088511917216026: 2
+
+PipelineIds details:
+c251ec0c-e7bb-42e8-9c79-492815fdc3f7: 2
+
+PolicyIds details:
+C9643F54D4000CC7: 2
+
+JSON dump:
+orgIds={"1088511917216026": 2}
+pipelineIds={"c251ec0c-e7bb-42e8-9c79-492815fdc3f7": 2}
+policyIds={"C9643F54D4000CC7": 2}
+
+-------- First on demand --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Single node cluster in cluster policy (Enhanced) --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Single node cluster in cluster policy (Legacy) --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+-------- Uncategorized truncated logs --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

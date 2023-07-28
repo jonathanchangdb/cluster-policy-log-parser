@@ -1,7 +1,0 @@
-shardName=singapore-prod
-[MATCHED_CLUSTER_SPEC]
-======= Summary =======
-count=2060,
-total # of org=17
-total # of pipeline=63
-total # of policy=0

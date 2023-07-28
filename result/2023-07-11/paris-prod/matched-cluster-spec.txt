@@ -1,7 +1,0 @@
-shardName=paris-prod
-[MATCHED_CLUSTER_SPEC]
-======= Summary =======
-count=10,
-total # of org=3
-total # of pipeline=4
-total # of policy=0

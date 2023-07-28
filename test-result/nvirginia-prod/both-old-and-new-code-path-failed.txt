@@ -1,0 +1,67 @@
+shardName=nvirginia-prod
+[BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
+======= Summary =======
+count=207,
+total # of org=1
+total # of pipeline=1
+total # of policy=0
+
+
+=================== DETAILS ===================
+-------- Same error message --------
+count=152
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+4376200035740377: 152
+
+PipelineIds details:
+41af97d4-ea29-42ab-9675-89f8c4e8b778: 152
+
+PolicyIds details:
+
+JSON dump:
+orgIds={"4376200035740377": 152}
+pipelineIds={"41af97d4-ea29-42ab-9675-89f8c4e8b778": 152}
+policyIds={}
+
+-------- Latest error is subset of legacy --------
+count=55
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+4376200035740377: 55
+
+PipelineIds details:
+41af97d4-ea29-42ab-9675-89f8c4e8b778: 55
+
+PolicyIds details:
+
+JSON dump:
+orgIds={"4376200035740377": 55}
+pipelineIds={"41af97d4-ea29-42ab-9675-89f8c4e8b778": 55}
+policyIds={}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

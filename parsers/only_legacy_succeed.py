@@ -14,8 +14,35 @@ def __dueToApplyPolicyRpc(only_legacy_succeed_specs):
         orgId, pipelineId = metadata['org_id'], metadata['pipeline_id']
         if error in latest_error:
             result.addWithPolicyId(orgId, pipelineId, policyId)
+        elif 'TEMPORARILY_UNAVAILABLE' in latest_error or 'INTERNAL_ERROR' in latest_error:
+            continue
         else:
             filtered.append(data)
+    return result, filtered
+
+
+def __dueToEnableElasticDisk(only_legacy_succeed_specs):
+    filtered = []
+    result = CategorizationResult("enable_elastic_disk=True")
+    regex = r"The cluster policy for the \"default\" cluster in the pipeline settings is not\n" \
+            r"compatible with the Delta Live Tables because of the following error:[\s]+Cluster " \
+            r"attribute (.*) for cluster 'default' is not allowed for a pipeline.*"
+    for data in only_legacy_succeed_specs:
+        (legacy_cluster_spec, latest_error, metadata) = data
+        policyId = get_policy_id(legacy_cluster_spec)
+        orgId, pipelineId = metadata['org_id'], metadata['pipeline_id']
+
+        regex_result = re.search(regex, latest_error)
+        if regex_result is not None:
+            attribute = regex_result.group(1)[1:-1]
+            policyValue = legacy_cluster_spec['new_cluster'][attribute]
+            if attribute == 'enable_elastic_disk' and policyValue:
+                result.addWithPolicyId(orgId, pipelineId, policyId)
+            else:
+                filtered.append(data)
+        else:
+            filtered.append(data)
+
     return result, filtered
 
 
@@ -32,8 +59,9 @@ def __dueToDisallowedClusterAttributes(only_legacy_succeed_specs):
 
         regex_result = re.search(regex, latest_error)
         if regex_result is not None:
-            attribute = regex_result.group(1)
-            result.add(attribute, orgId, pipelineId, policyId)
+            attribute = regex_result.group(1)[1:-1]
+            policyValue = legacy_cluster_spec['new_cluster'][attribute]
+            result.add(attribute, policyValue, orgId, pipelineId, policyId)
         else:
             filtered.append(data)
 
@@ -44,12 +72,13 @@ def parseOnlyLegacySucceed(response, shardName):
     parsedLogs, failedToParse = parseLogsFromResponse(response, __ONLY_LEGACY_SUCCEED_REGEX)
     onlyLegacySucceedLogs = [(json.loads(x), y, metadata) for (x, y, metadata) in parsedLogs]
     applyPolicyResult, ignoreApplyPolicy = __dueToApplyPolicyRpc(onlyLegacySucceedLogs)
-    disallowedAttrsResult, ignoreDisallowedAttrs = __dueToDisallowedClusterAttributes(ignoreApplyPolicy)
+    enableElasticDiskResult, ignoreEnableElasticDisk = __dueToEnableElasticDisk(ignoreApplyPolicy)
+    disallowedAttrsResult, ignoreDisallowedAttrs = __dueToDisallowedClusterAttributes(ignoreEnableElasticDisk)
 
     uncategorized = UncategorizedResult(ignoreDisallowedAttrs)
 
     metricsResultSummary = SummaryResult("ONLY_LEGACY_CODE_PATH_SUCCEED")
-    metricsResultSummary.add(applyPolicyResult)
+    metricsResultSummary.add(enableElasticDiskResult)
     metricsResultSummary.add(disallowedAttrsResult)
     metricsResultSummary.add(uncategorized)
 
@@ -57,6 +86,7 @@ def parseOnlyLegacySucceed(response, shardName):
 {metricsResultSummary.summary()}
 =================== DETAILS ===================
 {applyPolicyResult}
+{enableElasticDiskResult}
 {disallowedAttrsResult}
 {uncategorized}
 

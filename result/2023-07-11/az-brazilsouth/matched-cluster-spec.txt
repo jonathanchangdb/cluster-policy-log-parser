@@ -1,7 +1,0 @@
-shardName=az-brazilsouth
-[MATCHED_CLUSTER_SPEC]
-======= Summary =======
-count=551,
-total # of org=20
-total # of pipeline=78
-total # of policy=0

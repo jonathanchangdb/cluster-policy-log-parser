@@ -1,0 +1,48 @@
+shardName=az-eastus2-c2
+[ONLY_NEW_CODE_PATH_SUCCEED]
+======= Summary =======
+count=9,
+total # of org=1
+total # of pipeline=1
+total # of policy=1
+
+=================== DETAILS ===================
+-------- Node Type ID --------
+count=9
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+2350349804591912: 9
+
+PipelineIds details:
+15750824-5a07-45e9-8137-42e5b88a7643: 9
+
+PolicyIds details:
+C963A09D2D00015E: 9
+
+JSON dump:
+orgIds={"2350349804591912": 9}
+pipelineIds={"15750824-5a07-45e9-8137-42e5b88a7643": 9}
+policyIds={"C963A09D2D00015E": 9}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
+
+
+-------- Failed to parse --------
+count=0
+log JSON dump=[]

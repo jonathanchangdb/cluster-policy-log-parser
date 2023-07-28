@@ -1,7 +1,0 @@
-shardName=az-centralindia
-[MATCHED_CLUSTER_SPEC]
-======= Summary =======
-count=812,
-total # of org=26
-total # of pipeline=107
-total # of policy=0
