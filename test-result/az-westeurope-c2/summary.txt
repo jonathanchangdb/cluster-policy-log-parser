@@ -1,42 +1,43 @@
 [az-westeurope-c2]
 ======= Summary =======
-count=15339,
-total # of org=215
-total # of pipeline=932
-total # of policy=8
+count=13998,
+total # of org=222
+total # of pipeline=767
+total # of policy=9
 [MATCHED_CLUSTER_SPEC]:
-total = 10064, pipelineIds = 929, orgIds = 212, policies = 3
-- Custom tags total = 64, pipelineIds = 1, orgIds = 1, policies = 3
+total = 10022, pipelineIds = 764, orgIds = 220, policies = 1
+- Custom tags total = 22, pipelineIds = 1, orgIds = 1, policies = 1
 - DLT workload type total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 
 [MISMATCHED_CLUSTER_SPEC]:
-total = 4829, pipelineIds = 1, orgIds = 1, policies = 2
+total = 3714, pipelineIds = 1, orgIds = 1, policies = 2
 - First on demand total = 0, pipelineIds = 0, orgIds = 0, policies = 0
-- Single node cluster in cluster policy (Enhanced) total = 3905, pipelineIds = 1, orgIds = 1, policies = 2
-- Single node cluster in cluster policy (Legacy) total = 924, pipelineIds = 1, orgIds = 1, policies = 1
+- Single node cluster in cluster policy (Enhanced) total = 2975, pipelineIds = 1, orgIds = 1, policies = 2
+- Single node cluster in cluster policy (Legacy) total = 739, pipelineIds = 1, orgIds = 1, policies = 1
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 
 [ONLY_LEGACY_CODE_PATH_SUCCEED]:
-total = 364, pipelineIds = 1, orgIds = 1, policies = 2
+total = 201, pipelineIds = 1, orgIds = 1, policies = 2
 - enable_elastic_disk=True total = 0, pipelineIds = 0, orgIds = 0, policies = 0
-- Disallowed cluster attributes total = 364, pipelineIds = 1, orgIds = 1, policies = 2
+- Disallowed cluster attributes total = 201, pipelineIds = 1, orgIds = 1, policies = 2
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 
 [ONLY_NEW_CODE_PATH_SUCCEED]:
-total = 10, pipelineIds = 2, orgIds = 2, policies = 1
-- Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
-- Uncategorized total = 1, pipelineIds = 1, orgIds = 1, policies = 0
-- Instance pool adjustment total = 9, pipelineIds = 1, orgIds = 1, policies = 1
+total = 15, pipelineIds = 2, orgIds = 2, policies = 4
+- Node Type ID total = 4, pipelineIds = 1, orgIds = 1, policies = 2
+- enable_local_disk_encryption total = 1, pipelineIds = 1, orgIds = 1, policies = 1
+- Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Instance pool adjustment total = 10, pipelineIds = 1, orgIds = 1, policies = 1
 
 
 [BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]:
-total = 72, pipelineIds = 1, orgIds = 1, policies = 0
-- Same error message total = 62, pipelineIds = 1, orgIds = 1, policies = 0
-- Latest error is subset of legacy total = 10, pipelineIds = 1, orgIds = 1, policies = 0
+total = 46, pipelineIds = 1, orgIds = 1, policies = 0
+- Same error message total = 42, pipelineIds = 1, orgIds = 1, policies = 0
+- Latest error is subset of legacy total = 4, pipelineIds = 1, orgIds = 1, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 
@@ -44,33 +45,34 @@ total = 72, pipelineIds = 1, orgIds = 1, policies = 0
 
 ======= Details =======
 (MISMATCHED_CLUSTER_SPEC)
-total = 4829, pipelineIds = 1, orgIds = 1, policies = 2
+total = 3714, pipelineIds = 1, orgIds = 1, policies = 2
 - First on demand total = 0, pipelineIds = 0, orgIds = 0, policies = 0
-- Single node cluster in cluster policy (Enhanced) total = 3905, pipelineIds = 1, orgIds = 1, policies = 2
-- Single node cluster in cluster policy (Legacy) total = 924, pipelineIds = 1, orgIds = 1, policies = 1
+- Single node cluster in cluster policy (Enhanced) total = 2975, pipelineIds = 1, orgIds = 1, policies = 2
+- Single node cluster in cluster policy (Legacy) total = 739, pipelineIds = 1, orgIds = 1, policies = 1
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (ONLY_LEGACY_CODE_PATH_SUCCEED)
-total = 364, pipelineIds = 1, orgIds = 1, policies = 2
+total = 201, pipelineIds = 1, orgIds = 1, policies = 2
 - enable_elastic_disk=True total = 0, pipelineIds = 0, orgIds = 0, policies = 0
-- Disallowed cluster attributes total = 364, pipelineIds = 1, orgIds = 1, policies = 2
+- Disallowed cluster attributes total = 201, pipelineIds = 1, orgIds = 1, policies = 2
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED)
-total = 72, pipelineIds = 1, orgIds = 1, policies = 0
-- Same error message total = 62, pipelineIds = 1, orgIds = 1, policies = 0
-- Latest error is subset of legacy total = 10, pipelineIds = 1, orgIds = 1, policies = 0
+total = 46, pipelineIds = 1, orgIds = 1, policies = 0
+- Same error message total = 42, pipelineIds = 1, orgIds = 1, policies = 0
+- Latest error is subset of legacy total = 4, pipelineIds = 1, orgIds = 1, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (ONLY_NEW_CODE_PATH_SUCCEED)
-total = 10, pipelineIds = 2, orgIds = 2, policies = 1
-- Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
-- Uncategorized total = 1, pipelineIds = 1, orgIds = 1, policies = 0
-- Instance pool adjustment total = 9, pipelineIds = 1, orgIds = 1, policies = 1
+total = 15, pipelineIds = 2, orgIds = 2, policies = 4
+- Node Type ID total = 4, pipelineIds = 1, orgIds = 1, policies = 2
+- enable_local_disk_encryption total = 1, pipelineIds = 1, orgIds = 1, policies = 1
+- Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- Instance pool adjustment total = 10, pipelineIds = 1, orgIds = 1, policies = 1
 
 (MATCHED_CLUSTER_SPEC)
-total = 10064, pipelineIds = 929, orgIds = 212, policies = 3
-- Custom tags total = 64, pipelineIds = 1, orgIds = 1, policies = 3
+total = 10022, pipelineIds = 764, orgIds = 220, policies = 1
+- Custom tags total = 22, pipelineIds = 1, orgIds = 1, policies = 1
 - DLT workload type total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 

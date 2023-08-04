@@ -2,7 +2,7 @@ shardName=sydney-prod
 [MATCHED_CLUSTER_SPEC]
 ======= Summary =======
 count=10000,
-total # of org=64
-total # of pipeline=495
+total # of org=68
+total # of pipeline=446
 total # of policy=0
 

@@ -1,7 +1,7 @@
 shardName=gcp-us-west1
 [BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
 ======= Summary =======
-count=6190,
+count=8589,
 total # of org=1
 total # of pipeline=1
 total # of policy=0
@@ -9,22 +9,22 @@ total # of policy=0
 
 =================== DETAILS ===================
 -------- Same error message --------
-count=6190
+count=8589
 # of orgs=1
 # of pipelines=1
 # of policies=1
 
 OrgIds details:
-8422030046858219: 6190
+8422030046858219: 8589
 
 PipelineIds details:
-502a748d-4963-4469-adbb-5bef257fbc49: 6190
+502a748d-4963-4469-adbb-5bef257fbc49: 8589
 
 PolicyIds details:
 
 JSON dump:
-orgIds={"8422030046858219": 6190}
-pipelineIds={"502a748d-4963-4469-adbb-5bef257fbc49": 6190}
+orgIds={"8422030046858219": 8589}
+pipelineIds={"502a748d-4963-4469-adbb-5bef257fbc49": 8589}
 policyIds={}
 
 -------- Latest error is subset of legacy --------

@@ -1,11 +1,11 @@
 [az-eastus-c3]
 ======= Summary =======
-count=10130,
-total # of org=176
-total # of pipeline=620
-total # of policy=7
+count=10184,
+total # of org=174
+total # of pipeline=643
+total # of policy=8
 [MATCHED_CLUSTER_SPEC]:
-total = 10048, pipelineIds = 620, orgIds = 176, policies = 7
+total = 10048, pipelineIds = 642, orgIds = 174, policies = 7
 - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - DLT workload type total = 48, pipelineIds = 1, orgIds = 1, policies = 7
 
@@ -27,16 +27,17 @@ total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 
 [ONLY_NEW_CODE_PATH_SUCCEED]:
-total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+total = 9, pipelineIds = 1, orgIds = 1, policies = 1
 - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- enable_local_disk_encryption total = 9, pipelineIds = 1, orgIds = 1, policies = 1
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Instance pool adjustment total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 
 [BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]:
-total = 82, pipelineIds = 1, orgIds = 1, policies = 0
-- Same error message total = 75, pipelineIds = 1, orgIds = 1, policies = 0
-- Latest error is subset of legacy total = 7, pipelineIds = 1, orgIds = 1, policies = 0
+total = 127, pipelineIds = 1, orgIds = 1, policies = 0
+- Same error message total = 97, pipelineIds = 1, orgIds = 1, policies = 0
+- Latest error is subset of legacy total = 30, pipelineIds = 1, orgIds = 1, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 
@@ -58,19 +59,20 @@ total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED)
-total = 82, pipelineIds = 1, orgIds = 1, policies = 0
-- Same error message total = 75, pipelineIds = 1, orgIds = 1, policies = 0
-- Latest error is subset of legacy total = 7, pipelineIds = 1, orgIds = 1, policies = 0
+total = 127, pipelineIds = 1, orgIds = 1, policies = 0
+- Same error message total = 97, pipelineIds = 1, orgIds = 1, policies = 0
+- Latest error is subset of legacy total = 30, pipelineIds = 1, orgIds = 1, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (ONLY_NEW_CODE_PATH_SUCCEED)
-total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+total = 9, pipelineIds = 1, orgIds = 1, policies = 1
 - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- enable_local_disk_encryption total = 9, pipelineIds = 1, orgIds = 1, policies = 1
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Instance pool adjustment total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (MATCHED_CLUSTER_SPEC)
-total = 10048, pipelineIds = 620, orgIds = 176, policies = 7
+total = 10048, pipelineIds = 642, orgIds = 174, policies = 7
 - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - DLT workload type total = 48, pipelineIds = 1, orgIds = 1, policies = 7
 

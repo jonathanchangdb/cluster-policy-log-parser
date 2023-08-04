@@ -1,31 +1,49 @@
 shardName=az-westus
 [ONLY_NEW_CODE_PATH_SUCCEED]
 ======= Summary =======
-count=3,
+count=2,
 total # of org=1
 total # of pipeline=1
-total # of policy=1
+total # of policy=2
 
 =================== DETAILS ===================
 -------- Node Type ID --------
-count=3
+count=2
 # of orgs=1
 # of pipelines=1
 # of policies=1
 
 OrgIds details:
-330310747492454: 3
+330310747492454: 2
 
 PipelineIds details:
-a68e599b-08f6-44d1-b5cb-231dc90c7f8e: 3
+67ae8b22-b5ad-464e-b2e0-b746dce92e81: 2
 
 PolicyIds details:
-00003A94B29177F6: 3
+D062DA0F3700009A: 1
+00003A94B29177F6: 1
 
 JSON dump:
-orgIds={"330310747492454": 3}
-pipelineIds={"a68e599b-08f6-44d1-b5cb-231dc90c7f8e": 3}
-policyIds={"00003A94B29177F6": 3}
+orgIds={"330310747492454": 2}
+pipelineIds={"67ae8b22-b5ad-464e-b2e0-b746dce92e81": 2}
+policyIds={"D062DA0F3700009A": 1, "00003A94B29177F6": 1}
+
+-------- enable_local_disk_encryption --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
 
 -------- Uncategorized --------
 count=0

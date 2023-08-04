@@ -1,8 +1,8 @@
 shardName=gcp-australia-southeast1
 [MATCHED_CLUSTER_SPEC]
 ======= Summary =======
-count=18,
-total # of org=3
-total # of pipeline=3
+count=32,
+total # of org=4
+total # of pipeline=5
 total # of policy=0
 

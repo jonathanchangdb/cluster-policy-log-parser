@@ -2,7 +2,7 @@ shardName=az-westeurope
 [MATCHED_CLUSTER_SPEC]
 ======= Summary =======
 count=10000,
-total # of org=75
-total # of pipeline=286
+total # of org=83
+total # of pipeline=336
 total # of policy=0
 

@@ -1,11 +1,11 @@
 [gcp-us-west4]
 ======= Summary =======
-count=59,
-total # of org=3
-total # of pipeline=5
+count=258,
+total # of org=4
+total # of pipeline=8
 total # of policy=1
 [MATCHED_CLUSTER_SPEC]:
-total = 51, pipelineIds = 5, orgIds = 3, policies = 0
+total = 250, pipelineIds = 8, orgIds = 4, policies = 0
 - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - DLT workload type total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
@@ -29,6 +29,7 @@ total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 [ONLY_NEW_CODE_PATH_SUCCEED]:
 total = 2, pipelineIds = 1, orgIds = 1, policies = 1
 - Node Type ID total = 2, pipelineIds = 1, orgIds = 1, policies = 1
+- enable_local_disk_encryption total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Instance pool adjustment total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
@@ -66,11 +67,12 @@ total = 6, pipelineIds = 1, orgIds = 1, policies = 0
 (ONLY_NEW_CODE_PATH_SUCCEED)
 total = 2, pipelineIds = 1, orgIds = 1, policies = 1
 - Node Type ID total = 2, pipelineIds = 1, orgIds = 1, policies = 1
+- enable_local_disk_encryption total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Instance pool adjustment total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (MATCHED_CLUSTER_SPEC)
-total = 51, pipelineIds = 5, orgIds = 3, policies = 0
+total = 250, pipelineIds = 8, orgIds = 4, policies = 0
 - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - DLT workload type total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 

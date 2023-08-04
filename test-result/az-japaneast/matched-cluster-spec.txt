@@ -1,8 +1,8 @@
 shardName=az-japaneast
 [MATCHED_CLUSTER_SPEC]
 ======= Summary =======
-count=1770,
-total # of org=26
-total # of pipeline=101
+count=2518,
+total # of org=34
+total # of pipeline=167
 total # of policy=0
 

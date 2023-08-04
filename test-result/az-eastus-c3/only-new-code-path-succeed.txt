@@ -1,10 +1,10 @@
 shardName=az-eastus-c3
 [ONLY_NEW_CODE_PATH_SUCCEED]
 ======= Summary =======
-count=0,
-total # of org=0
-total # of pipeline=0
-total # of policy=0
+count=9,
+total # of org=1
+total # of pipeline=1
+total # of policy=1
 
 =================== DETAILS ===================
 -------- Node Type ID --------
@@ -23,6 +23,26 @@ JSON dump:
 orgIds={}
 pipelineIds={}
 policyIds={}
+
+-------- enable_local_disk_encryption --------
+count=9
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+6724278065743316: 9
+
+PipelineIds details:
+5d845f4e-c3cd-4dc2-9ee2-5280ca2ba6cf: 9
+
+PolicyIds details:
+000B4409D12AD66B: 9
+
+JSON dump:
+orgIds={"6724278065743316": 9}
+pipelineIds={"5d845f4e-c3cd-4dc2-9ee2-5280ca2ba6cf": 9}
+policyIds={"000B4409D12AD66B": 9}
 
 -------- Uncategorized --------
 count=0

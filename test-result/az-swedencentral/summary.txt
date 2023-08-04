@@ -1,11 +1,11 @@
 [az-swedencentral]
 ======= Summary =======
-count=2479,
-total # of org=14
-total # of pipeline=80
+count=2433,
+total # of org=13
+total # of pipeline=76
 total # of policy=0
 [MATCHED_CLUSTER_SPEC]:
-total = 2479, pipelineIds = 80, orgIds = 14, policies = 0
+total = 2433, pipelineIds = 76, orgIds = 13, policies = 0
 - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - DLT workload type total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
@@ -29,6 +29,7 @@ total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 [ONLY_NEW_CODE_PATH_SUCCEED]:
 total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- enable_local_disk_encryption total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Instance pool adjustment total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
@@ -66,11 +67,12 @@ total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 (ONLY_NEW_CODE_PATH_SUCCEED)
 total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- enable_local_disk_encryption total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Instance pool adjustment total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (MATCHED_CLUSTER_SPEC)
-total = 2479, pipelineIds = 80, orgIds = 14, policies = 0
+total = 2433, pipelineIds = 76, orgIds = 13, policies = 0
 - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - DLT workload type total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 

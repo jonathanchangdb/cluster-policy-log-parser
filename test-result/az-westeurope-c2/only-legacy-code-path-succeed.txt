@@ -1,7 +1,7 @@
 shardName=az-westeurope-c2
 [ONLY_LEGACY_CODE_PATH_SUCCEED]
 ======= Summary =======
-count=364,
+count=201,
 total # of org=1
 total # of pipeline=1
 total # of policy=2
@@ -42,30 +42,30 @@ pipelineIds={}
 policyIds={}
 
 -------- Disallowed cluster attributes --------
-count=364
+count=201
 # of orgs=1
 # of pipelines=1
 # of policies=1
 attributes=None
 
 OrgIds details:
-4569255383179310: 364
+4569255383179310: 201
 
 PipelineIds details:
-1e2a4e33-2f14-4d22-9aea-bd04189f0c83: 364
+38c9d4f9-d6dc-453d-99ad-c20ca1176eef: 201
 
 PolicyIds details:
-306312B97300034B: 253
-30644216E400504D: 111
+306312B97300034B: 105
+30644216E400504D: 96
 
 PolicyIds details:
-cluster_source_PIPELINE: {'count': 364, 'orgIds': {'4569255383179310'}, 'pipelineIds': {'1e2a4e33-2f14-4d22-9aea-bd04189f0c83'}, 'policyIds': {'306312B97300034B', '30644216E400504D'}}
+cluster_source_PIPELINE: {'count': 201, 'orgIds': {'4569255383179310'}, 'pipelineIds': {'38c9d4f9-d6dc-453d-99ad-c20ca1176eef'}, 'policyIds': {'30644216E400504D', '306312B97300034B'}}
 
 JSON dump:
-orgIds={"4569255383179310": 364}
-pipelineIds={"1e2a4e33-2f14-4d22-9aea-bd04189f0c83": 364}
-policyIds={"306312B97300034B": 253, "30644216E400504D": 111}
-attributes={"cluster_source_PIPELINE": {"count": 364, "orgIds": ["4569255383179310"], "pipelineIds": ["1e2a4e33-2f14-4d22-9aea-bd04189f0c83"], "policyIds": ["306312B97300034B", "30644216E400504D"]}}
+orgIds={"4569255383179310": 201}
+pipelineIds={"38c9d4f9-d6dc-453d-99ad-c20ca1176eef": 201}
+policyIds={"306312B97300034B": 105, "30644216E400504D": 96}
+attributes={"cluster_source_PIPELINE": {"count": 201, "orgIds": ["4569255383179310"], "pipelineIds": ["38c9d4f9-d6dc-453d-99ad-c20ca1176eef"], "policyIds": ["30644216E400504D", "306312B97300034B"]}}
 
 -------- Uncategorized --------
 count=0

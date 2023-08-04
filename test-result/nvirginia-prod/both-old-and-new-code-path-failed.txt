@@ -1,7 +1,7 @@
 shardName=nvirginia-prod
 [BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
 ======= Summary =======
-count=207,
+count=440,
 total # of org=1
 total # of pipeline=1
 total # of policy=0
@@ -9,57 +9,59 @@ total # of policy=0
 
 =================== DETAILS ===================
 -------- Same error message --------
-count=152
+count=369
 # of orgs=1
 # of pipelines=1
 # of policies=1
 
 OrgIds details:
-4376200035740377: 152
+6647146426535145: 369
 
 PipelineIds details:
-41af97d4-ea29-42ab-9675-89f8c4e8b778: 152
+59f529bd-ced6-42b9-919b-dd02dffbf433: 369
 
 PolicyIds details:
 
 JSON dump:
-orgIds={"4376200035740377": 152}
-pipelineIds={"41af97d4-ea29-42ab-9675-89f8c4e8b778": 152}
+orgIds={"6647146426535145": 369}
+pipelineIds={"59f529bd-ced6-42b9-919b-dd02dffbf433": 369}
 policyIds={}
 
 -------- Latest error is subset of legacy --------
-count=55
+count=69
 # of orgs=1
 # of pipelines=1
 # of policies=1
 
 OrgIds details:
-4376200035740377: 55
+6647146426535145: 69
 
 PipelineIds details:
-41af97d4-ea29-42ab-9675-89f8c4e8b778: 55
+59f529bd-ced6-42b9-919b-dd02dffbf433: 69
 
 PolicyIds details:
 
 JSON dump:
-orgIds={"4376200035740377": 55}
-pipelineIds={"41af97d4-ea29-42ab-9675-89f8c4e8b778": 55}
+orgIds={"6647146426535145": 69}
+pipelineIds={"59f529bd-ced6-42b9-919b-dd02dffbf433": 69}
 policyIds={}
 
 -------- Uncategorized --------
-count=0
-# of orgs=0
-# of pipelines=0
-# of policies=0
+count=2
+# of orgs=1
+# of pipelines=1
+# of policies=1
 
 OrgIds details:
+6647146426535145: 2
 
 PipelineIds details:
+59f529bd-ced6-42b9-919b-dd02dffbf433: 2
 
 JSON dump:
-orgIds={}
-pipelineIds={}
-logs={}
+orgIds={"6647146426535145": 2}
+pipelineIds={"59f529bd-ced6-42b9-919b-dd02dffbf433": 2}
+logs={"6647146426535145_59f529bd-ced6-42b9-919b-dd02dffbf433": [{"legacy": "INVALID_PARAMETER_VALUE: Validation failed for spark_version, needs to be one of (13.1.x-scala2.12, 13.0.x-scala2.12, 12.2.x-scala2.12, 12.1.x-scala2.12, 12.0.x-scala2.12, 11.3.x-scala2.12, 13.1.x-photon-scala2.12, 13.0.x-photon-scala2.12, 12.2.x-photon-scala2.12, 12.1.x-photon-scala2.12, 12.0.x-photon-scala2.12, 11.3.x-photon-scala2.12) (is an element in \"List(dlt:11.3-delta-pipelines-photon-dlt-release-2023.30-rc1-commit-7b57ba3-image-7912814, dlt:11.3-delta-pipelines-photon-dlt-release-2023.30-rc1-commit-7b57ba3-image-7912814)\")\n\n", "latest": "The cluster policy for pipeline updates in the pipeline settings is not\ncompatible with the Delta Live Tables because of the following error:\n\nCluster attribute `enable_elastic_disk' for cluster 'updates' is not allowed for a pipeline.\n\nPlease update the cluster policy accordingly.\n\n"}, {"legacy": "INVALID_PARAMETER_VALUE: Validation failed for aws_attributes.instance_profile_arn, the value must be present\n\n", "latest": "The cluster policy for pipeline updates in the pipeline settings is not\ncompatible with the Delta Live Tables because of the following error:\n\nCluster attribute `enable_elastic_disk' for cluster 'updates' is not allowed for a pipeline.\n\nPlease update the cluster policy accordingly.\n\n"}]}
 
 
 -------- Failed to parse --------

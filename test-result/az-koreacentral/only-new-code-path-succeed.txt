@@ -1,13 +1,33 @@
 shardName=az-koreacentral
 [ONLY_NEW_CODE_PATH_SUCCEED]
 ======= Summary =======
-count=0,
-total # of org=0
-total # of pipeline=0
-total # of policy=0
+count=3,
+total # of org=1
+total # of pipeline=1
+total # of policy=1
 
 =================== DETAILS ===================
 -------- Node Type ID --------
+count=3
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+4102579182584668: 3
+
+PipelineIds details:
+0b1e286b-3b2b-439c-808e-2d0afe8124b8: 3
+
+PolicyIds details:
+0008F71DE9BF70F0: 3
+
+JSON dump:
+orgIds={"4102579182584668": 3}
+pipelineIds={"0b1e286b-3b2b-439c-808e-2d0afe8124b8": 3}
+policyIds={"0008F71DE9BF70F0": 3}
+
+-------- enable_local_disk_encryption --------
 count=0
 # of orgs=0
 # of pipelines=0

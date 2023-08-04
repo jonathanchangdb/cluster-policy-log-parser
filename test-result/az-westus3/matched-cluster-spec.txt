@@ -1,8 +1,8 @@
 shardName=az-westus3
 [MATCHED_CLUSTER_SPEC]
 ======= Summary =======
-count=5618,
-total # of org=11
-total # of pipeline=38
+count=7612,
+total # of org=12
+total # of pipeline=49
 total # of policy=0
 

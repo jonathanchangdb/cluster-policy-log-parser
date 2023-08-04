@@ -1,7 +1,7 @@
 shardName=tokyo-prod
 [ONLY_LEGACY_CODE_PATH_SUCCEED]
 ======= Summary =======
-count=23,
+count=63,
 total # of org=1
 total # of pipeline=1
 total # of policy=2
@@ -25,25 +25,25 @@ pipelineIds={}
 policyIds={}
 
 -------- enable_elastic_disk=True --------
-count=23
+count=63
 # of orgs=1
 # of pipelines=1
 # of policies=1
 
 OrgIds details:
-7410880313725578: 23
+7410880313725578: 63
 
 PipelineIds details:
-81ba12ca-d6a1-4862-abfc-1bb884e809a9: 23
+81ba12ca-d6a1-4862-abfc-1bb884e809a9: 63
 
 PolicyIds details:
+001D2DF0D6FCC1A0: 42
 001640D5E8329F92: 21
-001D2DF0D6FCC1A0: 2
 
 JSON dump:
-orgIds={"7410880313725578": 23}
-pipelineIds={"81ba12ca-d6a1-4862-abfc-1bb884e809a9": 23}
-policyIds={"001640D5E8329F92": 21, "001D2DF0D6FCC1A0": 2}
+orgIds={"7410880313725578": 63}
+pipelineIds={"81ba12ca-d6a1-4862-abfc-1bb884e809a9": 63}
+policyIds={"001D2DF0D6FCC1A0": 42, "001640D5E8329F92": 21}
 
 -------- Disallowed cluster attributes --------
 count=0

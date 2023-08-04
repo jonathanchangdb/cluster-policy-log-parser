@@ -1,7 +1,7 @@
 shardName=az-canadacentral
 [BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
 ======= Summary =======
-count=55,
+count=65,
 total # of org=1
 total # of pipeline=1
 total # of policy=0
@@ -9,22 +9,22 @@ total # of policy=0
 
 =================== DETAILS ===================
 -------- Same error message --------
-count=53
+count=63
 # of orgs=1
 # of pipelines=1
 # of policies=1
 
 OrgIds details:
-6118191587384187: 53
+6118191587384187: 63
 
 PipelineIds details:
-7f44aa2a-e999-403c-9629-7ef5871e98e7: 53
+7f44aa2a-e999-403c-9629-7ef5871e98e7: 63
 
 PolicyIds details:
 
 JSON dump:
-orgIds={"6118191587384187": 53}
-pipelineIds={"7f44aa2a-e999-403c-9629-7ef5871e98e7": 53}
+orgIds={"6118191587384187": 63}
+pipelineIds={"7f44aa2a-e999-403c-9629-7ef5871e98e7": 63}
 policyIds={}
 
 -------- Latest error is subset of legacy --------

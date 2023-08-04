@@ -1,7 +1,7 @@
 shardName=az-eastus2-c3
 [BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
 ======= Summary =======
-count=8,
+count=21,
 total # of org=1
 total # of pipeline=1
 total # of policy=0
@@ -9,22 +9,22 @@ total # of policy=0
 
 =================== DETAILS ===================
 -------- Same error message --------
-count=8
+count=21
 # of orgs=1
 # of pipelines=1
 # of policies=1
 
 OrgIds details:
-6740998013308099: 8
+6740998013308099: 21
 
 PipelineIds details:
-f78724aa-673a-435d-b210-455687f8958a: 8
+f78724aa-673a-435d-b210-455687f8958a: 21
 
 PolicyIds details:
 
 JSON dump:
-orgIds={"6740998013308099": 8}
-pipelineIds={"f78724aa-673a-435d-b210-455687f8958a": 8}
+orgIds={"6740998013308099": 21}
+pipelineIds={"f78724aa-673a-435d-b210-455687f8958a": 21}
 policyIds={}
 
 -------- Latest error is subset of legacy --------

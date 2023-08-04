@@ -1,11 +1,11 @@
 [az-germanywestcentral]
 ======= Summary =======
-count=2501,
-total # of org=19
-total # of pipeline=70
+count=2645,
+total # of org=21
+total # of pipeline=83
 total # of policy=0
 [MATCHED_CLUSTER_SPEC]:
-total = 2501, pipelineIds = 70, orgIds = 19, policies = 0
+total = 2645, pipelineIds = 83, orgIds = 21, policies = 0
 - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - DLT workload type total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
@@ -29,6 +29,7 @@ total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 [ONLY_NEW_CODE_PATH_SUCCEED]:
 total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- enable_local_disk_encryption total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Instance pool adjustment total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
@@ -66,11 +67,12 @@ total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 (ONLY_NEW_CODE_PATH_SUCCEED)
 total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- enable_local_disk_encryption total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Instance pool adjustment total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (MATCHED_CLUSTER_SPEC)
-total = 2501, pipelineIds = 70, orgIds = 19, policies = 0
+total = 2645, pipelineIds = 83, orgIds = 21, policies = 0
 - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - DLT workload type total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 

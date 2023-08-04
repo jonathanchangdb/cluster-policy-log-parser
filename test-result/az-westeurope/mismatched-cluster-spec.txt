@@ -8,25 +8,21 @@ total # of policy=0
 
 =================== DETAILS ===================
 -------- Autoscaling retry --------
-count=43
-# of orgs=1
-# of pipelines=1
-# of policies=1
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
 
 OrgIds details:
-5356631102139678: 43
 
 PipelineIds details:
-165a09d1-1d8f-4708-82f7-453b6c14332c: 43
 
 PolicyIds details:
-8F63D160B9000344: 23
-8F6408BFFB000570: 20
 
 JSON dump:
-orgIds={"5356631102139678": 43}
-pipelineIds={"165a09d1-1d8f-4708-82f7-453b6c14332c": 43}
-policyIds={"8F63D160B9000344": 23, "8F6408BFFB000570": 20}
+orgIds={}
+pipelineIds={}
+policyIds={}
 
 -------- First on demand --------
 count=0

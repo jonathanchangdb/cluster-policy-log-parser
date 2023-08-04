@@ -29,6 +29,7 @@ total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 [ONLY_NEW_CODE_PATH_SUCCEED]:
 total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- enable_local_disk_encryption total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Instance pool adjustment total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
@@ -66,6 +67,7 @@ total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 (ONLY_NEW_CODE_PATH_SUCCEED)
 total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- enable_local_disk_encryption total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Instance pool adjustment total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 

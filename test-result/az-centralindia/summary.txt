@@ -1,11 +1,11 @@
 [az-centralindia]
 ======= Summary =======
 count=10003,
-total # of org=102
-total # of pipeline=435
+total # of org=98
+total # of pipeline=590
 total # of policy=0
 [MATCHED_CLUSTER_SPEC]:
-total = 10000, pipelineIds = 434, orgIds = 101, policies = 0
+total = 10000, pipelineIds = 589, orgIds = 97, policies = 0
 - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - DLT workload type total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
@@ -29,6 +29,7 @@ total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 [ONLY_NEW_CODE_PATH_SUCCEED]:
 total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- enable_local_disk_encryption total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Instance pool adjustment total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
@@ -66,11 +67,12 @@ total = 3, pipelineIds = 1, orgIds = 1, policies = 0
 (ONLY_NEW_CODE_PATH_SUCCEED)
 total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- enable_local_disk_encryption total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Instance pool adjustment total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (MATCHED_CLUSTER_SPEC)
-total = 10000, pipelineIds = 434, orgIds = 101, policies = 0
+total = 10000, pipelineIds = 589, orgIds = 97, policies = 0
 - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - DLT workload type total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 

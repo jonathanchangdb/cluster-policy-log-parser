@@ -1,7 +1,7 @@
 shardName=tokyo-prod
 [BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
 ======= Summary =======
-count=7,
+count=19,
 total # of org=1
 total # of pipeline=1
 total # of policy=0
@@ -9,22 +9,22 @@ total # of policy=0
 
 =================== DETAILS ===================
 -------- Same error message --------
-count=7
+count=19
 # of orgs=1
 # of pipelines=1
 # of policies=1
 
 OrgIds details:
-4817671870964940: 7
+4817671870964940: 19
 
 PipelineIds details:
-9fe93427-3f01-4711-b857-cc95d8934aa3: 7
+9fe93427-3f01-4711-b857-cc95d8934aa3: 19
 
 PolicyIds details:
 
 JSON dump:
-orgIds={"4817671870964940": 7}
-pipelineIds={"9fe93427-3f01-4711-b857-cc95d8934aa3": 7}
+orgIds={"4817671870964940": 19}
+pipelineIds={"9fe93427-3f01-4711-b857-cc95d8934aa3": 19}
 policyIds={}
 
 -------- Latest error is subset of legacy --------

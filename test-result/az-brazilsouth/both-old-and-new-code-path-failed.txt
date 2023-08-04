@@ -1,7 +1,7 @@
 shardName=az-brazilsouth
 [BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
 ======= Summary =======
-count=1,
+count=4,
 total # of org=1
 total # of pipeline=1
 total # of policy=0
@@ -9,22 +9,22 @@ total # of policy=0
 
 =================== DETAILS ===================
 -------- Same error message --------
-count=1
+count=4
 # of orgs=1
 # of pipelines=1
 # of policies=1
 
 OrgIds details:
-4888082877993055: 1
+4888082877993055: 4
 
 PipelineIds details:
-c363bf06-859c-496f-b250-2f5f126b646f: 1
+c363bf06-859c-496f-b250-2f5f126b646f: 4
 
 PolicyIds details:
 
 JSON dump:
-orgIds={"4888082877993055": 1}
-pipelineIds={"c363bf06-859c-496f-b250-2f5f126b646f": 1}
+orgIds={"4888082877993055": 4}
+pipelineIds={"c363bf06-859c-496f-b250-2f5f126b646f": 4}
 policyIds={}
 
 -------- Latest error is subset of legacy --------

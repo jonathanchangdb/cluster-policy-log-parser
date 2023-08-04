@@ -1,7 +1,7 @@
 shardName=sydney-prod
 [BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
 ======= Summary =======
-count=54,
+count=88,
 total # of org=1
 total # of pipeline=1
 total # of policy=0
@@ -9,22 +9,22 @@ total # of policy=0
 
 =================== DETAILS ===================
 -------- Same error message --------
-count=54
+count=88
 # of orgs=1
 # of pipelines=1
 # of policies=1
 
 OrgIds details:
-21424168644786: 54
+21424168644786: 88
 
 PipelineIds details:
-5cf4c37a-3d53-4e7e-8d21-3594b26063ce: 54
+5cf4c37a-3d53-4e7e-8d21-3594b26063ce: 88
 
 PolicyIds details:
 
 JSON dump:
-orgIds={"21424168644786": 54}
-pipelineIds={"5cf4c37a-3d53-4e7e-8d21-3594b26063ce": 54}
+orgIds={"21424168644786": 88}
+pipelineIds={"5cf4c37a-3d53-4e7e-8d21-3594b26063ce": 88}
 policyIds={}
 
 -------- Latest error is subset of legacy --------

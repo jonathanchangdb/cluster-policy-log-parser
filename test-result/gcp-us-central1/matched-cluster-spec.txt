@@ -1,8 +1,8 @@
 shardName=gcp-us-central1
 [MATCHED_CLUSTER_SPEC]
 ======= Summary =======
-count=3894,
-total # of org=21
-total # of pipeline=121
+count=5489,
+total # of org=25
+total # of pipeline=154
 total # of policy=0
 

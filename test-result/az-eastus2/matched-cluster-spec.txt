@@ -2,7 +2,7 @@ shardName=az-eastus2
 [MATCHED_CLUSTER_SPEC]
 ======= Summary =======
 count=10000,
-total # of org=77
-total # of pipeline=419
+total # of org=88
+total # of pipeline=451
 total # of policy=0
 

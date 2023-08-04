@@ -2,7 +2,7 @@ shardName=az-koreacentral
 [MATCHED_CLUSTER_SPEC]
 ======= Summary =======
 count=10000,
-total # of org=16
-total # of pipeline=45
+total # of org=19
+total # of pipeline=51
 total # of policy=0
 

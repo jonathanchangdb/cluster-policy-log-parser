@@ -1,7 +1,7 @@
 shardName=az-eastus-c3
 [BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
 ======= Summary =======
-count=82,
+count=127,
 total # of org=1
 total # of pipeline=1
 total # of policy=0
@@ -9,41 +9,41 @@ total # of policy=0
 
 =================== DETAILS ===================
 -------- Same error message --------
-count=75
+count=97
 # of orgs=1
 # of pipelines=1
 # of policies=1
 
 OrgIds details:
-5299434003402956: 75
+3743350799562422: 97
 
 PipelineIds details:
-22664474-285c-4571-afe0-b8e97eed533d: 75
+84251b91-d9cb-4c84-b7c9-acb540fee7a4: 97
 
 PolicyIds details:
 
 JSON dump:
-orgIds={"5299434003402956": 75}
-pipelineIds={"22664474-285c-4571-afe0-b8e97eed533d": 75}
+orgIds={"3743350799562422": 97}
+pipelineIds={"84251b91-d9cb-4c84-b7c9-acb540fee7a4": 97}
 policyIds={}
 
 -------- Latest error is subset of legacy --------
-count=7
+count=30
 # of orgs=1
 # of pipelines=1
 # of policies=1
 
 OrgIds details:
-5299434003402956: 7
+3743350799562422: 30
 
 PipelineIds details:
-22664474-285c-4571-afe0-b8e97eed533d: 7
+84251b91-d9cb-4c84-b7c9-acb540fee7a4: 30
 
 PolicyIds details:
 
 JSON dump:
-orgIds={"5299434003402956": 7}
-pipelineIds={"22664474-285c-4571-afe0-b8e97eed533d": 7}
+orgIds={"3743350799562422": 30}
+pipelineIds={"84251b91-d9cb-4c84-b7c9-acb540fee7a4": 30}
 policyIds={}
 
 -------- Uncategorized --------

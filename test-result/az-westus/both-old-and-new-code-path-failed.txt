@@ -1,7 +1,7 @@
 shardName=az-westus
 [BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
 ======= Summary =======
-count=736,
+count=856,
 total # of org=1
 total # of pipeline=1
 total # of policy=0
@@ -9,41 +9,41 @@ total # of policy=0
 
 =================== DETAILS ===================
 -------- Same error message --------
-count=730
+count=853
 # of orgs=1
 # of pipelines=1
 # of policies=1
 
 OrgIds details:
-2548836972759138: 730
+2548836972759138: 853
 
 PipelineIds details:
-6060ca8a-db6b-47a8-bf33-830252ca1c32: 730
+6060ca8a-db6b-47a8-bf33-830252ca1c32: 853
 
 PolicyIds details:
 
 JSON dump:
-orgIds={"2548836972759138": 730}
-pipelineIds={"6060ca8a-db6b-47a8-bf33-830252ca1c32": 730}
+orgIds={"2548836972759138": 853}
+pipelineIds={"6060ca8a-db6b-47a8-bf33-830252ca1c32": 853}
 policyIds={}
 
 -------- Latest error is subset of legacy --------
-count=6
+count=3
 # of orgs=1
 # of pipelines=1
 # of policies=1
 
 OrgIds details:
-2548836972759138: 6
+2548836972759138: 3
 
 PipelineIds details:
-6060ca8a-db6b-47a8-bf33-830252ca1c32: 6
+6060ca8a-db6b-47a8-bf33-830252ca1c32: 3
 
 PolicyIds details:
 
 JSON dump:
-orgIds={"2548836972759138": 6}
-pipelineIds={"6060ca8a-db6b-47a8-bf33-830252ca1c32": 6}
+orgIds={"2548836972759138": 3}
+pipelineIds={"6060ca8a-db6b-47a8-bf33-830252ca1c32": 3}
 policyIds={}
 
 -------- Uncategorized --------

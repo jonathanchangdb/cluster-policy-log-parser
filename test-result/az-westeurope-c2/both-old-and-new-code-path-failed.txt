@@ -1,7 +1,7 @@
 shardName=az-westeurope-c2
 [BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
 ======= Summary =======
-count=72,
+count=46,
 total # of org=1
 total # of pipeline=1
 total # of policy=0
@@ -9,41 +9,41 @@ total # of policy=0
 
 =================== DETAILS ===================
 -------- Same error message --------
-count=62
+count=42
 # of orgs=1
 # of pipelines=1
 # of policies=1
 
 OrgIds details:
-5984532590469959: 62
+6322990476730776: 42
 
 PipelineIds details:
-32f3de2d-5066-4ade-8f83-19a3c80ec08e: 62
+89315f67-c977-4aa4-8c77-c806843fc2fc: 42
 
 PolicyIds details:
 
 JSON dump:
-orgIds={"5984532590469959": 62}
-pipelineIds={"32f3de2d-5066-4ade-8f83-19a3c80ec08e": 62}
+orgIds={"6322990476730776": 42}
+pipelineIds={"89315f67-c977-4aa4-8c77-c806843fc2fc": 42}
 policyIds={}
 
 -------- Latest error is subset of legacy --------
-count=10
+count=4
 # of orgs=1
 # of pipelines=1
 # of policies=1
 
 OrgIds details:
-5984532590469959: 10
+6322990476730776: 4
 
 PipelineIds details:
-32f3de2d-5066-4ade-8f83-19a3c80ec08e: 10
+89315f67-c977-4aa4-8c77-c806843fc2fc: 4
 
 PolicyIds details:
 
 JSON dump:
-orgIds={"5984532590469959": 10}
-pipelineIds={"32f3de2d-5066-4ade-8f83-19a3c80ec08e": 10}
+orgIds={"6322990476730776": 4}
+pipelineIds={"89315f67-c977-4aa4-8c77-c806843fc2fc": 4}
 policyIds={}
 
 -------- Uncategorized --------

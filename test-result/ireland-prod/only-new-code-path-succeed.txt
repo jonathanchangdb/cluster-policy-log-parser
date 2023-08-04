@@ -27,6 +27,23 @@ orgIds={"5650561193680151": 2}
 pipelineIds={"9d0b7867-20fb-41d9-9dd4-99446394cce4": 2}
 policyIds={"001B150F1F58235C": 2}
 
+-------- enable_local_disk_encryption --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+PolicyIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+policyIds={}
+
 -------- Uncategorized --------
 count=0
 # of orgs=0

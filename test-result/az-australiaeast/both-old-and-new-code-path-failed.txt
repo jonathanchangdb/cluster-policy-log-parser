@@ -1,7 +1,7 @@
 shardName=az-australiaeast
 [BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
 ======= Summary =======
-count=8,
+count=20,
 total # of org=1
 total # of pipeline=1
 total # of policy=0
@@ -9,41 +9,41 @@ total # of policy=0
 
 =================== DETAILS ===================
 -------- Same error message --------
-count=5
+count=13
 # of orgs=1
 # of pipelines=1
 # of policies=1
 
 OrgIds details:
-7790553554900826: 5
+7790553554900826: 13
 
 PipelineIds details:
-10eb391c-cba5-404a-847d-5a1ae6f9d5df: 5
+10eb391c-cba5-404a-847d-5a1ae6f9d5df: 13
 
 PolicyIds details:
 
 JSON dump:
-orgIds={"7790553554900826": 5}
-pipelineIds={"10eb391c-cba5-404a-847d-5a1ae6f9d5df": 5}
+orgIds={"7790553554900826": 13}
+pipelineIds={"10eb391c-cba5-404a-847d-5a1ae6f9d5df": 13}
 policyIds={}
 
 -------- Latest error is subset of legacy --------
-count=3
+count=7
 # of orgs=1
 # of pipelines=1
 # of policies=1
 
 OrgIds details:
-7790553554900826: 3
+7790553554900826: 7
 
 PipelineIds details:
-10eb391c-cba5-404a-847d-5a1ae6f9d5df: 3
+10eb391c-cba5-404a-847d-5a1ae6f9d5df: 7
 
 PolicyIds details:
 
 JSON dump:
-orgIds={"7790553554900826": 3}
-pipelineIds={"10eb391c-cba5-404a-847d-5a1ae6f9d5df": 3}
+orgIds={"7790553554900826": 7}
+pipelineIds={"10eb391c-cba5-404a-847d-5a1ae6f9d5df": 7}
 policyIds={}
 
 -------- Uncategorized --------

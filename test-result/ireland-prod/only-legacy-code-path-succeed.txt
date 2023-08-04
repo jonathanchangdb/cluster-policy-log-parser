@@ -1,10 +1,10 @@
 shardName=ireland-prod
 [ONLY_LEGACY_CODE_PATH_SUCCEED]
 ======= Summary =======
-count=103,
+count=242,
 total # of org=1
 total # of pipeline=1
-total # of policy=6
+total # of policy=8
 
 =================== DETAILS ===================
 -------- ApplyPolicy RPC validation --------
@@ -25,29 +25,31 @@ pipelineIds={}
 policyIds={}
 
 -------- enable_elastic_disk=True --------
-count=103
+count=242
 # of orgs=1
 # of pipelines=1
 # of policies=1
 
 OrgIds details:
-2506601948196102: 103
+2506601948196102: 242
 
 PipelineIds details:
-caf11527-e159-48a6-8376-d9dda4c0872f: 103
+caf11527-e159-48a6-8376-d9dda4c0872f: 242
 
 PolicyIds details:
-00082FBC292622B0: 62
+00082FBC292622B0: 141
+00040EFE21D749BB: 41
 A96377E9F7000829: 31
+0011878C574B3090: 13
+001B7841EBAF452E: 6
+000BF8B1EDBE8364: 4
 A963D86B02001DC6: 4
-00040EFE21D749BB: 3
 00109C3704B4AE3C: 2
-000BF8B1EDBE8364: 1
 
 JSON dump:
-orgIds={"2506601948196102": 103}
-pipelineIds={"caf11527-e159-48a6-8376-d9dda4c0872f": 103}
-policyIds={"00082FBC292622B0": 62, "A96377E9F7000829": 31, "A963D86B02001DC6": 4, "00040EFE21D749BB": 3, "00109C3704B4AE3C": 2, "000BF8B1EDBE8364": 1}
+orgIds={"2506601948196102": 242}
+pipelineIds={"caf11527-e159-48a6-8376-d9dda4c0872f": 242}
+policyIds={"00082FBC292622B0": 141, "00040EFE21D749BB": 41, "A96377E9F7000829": 31, "0011878C574B3090": 13, "001B7841EBAF452E": 6, "000BF8B1EDBE8364": 4, "A963D86B02001DC6": 4, "00109C3704B4AE3C": 2}
 
 -------- Disallowed cluster attributes --------
 count=0

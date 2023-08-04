@@ -1,11 +1,11 @@
 [mumbai-prod]
 ======= Summary =======
-count=10000,
+count=10007,
 total # of org=15
-total # of pipeline=85
-total # of policy=0
+total # of pipeline=82
+total # of policy=1
 [MATCHED_CLUSTER_SPEC]:
-total = 10000, pipelineIds = 85, orgIds = 15, policies = 0
+total = 10000, pipelineIds = 82, orgIds = 15, policies = 0
 - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - DLT workload type total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
@@ -20,8 +20,8 @@ total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 
 [ONLY_LEGACY_CODE_PATH_SUCCEED]:
-total = 0, pipelineIds = 0, orgIds = 0, policies = 0
-- enable_elastic_disk=True total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+total = 7, pipelineIds = 1, orgIds = 1, policies = 1
+- enable_elastic_disk=True total = 7, pipelineIds = 1, orgIds = 1, policies = 1
 - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
@@ -29,6 +29,7 @@ total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 [ONLY_NEW_CODE_PATH_SUCCEED]:
 total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- enable_local_disk_encryption total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Instance pool adjustment total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
@@ -52,8 +53,8 @@ total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized truncated logs total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (ONLY_LEGACY_CODE_PATH_SUCCEED)
-total = 0, pipelineIds = 0, orgIds = 0, policies = 0
-- enable_elastic_disk=True total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+total = 7, pipelineIds = 1, orgIds = 1, policies = 1
+- enable_elastic_disk=True total = 7, pipelineIds = 1, orgIds = 1, policies = 1
 - Disallowed cluster attributes total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
@@ -66,11 +67,12 @@ total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 (ONLY_NEW_CODE_PATH_SUCCEED)
 total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- enable_local_disk_encryption total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Instance pool adjustment total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (MATCHED_CLUSTER_SPEC)
-total = 10000, pipelineIds = 85, orgIds = 15, policies = 0
+total = 10000, pipelineIds = 82, orgIds = 15, policies = 0
 - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - DLT workload type total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 

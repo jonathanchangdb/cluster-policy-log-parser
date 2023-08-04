@@ -1,13 +1,33 @@
 shardName=az-australiaeast
 [ONLY_NEW_CODE_PATH_SUCCEED]
 ======= Summary =======
-count=0,
-total # of org=0
-total # of pipeline=0
-total # of policy=0
+count=5,
+total # of org=1
+total # of pipeline=1
+total # of policy=1
 
 =================== DETAILS ===================
 -------- Node Type ID --------
+count=4
+# of orgs=1
+# of pipelines=1
+# of policies=1
+
+OrgIds details:
+1674539196262966: 4
+
+PipelineIds details:
+90c60e84-5679-4486-8291-824f8dfce339: 4
+
+PolicyIds details:
+00033DEAC8FBCC89: 4
+
+JSON dump:
+orgIds={"1674539196262966": 4}
+pipelineIds={"90c60e84-5679-4486-8291-824f8dfce339": 4}
+policyIds={"00033DEAC8FBCC89": 4}
+
+-------- enable_local_disk_encryption --------
 count=0
 # of orgs=0
 # of pipelines=0
@@ -25,19 +45,21 @@ pipelineIds={}
 policyIds={}
 
 -------- Uncategorized --------
-count=0
-# of orgs=0
-# of pipelines=0
-# of policies=0
+count=1
+# of orgs=1
+# of pipelines=1
+# of policies=1
 
 OrgIds details:
+1674539196262966: 1
 
 PipelineIds details:
+90c60e84-5679-4486-8291-824f8dfce339: 1
 
 JSON dump:
-orgIds={}
-pipelineIds={}
-logs={}
+orgIds={"1674539196262966": 1}
+pipelineIds={"90c60e84-5679-4486-8291-824f8dfce339": 1}
+logs={"1674539196262966_90c60e84-5679-4486-8291-824f8dfce339": [{"legacy": "INVALID_PARAMETER_VALUE: Validation failed for num_workers, the value must be present; Validation failed for node_type_id, the value must be Standard_D4ads_v5 (is \"Standard_F8s\")\n\n", "latest": {"new_cluster": {"cluster_name": "dlt-execution-e6a78629-6c1f-4f2f-b991-e54cd7431d5d", "spark_version": "dlt:11.3-delta-pipelines-dlt-release-2023.29-commit-499a946-image-a8a17ac", "spark_conf": {"pipelines.advancedAutoscaling.enabled": "true", "pipelines.autoscaling.maxNumExecutors": "5", "pipelines.autoscaling.minNumExecutors": "1", "pipelines.cloud": "Azure", "pipelines.dbrVersion": "11.3", "pipelines.dltDebugger.enabled": "true", "pipelines.enableExpectationsOnApplyChanges": "false", "pipelines.enableTrackHistory": "false", "pipelines.enzyme.enabled": "true", "pipelines.eventLevelDataFrameCollectUsage": "warn", "pipelines.eventLevelDataFrameSaveAsTableUsage": "warn", "pipelines.eventLevelDataFrameSaveUsage": "warn", "pipelines.eventLevelDataStreamWriterStartUsage": "warn", "pipelines.eventLevelPivotUsage": "warn", "pipelines.id": "e6a78629-6c1f-4f2f-b991-e54cd7431d5d", "pipelines.longRunningStageDetector.enabled": "true", "pipelines.metrics.clusterResources.enabled": "true", "pipelines.metrics.clusterUtilization.enabled": "true", "pipelines.metrics.flowProgressBacklog.enabled": "true", "pipelines.metrics.flowTimeReporter.enabled": "true", "pipelines.updateSnapshot.enabled": "true", "spark.databricks.acceptSoakingFeatures": "false", "spark.databricks.cloudFiles.rootSchemaLocation": "dbfs:/pipelines/e6a78629-6c1f-4f2f-b991-e54cd7431d5d/autoloader", "spark.databricks.cloudFiles.sqlApi.enabled": "true", "spark.databricks.delta.optimizeWrite.enabled": "true", "spark.databricks.delta.snapshot.prefetchCommitJson.enabled": "false", "spark.databricks.driver.hardKillUnresponsive.enabled": "false", "spark.databricks.driver.ipykernel.commChannelEnabled": "false", "spark.databricks.driverNfs.enabled": "true", "spark.databricks.preemption.enabled": "false", "spark.databricks.sql.MaterializedViewReadAllowInDBR": "true", "spark.debugger.enabled": "true", "spark.debugger.eventListener": "org.apache.spark.debugger.DLTDebuggerEventReporter", "spark.decommission.enabled": "true", "spark.scheduler.listenerbus.eventqueue.databricks.capacity": "1000000", "spark.sql.streaming.stopTimeout": "60s", "spark.storage.decommission.enabled": "true", "spark.storage.decommission.rddBlocks.enabled": "true", "spark.storage.decommission.shuffleBlocks.enabled": "true", "pipelines.clusterSpecChecksum": "B357806CD93A8C10DB615DE068DA4D67"}, "cluster_creator": "PIPELINE_LAUNCHER", "azure_attributes": {"spot_bid_max_price": 100.0}, "node_type_id": "Standard_D4ads_v5", "driver_node_type_id": "Standard_D4ads_v5", "custom_tags": {"Billing": "TSG"}, "autotermination_minutes": 0, "enable_elastic_disk": true, "enable_jobs_autostart": false, "policy_id": "001C77E662AF075E", "enable_local_disk_encryption": false, "billing_info": {"dlt_billing_info": {"tier": "ADVANCED", "is_photon_enabled": false, "dlt_workload_type": "DLT_UPDATE"}}, "runtime_engine": "STANDARD", "num_workers": 1}}}]}
 
 
 -------- Failed to parse --------

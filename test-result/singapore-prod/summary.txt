@@ -1,11 +1,11 @@
 [singapore-prod]
 ======= Summary =======
 count=10019,
-total # of org=38
-total # of pipeline=113
+total # of org=43
+total # of pipeline=123
 total # of policy=3
 [MATCHED_CLUSTER_SPEC]:
-total = 10005, pipelineIds = 112, orgIds = 37, policies = 2
+total = 10005, pipelineIds = 122, orgIds = 42, policies = 2
 - Custom tags total = 4, pipelineIds = 1, orgIds = 1, policies = 1
 - DLT workload type total = 1, pipelineIds = 1, orgIds = 1, policies = 1
 
@@ -29,6 +29,7 @@ total = 9, pipelineIds = 1, orgIds = 1, policies = 1
 [ONLY_NEW_CODE_PATH_SUCCEED]:
 total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- enable_local_disk_encryption total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Instance pool adjustment total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
@@ -66,11 +67,12 @@ total = 5, pipelineIds = 1, orgIds = 1, policies = 0
 (ONLY_NEW_CODE_PATH_SUCCEED)
 total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- enable_local_disk_encryption total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Instance pool adjustment total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (MATCHED_CLUSTER_SPEC)
-total = 10005, pipelineIds = 112, orgIds = 37, policies = 2
+total = 10005, pipelineIds = 122, orgIds = 42, policies = 2
 - Custom tags total = 4, pipelineIds = 1, orgIds = 1, policies = 1
 - DLT workload type total = 1, pipelineIds = 1, orgIds = 1, policies = 1
 

@@ -24,22 +24,15 @@ def __dueToApplyPolicyRpc(only_legacy_succeed_specs):
 def __dueToEnableElasticDisk(only_legacy_succeed_specs):
     filtered = []
     result = CategorizationResult("enable_elastic_disk=True")
-    regex = r"The cluster policy for the \"default\" cluster in the pipeline settings is not\n" \
-            r"compatible with the Delta Live Tables because of the following error:[\s]+Cluster " \
-            r"attribute (.*) for cluster 'default' is not allowed for a pipeline.*"
+    updates_error = """following error:\n\nCluster attribute `enable_elastic_disk' for cluster 'updates' is not allowed for a pipeline.\n\nPlease update"""
+    default_error = """following error:\n\nCluster attribute `enable_elastic_disk' for cluster 'default' is not allowed for a pipeline.\n\nPlease update"""
     for data in only_legacy_succeed_specs:
         (legacy_cluster_spec, latest_error, metadata) = data
         policyId = get_policy_id(legacy_cluster_spec)
         orgId, pipelineId = metadata['org_id'], metadata['pipeline_id']
 
-        regex_result = re.search(regex, latest_error)
-        if regex_result is not None:
-            attribute = regex_result.group(1)[1:-1]
-            policyValue = legacy_cluster_spec['new_cluster'][attribute]
-            if attribute == 'enable_elastic_disk' and policyValue:
-                result.addWithPolicyId(orgId, pipelineId, policyId)
-            else:
-                filtered.append(data)
+        if updates_error in latest_error or default_error in latest_error:
+            result.addWithPolicyId(orgId, pipelineId, policyId)
         else:
             filtered.append(data)
 

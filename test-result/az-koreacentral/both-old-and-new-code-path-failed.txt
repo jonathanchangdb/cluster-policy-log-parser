@@ -1,45 +1,49 @@
 shardName=az-koreacentral
 [BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
 ======= Summary =======
-count=0,
-total # of org=0
-total # of pipeline=0
+count=2,
+total # of org=1
+total # of pipeline=1
 total # of policy=0
 
 
 =================== DETAILS ===================
 -------- Same error message --------
-count=0
-# of orgs=0
-# of pipelines=0
-# of policies=0
+count=1
+# of orgs=1
+# of pipelines=1
+# of policies=1
 
 OrgIds details:
+4102579182584668: 1
 
 PipelineIds details:
+1e7fe46c-9575-4dcb-8dbc-b88fad710055: 1
 
 PolicyIds details:
 
 JSON dump:
-orgIds={}
-pipelineIds={}
+orgIds={"4102579182584668": 1}
+pipelineIds={"1e7fe46c-9575-4dcb-8dbc-b88fad710055": 1}
 policyIds={}
 
 -------- Latest error is subset of legacy --------
-count=0
-# of orgs=0
-# of pipelines=0
-# of policies=0
+count=1
+# of orgs=1
+# of pipelines=1
+# of policies=1
 
 OrgIds details:
+4102579182584668: 1
 
 PipelineIds details:
+1e7fe46c-9575-4dcb-8dbc-b88fad710055: 1
 
 PolicyIds details:
 
 JSON dump:
-orgIds={}
-pipelineIds={}
+orgIds={"4102579182584668": 1}
+pipelineIds={"1e7fe46c-9575-4dcb-8dbc-b88fad710055": 1}
 policyIds={}
 
 -------- Uncategorized --------

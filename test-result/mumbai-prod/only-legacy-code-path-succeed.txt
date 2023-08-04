@@ -1,10 +1,10 @@
 shardName=mumbai-prod
 [ONLY_LEGACY_CODE_PATH_SUCCEED]
 ======= Summary =======
-count=0,
-total # of org=0
-total # of pipeline=0
-total # of policy=0
+count=7,
+total # of org=1
+total # of pipeline=1
+total # of policy=1
 
 =================== DETAILS ===================
 -------- ApplyPolicy RPC validation --------
@@ -25,21 +25,24 @@ pipelineIds={}
 policyIds={}
 
 -------- enable_elastic_disk=True --------
-count=0
-# of orgs=0
-# of pipelines=0
-# of policies=0
+count=7
+# of orgs=1
+# of pipelines=1
+# of policies=1
 
 OrgIds details:
+4087154288878927: 7
 
 PipelineIds details:
+23780aa5-4fb6-4aa1-a577-2d6684566218: 7
 
 PolicyIds details:
+BC63D7FBDD000014: 7
 
 JSON dump:
-orgIds={}
-pipelineIds={}
-policyIds={}
+orgIds={"4087154288878927": 7}
+pipelineIds={"23780aa5-4fb6-4aa1-a577-2d6684566218": 7}
+policyIds={"BC63D7FBDD000014": 7}
 
 -------- Disallowed cluster attributes --------
 count=0

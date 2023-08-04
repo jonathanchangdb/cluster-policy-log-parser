@@ -1,7 +1,7 @@
 shardName=oregon-prod
 [BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
 ======= Summary =======
-count=191,
+count=284,
 total # of org=1
 total # of pipeline=1
 total # of policy=0
@@ -9,55 +9,59 @@ total # of policy=0
 
 =================== DETAILS ===================
 -------- Same error message --------
-count=191
+count=263
 # of orgs=1
 # of pipelines=1
 # of policies=1
 
 OrgIds details:
-1158255925719924: 191
+1158255925719924: 263
 
 PipelineIds details:
-091d3044-3431-4281-98f0-ec4fb961d8f7: 191
+091d3044-3431-4281-98f0-ec4fb961d8f7: 263
 
 PolicyIds details:
 
 JSON dump:
-orgIds={"1158255925719924": 191}
-pipelineIds={"091d3044-3431-4281-98f0-ec4fb961d8f7": 191}
+orgIds={"1158255925719924": 263}
+pipelineIds={"091d3044-3431-4281-98f0-ec4fb961d8f7": 263}
 policyIds={}
 
 -------- Latest error is subset of legacy --------
-count=0
-# of orgs=0
-# of pipelines=0
-# of policies=0
+count=12
+# of orgs=1
+# of pipelines=1
+# of policies=1
 
 OrgIds details:
+1158255925719924: 12
 
 PipelineIds details:
+091d3044-3431-4281-98f0-ec4fb961d8f7: 12
 
 PolicyIds details:
 
 JSON dump:
-orgIds={}
-pipelineIds={}
+orgIds={"1158255925719924": 12}
+pipelineIds={"091d3044-3431-4281-98f0-ec4fb961d8f7": 12}
 policyIds={}
 
 -------- Uncategorized --------
-count=0
-# of orgs=0
-# of pipelines=0
-# of policies=0
+count=9
+# of orgs=1
+# of pipelines=1
+# of policies=1
 
 OrgIds details:
+1158255925719924: 9
 
 PipelineIds details:
+091d3044-3431-4281-98f0-ec4fb961d8f7: 9
 
 JSON dump:
-orgIds={}
-pipelineIds={}
-logs={}
+orgIds={"1158255925719924": 9}
+pipelineIds={"091d3044-3431-4281-98f0-ec4fb961d8f7": 9}
+logs={"1158255925719924_091d3044-3431-4281-98f0-ec4fb961d8f7": [{"legacy": "INVALID_PARAMETER_VALUE: Validation failed for node_type_id, the value needs to be one of (r5.2xlarge) (is \"c5.2xlarge\"); Validation failed for driver_node_type_id, the value needs to be one of (r5.2xlarge) (is \"c5.2xlarge\")\n\n", "latest": "The cluster policy for pipeline updates in the pipeline settings is not\ncompatible with the Delta Live Tables because of the following error:\n\nCluster attribute `enable_elastic_disk' for cluster 'updates' is not allowed for a pipeline.\n\nPlease update the cluster policy accordingly.\n\n"}, {"legacy": "INVALID_PARAMETER_VALUE: Validation failed for node_type_id, the value needs to be one of (r5.2xlarge) (is \"c5.2xlarge\"); Validation failed for driver_node_type_id, the value needs to be one of (r5.2xlarge) (is \"c5.2xlarge\")\n\n", "latest": "The cluster policy for pipeline updates in the pipeline settings is not\ncompatible with the Delta Live Tables because of the following error:\n\nCluster attribute `enable_elastic_disk' for cluster 'updates' is not allowed for a pipeline.\n\nPlease update the cluster policy accordingly.\n\n"}, {"legacy": "INVALID_PARAMETER_VALUE: Validation failed for node_type_id, the value needs to be one of (c4.4xlarge) (is \"c5.2xlarge\"); Validation failed for driver_node_type_id, the value needs to be one of (c4.4xlarge) (is \"c5.2xlarge\")\n\n", "latest": "The cluster policy for pipeline updates in the pipeline settings is not\ncompatible with the Delta Live Tables because of the following error:\n\nCluster attribute `enable_elastic_disk' for cluster 'updates' is not allowed for a pipeline.\n\nPlease update the cluster policy accordingly.\n\n"}, {"legacy": "INVALID_PARAMETER_VALUE: Validation failed for node_type_id, the value needs to be one of (c4.4xlarge) (is \"c5.2xlarge\"); Validation failed for driver_node_type_id, the value needs to be one of (c4.4xlarge) (is \"c5.2xlarge\")\n\n", "latest": "The cluster policy for pipeline updates in the pipeline settings is not\ncompatible with the Delta Live Tables because of the following error:\n\nCluster attribute `enable_elastic_disk' for cluster 'updates' is not allowed for a pipeline.\n\nPlease update the cluster policy accordingly.\n\n"}, {"legacy": "INVALID_PARAMETER_VALUE: Validation failed for num_workers, the value cannot be present (is \"4\"); Validation failed for autoscale.min_workers, the value must be present; Validation failed for autoscale.max_workers, the value must be present\n\n", "latest": "The cluster policy for pipeline updates in the pipeline settings is not\ncompatible with the Delta Live Tables because of the following error:\n\nCluster attribute `enable_elastic_disk' for cluster 'updates' is not allowed for a pipeline.\n\nPlease update the cluster policy accordingly.\n\n"}, {"legacy": "INVALID_PARAMETER_VALUE: Validation failed for num_workers, the value cannot be present (is \"4\"); Validation failed for autoscale.min_workers, the value must be present; Validation failed for autoscale.max_workers, the value must be present\n\n", "latest": "The cluster policy for pipeline updates in the pipeline settings is not\ncompatible with the Delta Live Tables because of the following error:\n\nCluster attribute `enable_elastic_disk' for cluster 'updates' is not allowed for a pipeline.\n\nPlease update the cluster policy accordingly.\n\n"}, {"legacy": "INVALID_PARAMETER_VALUE: Validation failed for num_workers, the value cannot be present (is \"4\"); Validation failed for autoscale.min_workers, the value must be present; Validation failed for autoscale.max_workers, the value must be present\n\n", "latest": "The cluster policy for pipeline updates in the pipeline settings is not\ncompatible with the Delta Live Tables because of the following error:\n\nCluster attribute `enable_elastic_disk' for cluster 'updates' is not allowed for a pipeline.\n\nPlease update the cluster policy accordingly.\n\n"}, {"legacy": "INVALID_PARAMETER_VALUE: Validation failed for num_workers, the value cannot be present (is \"4\"); Validation failed for autoscale.min_workers, the value must be present; Validation failed for autoscale.max_workers, the value must be present\n\n", "latest": "The cluster policy for pipeline updates in the pipeline settings is not\ncompatible with the Delta Live Tables because of the following error:\n\nCluster attribute `enable_elastic_disk' for cluster 'updates' is not allowed for a pipeline.\n\nPlease update the cluster policy accordingly.\n\n"}, {"legacy": "INVALID_PARAMETER_VALUE: Validation failed for num_workers, the value cannot be present (is \"4\"); Validation failed for autoscale.min_workers, the value must be present; Validation failed for autoscale.max_workers, the value must be present\n\n", "latest": "The cluster policy for pipeline updates in the pipeline settings is not\ncompatible with the Delta Live Tables because of the following error:\n\nCluster attribute `enable_elastic_disk' for cluster 'updates' is not allowed for a pipeline.\n\nPlease update the cluster policy accordingly.\n\n"}]}
 
 
 -------- Failed to parse --------

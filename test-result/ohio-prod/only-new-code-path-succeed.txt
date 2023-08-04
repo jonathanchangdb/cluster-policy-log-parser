@@ -4,7 +4,7 @@ shardName=ohio-prod
 count=1,
 total # of org=1
 total # of pipeline=1
-total # of policy=0
+total # of policy=1
 
 =================== DETAILS ===================
 -------- Node Type ID --------
@@ -24,7 +24,7 @@ orgIds={}
 pipelineIds={}
 policyIds={}
 
--------- Uncategorized --------
+-------- enable_local_disk_encryption --------
 count=1
 # of orgs=1
 # of pipelines=1
@@ -36,10 +36,28 @@ OrgIds details:
 PipelineIds details:
 55f6b688-4fa0-4a72-9ec6-bd07c4744f9b: 1
 
+PolicyIds details:
+9A644F43BC0008E3: 1
+
 JSON dump:
 orgIds={"8364216033842746": 1}
 pipelineIds={"55f6b688-4fa0-4a72-9ec6-bd07c4744f9b": 1}
-logs={"8364216033842746_55f6b688-4fa0-4a72-9ec6-bd07c4744f9b": [{"legacy": "INVALID_PARAMETER_VALUE: Validation failed for enable_local_disk_encryption, the value must be true (is \"false\")\n\n", "latest": {"new_cluster": {"cluster_name": "dlt-execution-55f6b688-4fa0-4a72-9ec6-bd07c4744f9b", "spark_version": "dlt:12.2-delta-pipelines-dlt-release-2023.29-commit-499a946-image-9537109", "spark_conf": {"pipelines.cloud": "AWS", "pipelines.dbrVersion": "12.2", "pipelines.dltDebugger.enabled": "true", "pipelines.enableExpectationsOnApplyChanges": "false", "pipelines.enableTrackHistory": "false", "pipelines.enzyme.enabled": "true", "pipelines.eventLevelDataFrameCollectUsage": "warn", "pipelines.eventLevelDataFrameSaveAsTableUsage": "warn", "pipelines.eventLevelDataFrameSaveUsage": "warn", "pipelines.eventLevelDataStreamWriterStartUsage": "warn", "pipelines.eventLevelPivotUsage": "warn", "pipelines.id": "55f6b688-4fa0-4a72-9ec6-bd07c4744f9b", "pipelines.lineageEmission.enabled": "true", "pipelines.longRunningStageDetector.enabled": "true", "pipelines.metrics.clusterResources.enabled": "true", "pipelines.metrics.clusterUtilization.enabled": "true", "pipelines.metrics.flowProgressBacklog.enabled": "true", "pipelines.metrics.flowTimeReporter.enabled": "true", "pipelines.updateSnapshot.enabled": "false", "spark.databricks.acceptSoakingFeatures": "false", "spark.databricks.cloudFiles.sqlApi.enabled": "true", "spark.databricks.delta.optimizeWrite.enabled": "true", "spark.databricks.delta.snapshot.prefetchCommitJson.enabled": "false", "spark.databricks.driver.hardKillUnresponsive.enabled": "false", "spark.databricks.driver.ipykernel.commChannelEnabled": "false", "spark.databricks.driverNfs.enabled": "true", "spark.databricks.preemption.enabled": "false", "spark.databricks.sql.MaterializedViewReadAllowInDBR": "true", "spark.debugger.enabled": "true", "spark.debugger.eventListener": "org.apache.spark.debugger.DLTDebuggerEventReporter", "spark.scheduler.listenerbus.eventqueue.databricks.capacity": "1000000", "spark.sql.streaming.stopTimeout": "60s", "pipelines.clusterSpecChecksum": "913C7C96F9684B8DBF465B5EC1CFE206"}, "cluster_creator": "PIPELINE_LAUNCHER", "aws_attributes": {"first_on_demand": 1, "availability": "SPOT_WITH_FALLBACK", "zone_id": "auto", "instance_profile_arn": "arn:aws:iam::970600569985:instance-profile/GSRoleDPE0005EC2DatabricksSBXDEV"}, "node_type_id": "c5.2xlarge", "custom_tags": {"DPE_RELEASE_ID": "REL_000001", "APP_ENV_NAME": "SBXDEV", "DPE_ENV_CLASS": "SBX", "DPE_APP_ID": "DPE_0005", "APP_GRP_NAME": "DatabricksUser"}, "cluster_log_conf": {"s3": {"destination": "s3://gs-dpelogging-commonservicesnonprod-sse-ue2/DPELogs/Databricks/SBX/DPE_0005/SBXDEV/REL_000001/Databricks/Cluster", "region": "us-east-2"}}, "autotermination_minutes": 0, "enable_elastic_disk": true, "enable_jobs_autostart": false, "policy_id": "9A644F43BC0008E3", "enable_local_disk_encryption": true, "billing_info": {"dlt_billing_info": {"tier": "ADVANCED", "is_photon_enabled": false, "dlt_workload_type": "DLT_UPDATE"}}, "data_security_mode": "USER_ISOLATION", "runtime_engine": "STANDARD", "num_workers": 1}}}]}
+policyIds={"9A644F43BC0008E3": 1}
+
+-------- Uncategorized --------
+count=0
+# of orgs=0
+# of pipelines=0
+# of policies=0
+
+OrgIds details:
+
+PipelineIds details:
+
+JSON dump:
+orgIds={}
+pipelineIds={}
+logs={}
 
 
 -------- Failed to parse --------

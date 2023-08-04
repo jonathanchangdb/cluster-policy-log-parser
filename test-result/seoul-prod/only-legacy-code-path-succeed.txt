@@ -1,10 +1,10 @@
 shardName=seoul-prod
 [ONLY_LEGACY_CODE_PATH_SUCCEED]
 ======= Summary =======
-count=40,
+count=48,
 total # of org=1
 total # of pipeline=1
-total # of policy=2
+total # of policy=3
 
 =================== DETAILS ===================
 -------- ApplyPolicy RPC validation --------
@@ -25,25 +25,26 @@ pipelineIds={}
 policyIds={}
 
 -------- enable_elastic_disk=True --------
-count=40
+count=48
 # of orgs=1
 # of pipelines=1
 # of policies=1
 
 OrgIds details:
-7886422901770790: 40
+7886422901770790: 48
 
 PipelineIds details:
-6f2a5ce8-6d61-462c-9255-385bfe077cd8: 40
+6f2a5ce8-6d61-462c-9255-385bfe077cd8: 48
 
 PolicyIds details:
 3064121E6E00018D: 29
 30645BF260000009: 11
+3064121E6E0001E3: 8
 
 JSON dump:
-orgIds={"7886422901770790": 40}
-pipelineIds={"6f2a5ce8-6d61-462c-9255-385bfe077cd8": 40}
-policyIds={"3064121E6E00018D": 29, "30645BF260000009": 11}
+orgIds={"7886422901770790": 48}
+pipelineIds={"6f2a5ce8-6d61-462c-9255-385bfe077cd8": 48}
+policyIds={"3064121E6E00018D": 29, "30645BF260000009": 11, "3064121E6E0001E3": 8}
 
 -------- Disallowed cluster attributes --------
 count=0

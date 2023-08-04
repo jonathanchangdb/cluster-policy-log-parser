@@ -1,11 +1,11 @@
 [az-canadacentral]
 ======= Summary =======
-count=10058,
-total # of org=65
-total # of pipeline=355
+count=10068,
+total # of org=79
+total # of pipeline=458
 total # of policy=1
 [MATCHED_CLUSTER_SPEC]:
-total = 10003, pipelineIds = 355, orgIds = 65, policies = 1
+total = 10003, pipelineIds = 458, orgIds = 79, policies = 1
 - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - DLT workload type total = 3, pipelineIds = 1, orgIds = 1, policies = 1
 
@@ -29,13 +29,14 @@ total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 [ONLY_NEW_CODE_PATH_SUCCEED]:
 total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- enable_local_disk_encryption total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Instance pool adjustment total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 
 [BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]:
-total = 55, pipelineIds = 1, orgIds = 1, policies = 0
-- Same error message total = 53, pipelineIds = 1, orgIds = 1, policies = 0
+total = 65, pipelineIds = 1, orgIds = 1, policies = 0
+- Same error message total = 63, pipelineIds = 1, orgIds = 1, policies = 0
 - Latest error is subset of legacy total = 2, pipelineIds = 1, orgIds = 1, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
@@ -58,19 +59,20 @@ total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED)
-total = 55, pipelineIds = 1, orgIds = 1, policies = 0
-- Same error message total = 53, pipelineIds = 1, orgIds = 1, policies = 0
+total = 65, pipelineIds = 1, orgIds = 1, policies = 0
+- Same error message total = 63, pipelineIds = 1, orgIds = 1, policies = 0
 - Latest error is subset of legacy total = 2, pipelineIds = 1, orgIds = 1, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (ONLY_NEW_CODE_PATH_SUCCEED)
 total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Node Type ID total = 0, pipelineIds = 0, orgIds = 0, policies = 0
+- enable_local_disk_encryption total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Instance pool adjustment total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (MATCHED_CLUSTER_SPEC)
-total = 10003, pipelineIds = 355, orgIds = 65, policies = 1
+total = 10003, pipelineIds = 458, orgIds = 79, policies = 1
 - Custom tags total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - DLT workload type total = 3, pipelineIds = 1, orgIds = 1, policies = 1
 

@@ -165,6 +165,8 @@ def __dueToInstancePoolAdjustment(mismatched_cluster_specs):
 
             if 'node_type_id' in new_cluster:
                 del canonicalized_new_cluster['node_type_id']
+            if 'driver_node_type_id' in new_cluster:
+                del canonicalized_new_cluster['driver_node_type_id']
             if 'enable_elastic_disk' in new_cluster:
                 del canonicalized_new_cluster['enable_elastic_disk']
             if 'aws_attributes' in new_cluster:

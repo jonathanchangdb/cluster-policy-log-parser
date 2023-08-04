@@ -1,7 +1,7 @@
 shardName=ohio-prod
 [BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
 ======= Summary =======
-count=30,
+count=49,
 total # of org=1
 total # of pipeline=1
 total # of policy=0
@@ -9,22 +9,22 @@ total # of policy=0
 
 =================== DETAILS ===================
 -------- Same error message --------
-count=28
+count=47
 # of orgs=1
 # of pipelines=1
 # of policies=1
 
 OrgIds details:
-382843298319388: 28
+382843298319388: 47
 
 PipelineIds details:
-d74d52bd-4b0b-4544-a801-06c3e9dd6475: 28
+d74d52bd-4b0b-4544-a801-06c3e9dd6475: 47
 
 PolicyIds details:
 
 JSON dump:
-orgIds={"382843298319388": 28}
-pipelineIds={"d74d52bd-4b0b-4544-a801-06c3e9dd6475": 28}
+orgIds={"382843298319388": 47}
+pipelineIds={"d74d52bd-4b0b-4544-a801-06c3e9dd6475": 47}
 policyIds={}
 
 -------- Latest error is subset of legacy --------

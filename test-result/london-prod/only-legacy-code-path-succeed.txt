@@ -1,10 +1,10 @@
 shardName=london-prod
 [ONLY_LEGACY_CODE_PATH_SUCCEED]
 ======= Summary =======
-count=200,
+count=466,
 total # of org=1
 total # of pipeline=1
-total # of policy=2
+total # of policy=1
 
 =================== DETAILS ===================
 -------- ApplyPolicy RPC validation --------
@@ -25,25 +25,24 @@ pipelineIds={}
 policyIds={}
 
 -------- enable_elastic_disk=True --------
-count=200
+count=466
 # of orgs=1
 # of pipelines=1
 # of policies=1
 
 OrgIds details:
-3780991420495355: 200
+3780991420495355: 466
 
 PipelineIds details:
-8dbbe7f3-8102-4ba7-9924-a3d5b724cbce: 200
+ecfa160b-f4ab-42fa-adff-b1458f61393a: 466
 
 PolicyIds details:
-0361EF4E990003EF: 199
-0363B2105E00001C: 1
+0361EF4E990003EF: 466
 
 JSON dump:
-orgIds={"3780991420495355": 200}
-pipelineIds={"8dbbe7f3-8102-4ba7-9924-a3d5b724cbce": 200}
-policyIds={"0361EF4E990003EF": 199, "0363B2105E00001C": 1}
+orgIds={"3780991420495355": 466}
+pipelineIds={"ecfa160b-f4ab-42fa-adff-b1458f61393a": 466}
+policyIds={"0361EF4E990003EF": 466}
 
 -------- Disallowed cluster attributes --------
 count=0

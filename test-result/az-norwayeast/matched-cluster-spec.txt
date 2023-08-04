@@ -2,7 +2,7 @@ shardName=az-norwayeast
 [MATCHED_CLUSTER_SPEC]
 ======= Summary =======
 count=10000,
-total # of org=24
-total # of pipeline=1598
+total # of org=28
+total # of pipeline=1673
 total # of policy=0
 

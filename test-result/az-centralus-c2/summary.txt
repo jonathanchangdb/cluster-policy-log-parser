@@ -1,11 +1,11 @@
 [az-centralus-c2]
 ======= Summary =======
-count=10047,
-total # of org=69
-total # of pipeline=326
-total # of policy=5
+count=10051,
+total # of org=79
+total # of pipeline=382
+total # of policy=7
 [MATCHED_CLUSTER_SPEC]:
-total = 10029, pipelineIds = 324, orgIds = 69, policies = 4
+total = 10029, pipelineIds = 380, orgIds = 79, policies = 4
 - Custom tags total = 28, pipelineIds = 1, orgIds = 1, policies = 3
 - DLT workload type total = 1, pipelineIds = 1, orgIds = 1, policies = 1
 
@@ -27,15 +27,16 @@ total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 
 [ONLY_NEW_CODE_PATH_SUCCEED]:
-total = 2, pipelineIds = 1, orgIds = 1, policies = 2
-- Node Type ID total = 2, pipelineIds = 1, orgIds = 1, policies = 2
+total = 5, pipelineIds = 1, orgIds = 1, policies = 4
+- Node Type ID total = 5, pipelineIds = 1, orgIds = 1, policies = 4
+- enable_local_disk_encryption total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Instance pool adjustment total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 
 [BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]:
-total = 16, pipelineIds = 1, orgIds = 1, policies = 0
-- Same error message total = 14, pipelineIds = 1, orgIds = 1, policies = 0
+total = 17, pipelineIds = 1, orgIds = 1, policies = 0
+- Same error message total = 15, pipelineIds = 1, orgIds = 1, policies = 0
 - Latest error is subset of legacy total = 2, pipelineIds = 1, orgIds = 1, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
@@ -58,19 +59,20 @@ total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED)
-total = 16, pipelineIds = 1, orgIds = 1, policies = 0
-- Same error message total = 14, pipelineIds = 1, orgIds = 1, policies = 0
+total = 17, pipelineIds = 1, orgIds = 1, policies = 0
+- Same error message total = 15, pipelineIds = 1, orgIds = 1, policies = 0
 - Latest error is subset of legacy total = 2, pipelineIds = 1, orgIds = 1, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (ONLY_NEW_CODE_PATH_SUCCEED)
-total = 2, pipelineIds = 1, orgIds = 1, policies = 2
-- Node Type ID total = 2, pipelineIds = 1, orgIds = 1, policies = 2
+total = 5, pipelineIds = 1, orgIds = 1, policies = 4
+- Node Type ID total = 5, pipelineIds = 1, orgIds = 1, policies = 4
+- enable_local_disk_encryption total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Uncategorized total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 - Instance pool adjustment total = 0, pipelineIds = 0, orgIds = 0, policies = 0
 
 (MATCHED_CLUSTER_SPEC)
-total = 10029, pipelineIds = 324, orgIds = 69, policies = 4
+total = 10029, pipelineIds = 380, orgIds = 79, policies = 4
 - Custom tags total = 28, pipelineIds = 1, orgIds = 1, policies = 3
 - DLT workload type total = 1, pipelineIds = 1, orgIds = 1, policies = 1
 

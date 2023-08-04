@@ -1,56 +1,56 @@
 shardName=frankfurt-prod
 [ONLY_LEGACY_CODE_PATH_SUCCEED]
 ======= Summary =======
-count=264,
+count=88,
 total # of org=1
 total # of pipeline=1
 total # of policy=5
 
 =================== DETAILS ===================
 -------- ApplyPolicy RPC validation --------
-count=431
+count=186
 # of orgs=1
 # of pipelines=1
 # of policies=1
 
 OrgIds details:
-3726185482832627: 431
+3726185482832627: 186
 
 PipelineIds details:
-3faeb69d-7102-4f13-b4b4-e12d855e6359: 431
+3faeb69d-7102-4f13-b4b4-e12d855e6359: 186
 
 PolicyIds details:
-0F63CF324F000682: 312
-0F63CF324F0006C9: 119
+0F63CF324F000682: 142
+0F63CF324F0006C9: 44
 
 JSON dump:
-orgIds={"3726185482832627": 431}
-pipelineIds={"3faeb69d-7102-4f13-b4b4-e12d855e6359": 431}
-policyIds={"0F63CF324F000682": 312, "0F63CF324F0006C9": 119}
+orgIds={"3726185482832627": 186}
+pipelineIds={"3faeb69d-7102-4f13-b4b4-e12d855e6359": 186}
+policyIds={"0F63CF324F000682": 142, "0F63CF324F0006C9": 44}
 
 -------- enable_elastic_disk=True --------
-count=264
+count=88
 # of orgs=1
 # of pipelines=1
 # of policies=1
 
 OrgIds details:
-3726185482832627: 264
+3726185482832627: 88
 
 PipelineIds details:
-3faeb69d-7102-4f13-b4b4-e12d855e6359: 264
+3faeb69d-7102-4f13-b4b4-e12d855e6359: 88
 
 PolicyIds details:
-0F63CF324F000F57: 212
-001EA42136F515A1: 27
-0F63CF324F000DE7: 18
-00187DB1352FD7B7: 6
+00187DB1352FD7B7: 48
+001EA42136F515A1: 32
+0F63CF324F000DE7: 6
 00038B073F6D7E3F: 1
+0F63CF324F000F57: 1
 
 JSON dump:
-orgIds={"3726185482832627": 264}
-pipelineIds={"3faeb69d-7102-4f13-b4b4-e12d855e6359": 264}
-policyIds={"0F63CF324F000F57": 212, "001EA42136F515A1": 27, "0F63CF324F000DE7": 18, "00187DB1352FD7B7": 6, "00038B073F6D7E3F": 1}
+orgIds={"3726185482832627": 88}
+pipelineIds={"3faeb69d-7102-4f13-b4b4-e12d855e6359": 88}
+policyIds={"00187DB1352FD7B7": 48, "001EA42136F515A1": 32, "0F63CF324F000DE7": 6, "00038B073F6D7E3F": 1, "0F63CF324F000F57": 1}
 
 -------- Disallowed cluster attributes --------
 count=0

@@ -1,7 +1,7 @@
 shardName=az-northeurope-c2
 [BOTH_LEGACY_AND_NEW_CODE_PATH_FAILED]
 ======= Summary =======
-count=16,
+count=15,
 total # of org=1
 total # of pipeline=1
 total # of policy=0
@@ -9,22 +9,22 @@ total # of policy=0
 
 =================== DETAILS ===================
 -------- Same error message --------
-count=16
+count=15
 # of orgs=1
 # of pipelines=1
 # of policies=1
 
 OrgIds details:
-6478936650198963: 16
+5678659344564033: 15
 
 PipelineIds details:
-b24405c7-8a65-454b-8186-4842caa78011: 16
+9cbc90cc-71f3-45be-a2d2-a2c6710e5149: 15
 
 PolicyIds details:
 
 JSON dump:
-orgIds={"6478936650198963": 16}
-pipelineIds={"b24405c7-8a65-454b-8186-4842caa78011": 16}
+orgIds={"5678659344564033": 15}
+pipelineIds={"9cbc90cc-71f3-45be-a2d2-a2c6710e5149": 15}
 policyIds={}
 
 -------- Latest error is subset of legacy --------
